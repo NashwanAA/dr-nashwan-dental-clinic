@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://NashwanAA.github.io/dr-nashwan-dental-clinic/</loc>
+    <lastmod>2023-10-28</lastmod> <!-- ضع تاريخ اليوم أو تاريخ آخر تعديل مهم -->
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <!-- إذا كان لديك صفحات مقالات منفصلة، أضفها هنا، مثال: -->
+  <!--
+  <url>
+    <loc>https://NashwanAA.github.io/dr-nashwan-dental-clinic/article-detail-1.html</loc>
+    <lastmod>2023-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  -->
+</urlset>
