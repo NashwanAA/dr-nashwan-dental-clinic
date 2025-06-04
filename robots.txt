@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://NashwanAA.github.io/dr-nashwan-dental-clinic/sitemap.xml
