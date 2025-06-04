@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مركز الدكتور نشوان الخولاني لطب الأسنان | إب - رعاية متكاملة لابتسامتك</title>
+    <meta name="description" content="مركز الدكتور نشوان الخولاني لطب الأسنان في إب. نقدم خدمات طب أسنان شاملة وعالية الجودة تشمل تجميل وزراعة وتقويم الأسنان بأحدث التقنيات. فروعنا في مفرق جبلة والدائري. اتصل بنا اليوم للحجز والاستفسار.">
+    <meta name="keywords" content="طب أسنان, دكتور نشوان الخولاني, عيادة أسنان إب, طبيب أسنان إب, مفرق جبلة, الدائري, تجميل أسنان, زراعة أسنان, تقويم أسنان, ابتسامة هوليود, تنظيف أسنان, علاج عصب, طب أسنان أطفال">
+
+    <!-- Google Fonts (Cairo) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons (لأيقونات مثل الهاتف، واتساب، إلخ.) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- رابط ملف الأنماط الرئيسي -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- أيقونة الموقع (Favicon) - استبدل بالمسار الصحيح -->
+    <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+<body>
+    <!-- شريط التنقل العلوي -->
+    <header class="navbar">
+        <div class="container">
+            <a href="#home" class="logo">
+                <img src="images/logo-clinic.png" alt="شعار مركز د. نشوان الخولاني" class="logo-img">
+                <!-- مركز د. نشوان الخولاني -->
+            </a>
+            <button class="nav-toggle" id="nav-toggle-button" aria-label="فتح/إغلاق القائمة" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav-menu" id="nav-menu-items">
+                <ul>
+                    <li><a href="#home" class="nav-link active">الرئيسية</a></li>
+                    <li><a href="#services" class="nav-link">خدماتنا</a></li>
+                    <li><a href="#about" class="nav-link">من نحن</a></li>
+                    <li><a href="#team" class="nav-link">فريق العمل</a></li>
+                    <li><a href="#gallery" class="nav-link">معرض الصور</a></li>
+                    <li><a href="#faq" class="nav-link">الأسئلة الشائعة</a></li>
+                    <li><a href="#articles" class="nav-link">مقالات ونصائح</a></li>
+                    <li><a href="#contact" class="nav-link">تواصل معنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- القسم الرئيسي (الرئيسية - Hero Section) -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>مركز الدكتور نشوان الخولاني لطب الأسنان</h1>
+            <p class="subtitle">نعتني بابتسامتك بأحدث التقنيات وأفضل الخبرات في قلب مدينة إب.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary btn-lg"><i class="fas fa-calendar-check"></i> احجز موعدك الآن</a>
+                <a href="#services" class="btn btn-secondary btn-lg"><i class="fas fa-briefcase-medical"></i> اكتشف خدماتنا</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الخدمات -->
+    <section id="services" class="services-section section-padding">
+        <div class="container">
+            <h2 class="section-title">خدماتنا المتميزة</h2>
+            <p class="section-subtitle">نقدم مجموعة شاملة من علاجات الأسنان لتلبية جميع احتياجاتكم.</p>
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-icon-container"><img src="images/service-cosmetic.jpg" alt="تجميل الأسنان" class="service-icon"></div>
+                    <h3>تجميل الأسنان</h3>
+                    <p>ابتسامات هوليود، تبييض بالليزر، فينير، لومينير، حشوات تجميلية.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon-container"><img src="images/service-implants.jpg" alt="زراعة الأسنان" class="service-icon"></div>
+                    <h3>زراعة الأسنان</h3>
+                    <p>تعويض الأسنان المفقودة بأحدث تقنيات الزراعة الفورية والتقليدية.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon-container"><img src="images/service-ortho.jpg" alt="تقويم الأسنان" class="service-icon"></div>
+                    <h3>تقويم الأسنان</h3>
+                    <p>علاج تشوهات الفكين واعوجاج الأسنان (معدني، شفاف، داخلي).</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon-container"><img src="images/service-children.jpg" alt="طب أسنان الأطفال" class="service-icon"></div>
+                    <h3>طب أسنان الأطفال</h3>
+                    <p>رعاية متخصصة لأسنان الأطفال، علاج وقائي، وحشوات ملونة.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon-container"><img src="images/service-rootcanal.jpg" alt="علاج العصب" class="service-icon"></div>
+                    <h3>علاج الجذور والأعصاب</h3>
+                    <p>علاج التهابات العصب بأجهزة متطورة لإنقاذ السن.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon-container"><img src="images/service-general.jpg" alt="علاجات عامة ووقائية" class="service-icon"></div>
+                    <h3>علاجات عامة ووقائية</h3>
+                    <p>تنظيف الأسنان، إزالة الجير، حشوات، خلع، تركيبات ثابتة ومتحركة.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم من نحن -->
+    <section id="about" class="about-section section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title">لماذا تختار مركز الدكتور نشوان الخولاني؟</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>مهمتنا: ابتسامة صحية وجميلة لكل مريض</h3>
+                    <p>في مركز الدكتور نشوان الخولاني، نسعى لتقديم تجربة علاجية فريدة تجمع بين الخبرة الطويلة، أحدث التقنيات، والاهتمام الشخصي بكل مريض. تأسس مركزنا ليكون الوجهة الأولى لصحة الفم والأسنان في مدينة إب، مع التزامنا بأعلى معايير الجودة والتعقيم.</p>
+                    <p>نؤمن بأن الوقاية خير من العلاج، لذا نركز على توعية مرضانا بأهمية العناية بصحة الفم والأسنان. فريقنا مستعد دائمًا لتقديم النصح والإرشاد للحفاظ على ابتسامة مشرقة تدوم طويلاً.</p>
+                    <ul class="features-list">
+                        <li><i class="fas fa-user-md icon-feature"></i> أطباء متخصصون بخبرات عالية.</li>
+                        <li><i class="fas fa-microscope icon-feature"></i> أحدث الأجهزة والتقنيات العالمية.</li>
+                        <li><i class="fas fa-shield-virus icon-feature"></i> معايير تعقيم صارمة لضمان سلامتكم.</li>
+                        <li><i class="fas fa-smile icon-feature"></i> بيئة مريحة واستقبال ودود.</li>
+                        <li><i class="fas fa-hand-holding-medical icon-feature"></i> خطط علاجية مخصصة لكل حالة.</li>
+                    </ul>
+                    <a href="#team" class="btn btn-outline">تعرف على فريقنا</a>
+                </div>
+                <div class="about-image">
+                    <img src="images/clinic-interior-photo.jpg" alt="داخل مركز الدكتور نشوان الخولاني">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم فريق العمل -->
+    <section id="team" class="team-section section-padding">
+        <div class="container">
+            <h2 class="section-title">فريقنا الطبي الخبير</h2>
+            <p class="section-subtitle">نخبة من الأطباء المتخصصين لتقديم أفضل رعاية لأسنانكم.</p>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-image-container">
+                        <img src="images/dr-nashwan-photo.jpg" alt="الدكتور نشوان الخولاني">
+                    </div>
+                    <h3>د. نشوان الخولاني</h3>
+                    <p class="member-title">مدير المركز واختصاصي طب وتجميل الأسنان</p>
+                    <p class="member-bio">يمتلك الدكتور نشوان خبرة واسعة تمتد لأكثر من [أدخل عدد] سنوات في مختلف مجالات طب الأسنان، مع تركيز خاص على زراعة وتجميل الأسنان. حاصل على [اذكر الشهادات أو التخصصات الرئيسية هنا، مثال: ماجستير في زراعة الأسنان من جامعة X]. يحرص دائمًا على مواكبة أحدث التطورات في طب الأسنان.</p>
+                </div>
+                <!-- أضف المزيد من أعضاء الفريق هنا إذا وجدوا -->
+                <!-- مثال لعضو فريق آخر -->
+                <!--
+                <div class="team-member">
+                    <div class="member-image-container">
+                        <img src="images/dr-another-photo.jpg" alt="اسم طبيب آخر">
+                    </div>
+                    <h3>د. [اسم الطبيب الآخر]</h3>
+                    <p class="member-title">[تخصصه، مثال: اختصاصي تقويم الأسنان]</p>
+                    <p class="member-bio">[نبذة قصيرة عن خبراته وشهاداته]</p>
+                </div>
+                -->
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم معرض الصور (Before & After أو صور للمركز) -->
+    <section id="gallery" class="gallery-section section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title">شاهد نتائجنا</h2>
+            <p class="section-subtitle">نفتخر بمساعدة مرضانا في الحصول على ابتسامات صحية وجميلة. (جميع الصور بموافقة المرضى)</p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/gallery-before-after-1.jpg" alt="قبل وبعد - حالة 1">
+                    <div class="gallery-caption">حالة تجميل أسنان (فينير)</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery-clinic-1.jpg" alt="صورة من داخل المركز">
+                    <div class="gallery-caption">أحد غرف العلاج المجهزة</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery-before-after-2.jpg" alt="قبل وبعد - حالة زراعة">
+                    <div class="gallery-caption">حالة زراعة أسنان ناجحة</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery-equipment-1.jpg" alt="أجهزة حديثة بالمركز">
+                    <div class="gallery-caption">نستخدم أحدث التقنيات</div>
+                </div>
+                <!-- أضف المزيد من الصور -->
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الأسئلة الشائعة (FAQ) -->
+    <section id="faq" class="faq-section section-padding">
+        <div class="container">
+            <h2 class="section-title">أسئلة شائعة</h2>
+            <p class="section-subtitle">نجيب على أكثر استفساراتكم شيوعًا حول خدماتنا.</p>
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>ما هي مواعيد عمل المركز؟</span>
+                        <i class="fas fa-chevron-down icon-toggle"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>نعمل في الفرع الرئيسي (مفرق جبلة) وفرع الدائري من السبت إلى الخميس، من الساعة 9:00 صباحًا حتى 1:00 ظهرًا، ومن الساعة 4:00 عصرًا حتى 8:30 مساءً. يوم الجمعة إجازة رسمية.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>هل يتطلب الحجز المسبق؟</span>
+                        <i class="fas fa-chevron-down icon-toggle"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>نعم، نفضل الحجز المسبق لضمان حصولكم على أفضل خدمة وتجنب الانتظار الطويل. يمكنكم الحجز عبر الاتصال الهاتفي بالأرقام الموضحة.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>هل تقبلون بطاقات التأمين الصحي؟</span>
+                        <i class="fas fa-chevron-down icon-toggle"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>حاليًا، لا نتعامل بشكل مباشر مع جميع شركات التأمين، ولكن يمكننا تزويدكم بالفواتير والتقارير اللازمة لتقديمها لشركة التأمين الخاصة بكم. يرجى الاستفسار عن تفاصيل الدفع عند الحجز.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>ما هي تكلفة الخدمات؟</span>
+                        <i class="fas fa-chevron-down icon-toggle"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>تختلف تكلفة الخدمات بناءً على نوع العلاج المطلوب وحالة المريض. يمكنكم الحصول على استشارة أولية لتقييم الحالة وتقدير التكلفة. نحن نسعى لتقديم أسعار تنافسية مع الحفاظ على أعلى معايير الجودة.</p>
+                    </div>
+                </div>
+                <!-- أضف المزيد من الأسئلة -->
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المقالات والنصائح -->
+    <section id="articles" class="articles-section section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title">مقالات ونصائح لصحة أسنانك</h2>
+            <p class="section-subtitle">معلومات مفيدة للحفاظ على ابتسامة صحية وجذابة.</p>
+            <div class="articles-grid">
+                <article class="article-card">
+                    <a href="article-detail-1.html"> <!-- رابط لصفحة المقال الكاملة (إذا وجدت) -->
+                        <img src="images/article-brushing.jpg" alt="أهمية تنظيف الأسنان" class="article-image">
+                        <div class="article-content">
+                            <h3>أهمية تنظيف الأسنان اليومي بالفرشاة والخيط</h3>
+                            <p class="article-excerpt">اكتشف لماذا يعتبر تنظيف الأسنان المنتظم أساسيًا لصحة فمك والوقاية من التسوس وأمراض اللثة...</p>
+                            <span class="article-date">25 أكتوبر 2023</span>
+                        </div>
+                    </a>
+                </article>
+                <article class="article-card">
+                    <a href="article-detail-2.html">
+                        <img src="images/article-diet.jpg" alt="الغذاء وصحة الأسنان" class="article-image">
+                        <div class="article-content">
+                            <h3>كيف يؤثر نظامك الغذائي على صحة أسنانك؟</h3>
+                            <p class="article-excerpt">تعرف على الأطعمة والمشروبات التي تفيد أسنانك وتلك التي يجب تجنبها للحفاظ على ابتسامة قوية...</p>
+                            <span class="article-date">20 أكتوبر 2023</span>
+                        </div>
+                    </a>
+                </article>
+                <article class="article-card">
+                    <a href="article-detail-3.html">
+                        <img src="images/article-whitening.jpg" alt="تبييض الأسنان" class="article-image">
+                        <div class="article-content">
+                            <h3>كل ما تريد معرفته عن تبييض الأسنان الآمن</h3>
+                            <p class="article-excerpt">هل تفكر في تبييض أسنانك؟ تعرف على الطرق المختلفة والاحتياطات اللازمة للحصول على نتائج رائعة...</p>
+                            <span class="article-date">15 أكتوبر 2023</span>
+                        </div>
+                    </a>
+                </article>
+                <!-- يمكنك إضافة المزيد من المقالات -->
+            </div>
+            <!-- <a href="all-articles.html" class="btn btn-primary mt-4">عرض جميع المقالات</a> -->
+        </div>
+    </section>
+
+    <!-- قسم تواصل معنا -->
+    <section id="contact" class="contact-section section-padding">
+        <div class="container">
+            <h2 class="section-title">تواصل معنا</h2>
+            <p class="section-subtitle">نحن هنا لمساعدتك! لا تتردد في الاتصال بنا أو زيارتنا في أحد فروعنا.</p>
+            <div class="contact-info-grid">
+                <div class="contact-branch">
+                    <h3><i class="fas fa-clinic-medical"></i> الفرع الرئيسي: إب - مفرق جبلة</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>الموقع:</strong> جوار الكريمي للصرافة، [أضف تفاصيل أدق إذا أمكن]</p>
+                    <p><i class="fas fa-phone"></i> <strong>الهاتف:</strong> <a href="tel:+967779690850">779690850</a></p>
+                    <p><i class="fab fa-whatsapp"></i> <strong>واتساب:</strong> <a href="https://wa.me/967779690850" target="_blank">779690850</a></p>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.331110770858!2d[LONGITUDE_HERE]!3d[LATITUDE_HERE]!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMjAnMjUuMSJOIDEzMMKwNTUnNDAuMCJF!5e0!3m2!1sen!2s!4v1672855555555!5m2!1sen!2s" width="100%" height="250" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="موقع فرع مفرق جبلة"></iframe>
+                        <!-- **مهم:** استبدل [LATITUDE_HERE] و [LONGITUDE_HERE] بإحداثيات الفرع، أو استخدم رابط التضمين الصحيح من جوجل ماب -->
+                    </div>
+                </div>
+                <div class="contact-branch">
+                    <h3><i class="fas fa-clinic-medical"></i> فرع الدائري</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>الموقع:</strong> مبنى مختبرات نيولاب، مقابل حلويات موكا، [أضف تفاصيل أدق]</p>
+                    <p><i class="fas fa-phone"></i> <strong>الهاتف:</strong> <a href="tel:+967783443899">783443899</a></p>
+                    <p><i class="fab fa-whatsapp"></i> <strong>واتساب:</strong> <a href="https://wa.me/967783443899" target="_blank">783443899</a></p>
+                    <div class="map-container">
+                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.123456789012!2d[LONGITUDE_DAERI]!3d[LATITUDE_DAERI]!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMjAnMjUuMSJOIDEzMMKwNTUnNDAuMCJF!5e0!3m2!1sen!2s!4v1672855555555!5m2!1sen!2s" width="100%" height="250" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="موقع فرع الدائري"></iframe>
+                        <!-- **مهم:** استبدل [LATITUDE_DAERI] و [LONGITUDE_DAERI] بإحداثيات الفرع، أو استخدم رابط التضمين الصحيح من جوجل ماب -->
+                    </div>
+                </div>
+            </div>
+            <!-- يمكنك إضافة نموذج تواصل بسيط هنا إذا كنت تستخدم خدمة خارجية مثل Formspree -->
+            <!-- مثال لنموذج Formspree (يتطلب إعداد حساب Formspree)
+            <form id="contact-form" action="httpsSEND_TO_YOUR_FORMSPREE_ENDPOINT" method="POST" class="contact-form">
+                <h3>أو أرسل لنا رسالة مباشرة</h3>
+                <div class="form-group">
+                    <label for="name">الاسم الكامل:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">البريد الإلكتروني:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">رقم الهاتف (اختياري):</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">رسالتك:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">إرسال الرسالة</button>
+            </form>
+            -->
+        </div>
+    </section>
+
+    <!-- التذييل (Footer) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>مركز د. نشوان الخولاني</h4>
+                    <p>نسعى لتقديم أفضل رعاية لأسنانكم باستخدام أحدث التقنيات والمعايير العالمية.</p>
+                    <div class="social-links">
+                        <a href="[رابط_فيسبوك_هنا]" target="_blank" title="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                        <a href="[رابط_انستغرام_هنا]" target="_blank" title="انستغرام"><i class="fab fa-instagram"></i></a>
+                        <a href="[رابط_تويتر_هنا]" target="_blank" title="تويتر"><i class="fab fa-twitter"></i></a>
+                        <!-- <a href="[رابط_يوتيوب_هنا]" target="_blank" title="يوتيوب"><i class="fab fa-youtube"></i></a> -->
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#services">خدماتنا</a></li>
+                        <li><a href="#about">من نحن</a></li>
+                        <li><a href="#team">فريق العمل</a></li>
+                        <li><a href="#faq">الأسئلة الشائعة</a></li>
+                        <li><a href="#contact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>ساعات العمل</h4>
+                    <p>السبت - الخميس:</p>
+                    <p>9:00 ص - 1:00 م</p>
+                    <p>4:00 م - 8:30 م</p>
+                    <p>الجمعة: مغلق</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© <span id="year"></span> مركز الدكتور نشوان الخولاني لطب الأسنان. جميع الحقوق محفوظة.</p>
+                <p>تصميم وتطوير: [إذا أردت ذكر اسمك/شركتك هنا]</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- زر العودة للأعلى -->
+    <a href="#home" class="back-to-top" id="back-to-top-button" title="العودة للأعلى"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- أزرار الاتصال المعلقة (Fixed Action Buttons) -->
+    <div class="fixed-action-buttons">
+        <a href="tel:+967779690850" class="fab-btn phone-btn" title="اتصل بالفرع الرئيسي (مفرق جبلة)">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+        <a href="https://wa.me/967779690850" target="_blank" class="fab-btn whatsapp-btn" title="تواصل عبر واتساب (مفرق جبلة)">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <!-- يمكنك إضافة زر اتصال آخر لفرع الدائري أو تخصيصه بشكل أفضل -->
+    </div>
+
+    <!-- ملف JavaScript (لبعض الوظائف مثل القائمة المنسدلة والأكورديون) -->
+    <script src="script.js"></script>
+</body>
+</html>
