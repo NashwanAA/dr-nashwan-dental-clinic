@@ -12,17 +12,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome Icons (لأيقونات مثل الهاتف، واتساب، إلخ.) -->
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- رابط ملف الأنماط الرئيسي -->
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- أيقونة الموقع (Favicon) - استبدل بالمسار الصحيح -->
+    <!-- Favicon -->
     <link rel="icon" href="images/favicon.png" type="image/png">
 </head>
 <body>
-    <!-- شريط التنقل العلوي -->
+    <!-- Navbar -->
     <header class="navbar">
         <div class="container">
             <a href="#home" class="logo">
@@ -46,8 +46,11 @@
         </div>
     </header>
 
-    <!-- القسم الرئيسي (الرئيسية - Hero Section) -->
+    <!-- Hero Section -->
     <section id="home" class="hero">
+        <!-- إذا أردت استخدام صورة خلفية للهيرو من مجلد images/، عدل ملف style.css -->
+        <!-- .hero { background: url('images/hero-background.jpg') ...; } -->
+        <!-- الصورة المقترحة: clinic-promo-smile.jpg (إذا كانت مناسبة كخلفية) أو صورة عامة لابتسامة مشرقة -->
         <div class="hero-overlay"></div>
         <div class="container hero-content">
             <h1>مركز الدكتور نشوان الخولاني لطب الأسنان</h1>
@@ -56,52 +59,68 @@
                 <a href="#contact" class="btn btn-primary btn-lg"><i class="fas fa-calendar-check"></i> احجز موعدك الآن</a>
                 <a href="#services" class="btn btn-secondary btn-lg"><i class="fas fa-briefcase-medical"></i> اكتشف خدماتنا</a>
             </div>
-            <!-- تم حذف div.team-member من هنا لأنه لا ينتمي إلى قسم Hero -->
         </div>
     </section>
 
-    <!-- قسم الخدمات -->
+    <!-- Services Section -->
     <section id="services" class="services-section section-padding">
         <div class="container">
             <h2 class="section-title">خدماتنا المتميزة</h2>
             <p class="section-subtitle">نقدم مجموعة شاملة من علاجات الأسنان لتلبية جميع احتياجاتكم.</p>
             <div class="services-grid">
                 <div class="service-item">
-                    <div class="service-icon-container"><img src="images/service-cosmetic.jpg" alt="تجميل الأسنان" class="service-icon"></div>
+                    <div class="service-icon-container">
+                        <!-- الصورة المقترحة: cosmetic-options-poster.jpg أو صورة عامة لتجميل الأسنان -->
+                        <img src="images/service-cosmetic.jpg" alt="تجميل الأسنان" class="service-icon">
+                    </div>
                     <h3>تجميل الأسنان</h3>
                     <p>ابتسامات هوليود، تبييض بالليزر، فينير، لومينير، حشوات تجميلية.</p>
                 </div>
                 <div class="service-item">
-                    <div class="service-icon-container"><img src="images/service-implants.jpg" alt="زراعة الأسنان" class="service-icon"></div>
+                    <div class="service-icon-container">
+                        <!-- الصورة المقترحة: clinic-promo-implants.jpg أو advanced-implant-services.jpg -->
+                        <img src="images/service-implants.jpg" alt="زراعة الأسنان" class="service-icon">
+                    </div>
                     <h3>زراعة الأسنان</h3>
                     <p>تعويض الأسنان المفقودة بأحدث تقنيات الزراعة الفورية وتقنية الزرعات المصممه ثلاثية الابعاد.</p>
                 </div>
                 <div class="service-item">
-                    <div class="service-icon-container"><img src="images/service-ortho.jpg" alt="تقويم الأسنان" class="service-icon"></div> <!-- تم الاحتفاظ بالصورة الأولى لتقويم الأسنان -->
+                    <div class="service-icon-container">
+                        <!-- الصورة المقترحة: orthodontics-care-kit.jpg -->
+                        <img src="images/service-ortho.jpg" alt="تقويم الأسنان" class="service-icon">
+                    </div>
                     <h3>تقويم الأسنان</h3>
                     <p>علاج تشوهات الفكين واعوجاج الأسنان (معدني، شفاف، داخلي).</p>
                 </div>
                 <div class="service-item">
-                    <div class="service-icon-container"><img src="images/service-children.jpg" alt="طب أسنان الأطفال" class="service-icon"></div>
+                    <div class="service-icon-container">
+                        <!-- الصورة المقترحة: child-dental-care.jpg (صورة الطفلة وأسنانها) -->
+                        <img src="images/service-children.jpg" alt="طب أسنان الأطفال" class="service-icon">
+                    </div>
                     <h3>طب أسنان الأطفال</h3>
                     <p>رعاية متخصصة لأسنان الأطفال، علاج وقائي، وحشوات.</p>
                 </div>
                 <div class="service-item">
-                    <div class="service-icon-container"><img src="images/service-rootcanal.jpg" alt="علاج العصب" class="service-icon"></div>
+                    <div class="service-icon-container">
+                        <!-- الصورة المقترحة: صورة توضيحية لعلاج العصب إذا توفرت، أو اترك service-rootcanal.jpg إذا كانت عامة -->
+                        <img src="images/service-rootcanal.jpg" alt="علاج العصب" class="service-icon">
+                    </div>
                     <h3>علاج الجذور والأعصاب</h3>
                     <p>علاج التهابات العصب بأجهزة متطورة لإنقاذ السن.</p>
                 </div>
                 <div class="service-item">
-                    <div class="service-icon-container"><img src="images/service-general.jpg" alt="علاجات عامة ووقائية" class="service-icon"></div>
+                    <div class="service-icon-container">
+                        <!-- الصورة المقترحة: dental-tools-model.jpg أو صورة عامة للعلاجات -->
+                        <img src="images/service-general.jpg" alt="علاجات عامة ووقائية" class="service-icon">
+                    </div>
                     <h3>علاجات عامة ووقائية</h3>
                     <p>تنظيف الأسنان، إزالة الجير، حشوات، خلع، تركيبات ثابتة ومتحركة.</p>
                 </div>
-                <!-- تم حذف التكرارات الأخرى لعناصر الخدمات -->
             </div>
         </div>
     </section>
 
-    <!-- قسم من نحن -->
+    <!-- About Section -->
     <section id="about" class="about-section section-padding bg-light">
         <div class="container">
             <h2 class="section-title">لماذا تختار مركز الدكتور نشوان الخولاني؟</h2>
@@ -120,16 +139,14 @@
                     <a href="#team" class="btn btn-outline">تعرف على فريقنا</a>
                 </div>
                 <div class="about-image">
-                    <img src="images/clinic-interior-photo.jpg" alt="داخل مركز الدكتور نشوان الخولاني">
-                    <!-- إذا أردت إضافة الصورة الثانية هنا، يمكنك وضعها كـ <img> آخر داخل هذا الـ div أو في div.about-image جديد بجانبه (يتطلب تعديل CSS) -->
-                    <!-- <img src="images/clinic-treatment-room.jpg" alt="غرفة علاج مجهزة في مركز الدكتور نشوان"> -->
+                    <!-- الصورة المقترحة: clinic-treatment-room.jpg (غرفة العيادة) -->
+                    <img src="images/clinic-treatment-room.jpg" alt="داخل مركز الدكتور نشوان الخولاني">
                 </div>
             </div>
         </div>
-        <!-- تم حذف div.about-image الذي كان خارج الـ container -->
     </section>
 
-    <!-- قسم فريق العمل -->
+    <!-- Team Section -->
     <section id="team" class="team-section section-padding">
         <div class="container">
             <h2 class="section-title">فريقنا الطبي الخبير</h2>
@@ -137,77 +154,68 @@
             <div class="team-grid">
                 <div class="team-member">
                     <div class="member-image-container">
-                        <img src="images/dr-nashwan-photo.jpg" alt="الدكتور نشوان الخولاني"> <!-- تم الاحتفاظ بالصورة الأولى للدكتور -->
+                        <img src="images/dr-nashwan-portrait.jpg" alt="الدكتور نشوان الخولاني">
                     </div>
                     <h3>د. نشوان الخولاني</h3>
                     <p class="member-title">مدير المركز واختصاصي جراخة الفم والوجه والفكين</p>
                     <p class="member-bio">يمتلك الدكتور نشوان خبرة واسعة تمتد لأكثر من [20] سنوات في مختلف مجالات طب الأسنان، مع تركيز خاص على زراعة و تقويم و تجميل الأسنان. حاصل على [ دكتوراه في جراحة الوجه والفكين و زراعة الأسنان ، دبلوم في تجميل الاسنان، دبلوم جراحة وامراض اللثة ]. يحرص دائمًا على مواكبة أحدث التطورات في طب الأسنان.</p>
                 </div>
-                <!-- تم حذف التكرار الثاني لـ team-member الخاص بالدكتور نشوان -->
-                <!-- مثال لإضافة أعضاء فريق آخرين (تحتاج لملء البيانات والصور) -->
-                <!--
+                <!-- أضف أعضاء الفريق الآخرين هنا إذا أردت -->
+                <!-- مثال:
                 <div class="team-member">
                     <div class="member-image-container">
-                        <img src="images/dr-wafa-photo.jpg" alt="د.وفاء اليفرسي">
+                        <img src="images/dr-another-photo.jpg" alt="د. [اسم الطبيب]">
                     </div>
-                    <h3>د. وفاء اليفرسي</h3>
-                    <p class="member-title">[تخصصها]</p>
-                    <p class="member-bio">[نبذة عنها]</p>
-                </div>
-                <div class="team-member">
-                    <div class="member-image-container">
-                        <img src="images/dr-zahraa-photo.jpg" alt="د.الزهراء مختار">
-                    </div>
-                    <h3>د. الزهراء مختار</h3>
-                    <p class="member-title">[تخصصها]</p>
-                    <p class="member-bio">[نبذة عنها]</p>
+                    <h3>د. [اسم الطبيب]</h3>
+                    <p class="member-title">[تخصصه]</p>
+                    <p class="member-bio">[نبذة قصيرة]</p>
                 </div>
                 -->
             </div>
         </div>
     </section>
 
-    <!-- قسم معرض الصور (Before & After أو صور للمركز) -->
+    <!-- Gallery Section -->
     <section id="gallery" class="gallery-section section-padding bg-light">
         <div class="container">
             <h2 class="section-title">شاهد نتائجنا</h2>
             <p class="section-subtitle">نفتخر بمساعدة مرضانا في الحصول على ابتسامات صحية وجميلة. (جميع الصور بموافقة المرضى)</p>
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="images/gallery-before-after-1.jpg" alt="قبل وبعد - حالة 1">
-                    <div class="gallery-caption">حالة تجميل أسنان (فينير)</div>
-                </div>
-                <div class="gallery-item">
+                    <!-- الصورة المقترحة: cosmetic-dentistry-before-after.jpg (قبل وبعد تجميل) -->
                     <img src="images/cosmetic-dentistry-before-after.jpg" alt="قبل وبعد - تجميل أسنان">
                     <div class="gallery-caption">نتائج مذهلة لتجميل الأسنان</div>
                 </div>
                 <div class="gallery-item">
-                    <img src="images/gallery-clinic-1.jpg" alt="صورة من داخل المركز">
-                    <div class="gallery-caption">أحد غرف العلاج المجهزة</div>
-                </div>
-                <div class="gallery-item">
+                    <!-- الصورة المقترحة: صورة أخرى لـ "قبل وبعد" أو لزراعة أسنان ناجحة -->
                     <img src="images/gallery-before-after-2.jpg" alt="قبل وبعد - حالة زراعة">
                     <div class="gallery-caption">حالة زراعة أسنان ناجحة</div>
                 </div>
                 <div class="gallery-item">
+                    <!-- الصورة المقترحة: clinic-diagnostics.jpg (طبيبة تنظر لأشعة) -->
+                    <img src="images/clinic-diagnostics.jpg" alt="أحدث أجهزة التشخيص">
+                    <div class="gallery-caption">تشخيص دقيق بأحدث الأجهزة</div>
+                </div>
+                <div class="gallery-item">
+                    <!-- الصورة المقترحة: zygomatic-implants-model.jpg أو advanced-dental-implants.jpg -->
+                    <img src="images/zygomatic-implants-model.jpg" alt="نموذج لزراعة متقدمة">
+                    <div class="gallery-caption">تقنيات زراعة متقدمة</div>
+                </div>
+                 <div class="gallery-item">
+                    <!-- صورة إضافية للمركز أو المعدات -->
                     <img src="images/gallery-equipment-1.jpg" alt="أجهزة حديثة بالمركز">
                     <div class="gallery-caption">نستخدم أحدث التقنيات</div>
                 </div>
                 <div class="gallery-item">
-                    <img src="images/zygomatic-implants-model.jpg" alt="نموذج لزراعة Zygomatic">
-                    <div class="gallery-caption">تقنيات زراعة متقدمة</div>
+                     <!-- صورة من داخل العيادة أو صورة للدكتور نشوان أثناء العمل -->
+                    <img src="images/dr-nashwan-surgery.jpg" alt="الدكتور نشوان أثناء العمل">
+                    <div class="gallery-caption">خبرة ودقة في العمل</div>
                 </div>
-                <div class="gallery-item"> <!-- الصورة التي كانت موضوعة بشكل خاطئ -->
-                    <img src="images/clinic-diagnostics.jpg" alt="أحدث أجهزة التشخيص">
-                    <div class="gallery-caption">أحدث أجهزة التشخيص</div>
-                </div>
-                <!-- يمكنك إضافة المزيد من الصور هنا إذا أردت -->
             </div>
         </div>
-        <!-- تم حذف العناصر التي كانت خارج قسم معرض الصور -->
     </section>
 
-    <!-- قسم الأسئلة الشائعة (FAQ) -->
+    <!-- FAQ Section -->
     <section id="faq" class="faq-section section-padding">
         <div class="container">
             <h2 class="section-title">أسئلة شائعة</h2>
@@ -249,74 +257,77 @@
                         <p>تختلف تكلفة الخدمات بناءً على نوع العلاج المطلوب وحالة المريض. يمكنكم الحصول على استشارة أولية لتقييم الحالة وتقدير التكلفة. نحن نسعى لتقديم أسعار تنافسية مع الحفاظ على أعلى معايير الجودة.</p>
                     </div>
                 </div>
-                <!-- أضف المزيد من الأسئلة -->
+                <!-- مثال لإضافة سؤال وصورة من البوسترات -->
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>أعاني من ألم في وجهي، هل يمكن أن يكون من الأسنان؟</span>
+                        <i class="fas fa-chevron-down icon-toggle"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>نعم، ألم الوجه قد يكون له أسباب متعددة، ومنها ألم العصب ثلاثي التوائم الذي قد يتشابه مع ألم الأسنان. من المهم استشارة طبيبك لتشخيص دقيق. يمكن الاطلاع على هذا البوستر لمزيد من المعلومات:</p>
+                        <!-- الصورة المقترحة: trigeminal-neuralgia-poster.jpg (البوستر عن ألم العصب) -->
+                        <img src="images/trigeminal-neuralgia-poster.jpg" alt="ألم العصب ثلاثي التوائم" style="max-width: 100%; margin-top: 15px; border-radius: 8px;">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- قسم المقالات والنصائح -->
+    <!-- Articles Section -->
     <section id="articles" class="articles-section section-padding bg-light">
         <div class="container">
             <h2 class="section-title">مقالات ونصائح لصحة أسنانك</h2>
             <p class="section-subtitle">معلومات مفيدة للحفاظ على ابتسامة صحية وجذابة.</p>
             <div class="articles-grid">
                 <article class="article-card">
-                    <a href="article-detail-1.html"> <!-- رابط لصفحة المقال الكاملة (إذا وجدت) -->
-                        <img src="images/article-brushing.jpg" alt="أهمية تنظيف الأسنان" class="article-image">
+                    <a href="#"> <!-- يمكنك إنشاء صفحة منفصلة لكل مقال لاحقًا -->
+                        <!-- الصورة المقترحة: dental-care-poster.jpg (بوستر الحماية من التسوس) -->
+                        <img src="images/dental-care-poster.jpg" alt="الحماية من تسوس الأسنان" class="article-image">
                         <div class="article-content">
-                            <h3>أهمية تنظيف الأسنان اليومي بالفرشاة والخيط</h3>
-                            <p class="article-excerpt">اكتشف لماذا يعتبر تنظيف الأسنان المنتظم أساسيًا لصحة فمك والوقاية من التسوس وأمراض اللثة...</p>
+                            <h3>نصائح ذهبية للحماية من تسوس الأسنان</h3>
+                            <p class="article-excerpt">اتبع هذه الإرشادات البسيطة للحفاظ على أسنانك قوية وصحية وخالية من التسوس...</p>
+                            <span class="article-date">28 أكتوبر 2023</span>
+                        </div>
+                    </a>
+                </article>
+                <article class="article-card">
+                    <a href="#">
+                        <!-- الصورة المقترحة: teeth-sensitivity-ice.jpg (صورة حساسية الأسنان) -->
+                        <img src="images/teeth-sensitivity-ice.jpg" alt="حساسية الأسنان" class="article-image">
+                        <div class="article-content">
+                            <h3>كيف تتعامل مع حساسية الأسنان بفعالية؟</h3>
+                            <p class="article-excerpt">أسباب حساسية الأسنان وطرق علاجها والوقاية منها للحصول على راحة دائمة...</p>
                             <span class="article-date">25 أكتوبر 2023</span>
                         </div>
                     </a>
                 </article>
                 <article class="article-card">
-                    <a href="article-detail-2.html">
-                        <img src="images/article-diet.jpg" alt="الغذاء وصحة الأسنان" class="article-image">
-                        <div class="article-content">
-                            <h3>كيف يؤثر نظامك الغذائي على صحة أسنانك؟</h3>
-                            <p class="article-excerpt">تعرف على الأطعمة والمشروبات التي تفيد أسنانك وتلك التي يجب تجنبها للحفاظ على ابتسامة قوية...</p>
-                            <span class="article-date">20 أكتوبر 2023</span>
-                        </div>
-                    </a>
-                </article>
-                <article class="article-card">
-                    <a href="article-detail-3.html">
-                        <img src="images/article-whitening.jpg" alt="تبييض الأسنان" class="article-image">
-                        <div class="article-content">
-                            <h3>كل ما تريد معرفته عن تبييض الأسنان الآمن</h3>
-                            <p class="article-excerpt">هل تفكر في تبييض أسنانك؟ تعرف على الطرق المختلفة والاحتياطات اللازمة للحصول على نتائج رائعة...</p>
-                            <span class="article-date">15 أكتوبر 2023</span>
-                        </div>
-                    </a>
-                </article>
-                <article class="article-card"> <!-- المقال الذي كان موضوعًا بشكل خاطئ -->
                     <a href="#">
-                        <img src="images/decayed-teeth-models.jpg" alt="مراحل تسوس الأسنان" class="article-image">
+                        <!-- الصورة المقترحة: decayed-teeth-models.jpg (نماذج تسوس الأسنان) أو tooth-pain-causes-poster.jpg -->
+                        <img src="images/tooth-pain-causes-poster.jpg" alt="أسباب آلام الأسنان" class="article-image">
                         <div class="article-content">
-                            <h3>كل ما تريد معرفته عن تسوس الأسنان</h3>
-                            <p class="article-excerpt">أسباب تسوس الأسنان، طرق الوقاية، وأحدث أساليب العلاج...</p>
-                            <span class="article-date">تاريخ النشر</span> <!-- قم بتحديث التاريخ -->
+                            <h3>ما هي العوامل المسببة لآلام الأسنان؟</h3>
+                            <p class="article-excerpt">تعرف على الأسباب الشائعة لآلام الأسنان ومتى يجب عليك زيارة الطبيب فورًا...</p>
+                            <span class="article-date">22 أكتوبر 2023</span>
                         </div>
                     </a>
                 </article>
-                <article class="article-card"> <!-- المقال عن حساسية الأسنان الذي كان موضوعًا بشكل خاطئ -->
+                 <article class="article-card">
                     <a href="#">
-                        <img src="images/teeth-sensitivity-ice.jpg" alt="حساسية الأسنان تجاه البرودة" class="article-image">
+                        <!-- الصورة المقترحة: sedation-dentistry-poster.jpg (بوستر التخدير الواعي) -->
+                        <img src="images/sedation-dentistry-poster.jpg" alt="التخدير الواعي في طب الأسنان" class="article-image">
                         <div class="article-content">
-                            <h3>كيف تتعامل مع حساسية الأسنان؟</h3>
-                            <p class="article-excerpt">نصائح وإرشادات للتخفيف من حساسية الأسنان تجاه المشروبات الباردة والساخنة...</p>
-                            <span class="article-date">تاريخ النشر</span> <!-- قم بتحديث التاريخ -->
+                            <h3>لا تخف من كرسي الأسنان: الحل مع التخدير الواعي!</h3>
+                            <p class="article-excerpt">تعرف على فوائد التخدير الواعي وكيف يساعدك على تجاوز قلق علاج الأسنان...</p>
+                            <span class="article-date">19 أكتوبر 2023</span>
                         </div>
                     </a>
                 </article>
             </div>
-            <!-- <a href="all-articles.html" class="btn btn-primary mt-4">عرض جميع المقالات</a> -->
         </div>
-        <!-- تم حذف العناصر التي كانت خارج قسم المقالات -->
     </section>
 
-    <!-- قسم تواصل معنا -->
+    <!-- Contact Section -->
     <section id="contact" class="contact-section section-padding">
         <div class="container">
             <h2 class="section-title">تواصل معنا</h2>
@@ -328,7 +339,6 @@
                     <p><i class="fas fa-phone"></i> <strong>الهاتف:</strong> <a href="tel:+967779690850">779690850</a></p>
                     <p><i class="fab fa-whatsapp"></i> <strong>واتساب:</strong> <a href="https://wa.me/967779690850" target="_blank">779690850</a></p>
                     <div class="map-container">
-                        <!-- **مهم:** ضع هنا كود iframe الصحيح لخريطة فرع مفرق جبلة -->
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3872.2382402332323!2d44.17711620000001!3d13.944415399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x161ce95388b27451%3A0x606a6de265e0d1c1!2z2YXYsdmD2LIg2KfZhNiv2YPYqtmI2LEvINmG2LTZiNin2YYg2KfZhNiu2YjZhNin2YbZiiDYp9mE2LfYqNmKINin2YTYqtiu2LXYtdmK!5e0!3m2!1sar!2s!4v1749322069463!5m2!1sar!2s" width="100%" height="300" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="موقع فرع مفرق جبلة"></iframe>
                     </div>
                 </div>
@@ -338,20 +348,20 @@
                     <p><i class="fas fa-phone"></i> <strong>الهاتف:</strong> <a href="tel:+967783443899">783443899</a></p>
                     <p><i class="fab fa-whatsapp"></i> <strong>واتساب:</strong> <a href="https://wa.me/967783443899" target="_blank">783443899</a></p>
                     <div class="map-container">
-                        <!-- **مهم:** ضع هنا كود iframe الصحيح لخريطة فرع الدائري -->
                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241.99126942793515!2d44.161639556540266!3d13.966919155155933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x161ceb00546b6aa3%3A0xf6847900ef96771a!2z2YXYrtiq2KjYsdin2Kog2KjYsdisINmG2YrZiNmE2KfYqCDYp9mE2KrYrti12LXZitip!5e0!3m2!1sar!2s!4v1749322221009!5m2!1sar!2s" width="100%" height="300" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="موقع فرع الدائري"></iframe>
                     </div>
                 </div>
-                <div class="contact-branch"> <!-- بوستر الخدمات، يمكن إبقاؤه أو دمجه بشكل آخر -->
-                     <h3>ملخص خدماتنا ومعلومات الاتصال</h3>
-                     <img src="images/clinic-services-poster.jpg" alt="خدمات مركز الدكتور نشوان الخولاني ومعلومات الاتصال" style="width:100%; border-radius:8px;">
+                 <div class="contact-branch">
+                     <h3><i class="fas fa-concierge-bell"></i> خدمات إضافية</h3>
+                     <!-- الصورة المقترحة: clinic-services-poster.jpg -->
+                     <img src="images/clinic-services-poster.jpg" alt="خدمات مركز الدكتور نشوان الخولاني ومعلومات الاتصال" style="width:100%; border-radius:8px; margin-top:15px;">
+                     <p style="margin-top:10px;">لمعرفة المزيد عن خدماتنا أو للحالات الطارئة، لا تترددوا في الاتصال بنا مباشرة.</p>
                 </div>
             </div>
-            <!-- يمكنك إضافة نموذج تواصل بسيط هنا إذا كنت تستخدم خدمة خارجية مثل Formspree -->
         </div>
     </section>
 
-    <!-- التذييل (Footer) -->
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -359,9 +369,9 @@
                     <h4>مركز د. نشوان الخولاني</h4>
                     <p>نسعى لتقديم أفضل رعاية لأسنانكم باستخدام أحدث التقنيات والمعايير العالمية.</p>
                     <div class="social-links">
-                        <a href="https://www.facebook.com/share/16dvoQSWrx/" target="_blank" title="فيسبوك"><i class="fab fa-facebook-f"></i></a> <!-- تم تصحيح الرابط -->
-                        <a href="رابط_انستغرام_صحيح_هنا" target="_blank" title="انستغرام"><i class="fab fa-instagram"></i></a> <!-- **مهم:** استبدل بالرابط الصحيح -->
-                        <a href="رابط_تويتر_صحيح_هنا" target="_blank" title="تويتر"><i class="fab fa-twitter"></i></a> <!-- **مهم:** استبدل بالرابط الصحيح -->
+                        <a href="https://www.facebook.com/share/16dvoQSWrx/" target="_blank" title="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                        <a href="[رابط_انستغرام_صحيح_هنا]" target="_blank" title="انستغرام"><i class="fab fa-instagram"></i></a>
+                        <a href="[رابط_تويتر_صحيح_هنا]" target="_blank" title="تويتر"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
                 <div class="footer-col">
@@ -384,16 +394,14 @@
             </div>
             <div class="footer-bottom">
                 <p>© <span id="year"></span> مركز الدكتور نشوان الخولاني لطب الأسنان. جميع الحقوق محفوظة.</p>
-                <!-- يمكنك إضافة اسمك أو اسم شركتك هنا إذا أردت -->
-                <!-- <p>تصميم وتطوير: اسمك/شركتك</p> -->
             </div>
         </div>
     </footer>
 
-    <!-- زر العودة للأعلى -->
+    <!-- Back to Top Button -->
     <a href="#home" class="back-to-top" id="back-to-top-button" title="العودة للأعلى"><i class="fas fa-arrow-up"></i></a>
 
-    <!-- أزرار الاتصال المعلقة (Fixed Action Buttons) -->
+    <!-- Fixed Action Buttons -->
     <div class="fixed-action-buttons">
         <a href="tel:+967779690850" class="fab-btn phone-btn" title="اتصل بالفرع الرئيسي (مفرق جبلة)">
             <i class="fas fa-phone-alt"></i>
@@ -403,7 +411,7 @@
         </a>
     </div>
 
-    <!-- ملف JavaScript (لبعض الوظائف مثل القائمة المنسدلة والأكورديون) -->
+    <!-- JavaScript File -->
     <script src="script.js"></script>
 </body>
 </html>
