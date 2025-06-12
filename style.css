@@ -910,3 +910,180 @@ a:hover {
     .service-icon-container { width: 80px; height: 80px; margin-bottom: 20px;}
     .service-item h3 { font-size: 1.4rem; }
 }
+
+/* === Testimonials Section === */
+.testimonials-section {
+    /* يمكنك إلغاء التعليق عن السطر التالي إذا أردت خلفية بلون مختلف لهذا القسم */
+    /* background-color: #f0f8ff; */ /* مثال: لون أزرق فاتح جدًا */
+}
+
+.testimonials-grid {
+    display: grid;
+    /* سيعرض شهادة واحدة في كل صف على الشاشات الصغيرة، واثنتين على المتوسطة، وثلاث على الكبيرة إذا سمحت المساحة */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px; /* المسافة بين بطاقات الشهادات */
+    margin-top: 30px; /* مسافة علوية من عنوان القسم الفرعي */
+}
+
+.testimonial-item {
+    background: #ffffff; /* خلفية بيضاء لبطاقة الشهادة */
+    padding: 30px 25px;
+    border-radius: 10px; /* حواف دائرية */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); /* ظل خفيف */
+    text-align: center;
+    display: flex; /* لتوسيط المحتوى بشكل أفضل إذا كانت الصورة والنص عموديين */
+    flex-direction: column; /* ترتيب العناصر عموديًا */
+    align-items: center; /* توسيط العناصر أفقيًا */
+    transition: transform 0.3s ease, boxن-shadow 0.3s ease;
+}
+
+.testimonial-item:hover {
+    transform: translateYعم، بما أننا أضفنا قسمًا جديدًا وهو "شهادات(-8px); /* تأثير بسيط عند التمرير */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.testimonial- المرضى (`#testimonials`)", فسنحتاج إلى إضافة الأنماط الخاصة به إلى ملف `style.css`avatar {
+    width: 90px;  /* حجم صورة الأفاتار */
+    height: 90px لكي يظهر بشكل جيد.
+
+أيضًا، قمنا بإضافة خدمة "جراحة الفم والوجه والفكين" كعنصر جديد في قسم الخدمات. التصميم الحالي لـ `service-item` يجب أن يعمل;
+    border-radius: 50%; /* لجعلها دائرية */
+    object-fit: cover; /* لضمان ملاءمة الصورة بشكل جيد دون تشويه */
+    margin-bottom: 20px معها بشكل جيد، ولكن إذا أردت تمييزها بشكل خاص، يمكنك إضافة بعض التعديلات الطفيفة.
+
+إليك الأنماط المقترحة لملف `style.css`. يمكنك **إضافة هذه الأ;
+    border: 4px solid #007bff; /* إطار بلون مميز حول الصورة */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);نماط إلى نهاية ملف `style.css` الحالي لديك.**
+
+```css
+/* === Testimonials Section === */
+.testimonials-section {
+    /* background-color: #f0f8ff; /* يمكنك تفعيل هذا إذا أ
+}
+
+.testimonial-text {
+    font-size: 1rem;    /* حجم خط نص الشهادة */
+    color: #555;       /* لون نص الشهادة */
+    line-height: 1.8;   /* تباعد الأسطر */
+    margin-bottom: 20px;
+    ردت لون خلفية مختلف قليلاً */
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* لعرض الشهادات في أعمدة متجاوبة */
+    gap: 30px; /* المسافة بين بطfont-style: italic; /* جعل النص مائلاً قليلاً */
+    position: relative; /* لوضع علامات الاقتباس */
+    padding: 0 15px; /* مسافة داخلية لنص الشهادة */
+}
+
+.testimonial-text::before { /* علامة اقتباس قبل النص */
+    content: "\fاقات الشهادات */
+    margin-top: 30px; /* مسافة من العنوان الفرعي للقسم */
+}
+
+.testimonial-item {
+    background: #fff; /* خلفية بيضاء لبطاقة الشهادة */
+    padding: 30px;
+    border-radius: 10px; /* حواف دائرية */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 010d"; /* أيقونة اقتباس يسار من Font Awesome */
+    font-family: "Font Awesome 6 Free"; /* تأكد من استخدام اسم الخط الصحيح لـ Font Awesome */
+    font-weight: 900; /* لتظهر الأيقونة بشكل صحيح */
+    color: #007bff;   /* لون علامة الاقتباس */
+    font-size: 1.5rem; /* حجم علامة الاقتباس.08); /* ظل خفيف */
+    text-align: center;
+    position: relative; /* مهم إذا أردت إضافة أيقونات اقتباس بشكل مطلق لاحقًا */
+    display: flex; /* لتوسيط المحتوى بشكل أفضل إذا لم تكن هناك صورة */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-avatar {
+    width */
+    position: absolute;
+    top: -5px; /* تعديل الموقع الرأسي قليلاً */
+    right: -10px; /* للغة العربية (استخدم left للغة الإنجليزية) */
+    opacity: 0.6;
+}
+
+.testimonial-text::after { /* علامة اقتباس بعد النص */
+    content: "\f10e"; /* أيقونة اقتباس يمين من Font Awesome */
+    font-family: ": 80px;
+    height: 80px;
+    border-radius: 50%; /* لجعل الصورة دائرية */
+    object-fit: cover; /* لضمان ملء الصورة للدائرة بشكل جيد */
+    margin: 0 auto 20px auto; /* توسيط الصورة ومسافة تحتها */
+    border: 3px solid #007bff; /* إطار بلون مميز (يمكنك تغييره) */Font Awesome 6 Free";
+    font-weight: 900;
+    color: #007bff;
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: -5px; /* تعديل الموقع الرأسي قليلاً */
+    left: -10px; /* للغة العربية (استخدم right للغة الإنجليزية) */
+    opacity: 0.6;
+}
+
+.testimonial-author {
+    font-size: 1.15rem; /* حجم خط اسم صاحب
+}
+
+.testimonial-text {
+    font-size: 1rem; /* حجم خط نص الشهادة */
+    color: #555; /* لون نص الشهادة */
+    line-height: 1.8; /* تباعد الأسطر */
+    margin-bottom: 20px;
+    font-style: italic; /* لجعل النص مائلاً قليلاً */
+    position: relative; /* لوضع علامات الاقتباس */
+    padding الشهادة */
+    font-weight: 700;   /* جعل الخط أعرض */
+    color: #0056b3;   /* لون اسم صاحب الشهادة */
+    margin-bottom: 5px;
+    margin-top: auto; /* لدفع الاسم للأسفل إذا كان ارتفاع البطاقات مختلفًا */
+}
+
+.testimonial-detail {
+    font-size: 0.9rem;  /* حجم خط التفاصيل الإضافية */
+    color: #777777;     /* لون التفاصيل الإضافية */: 0 15px; /* مسافة داخلية للنص إذا كان طويلاً */
+}
+
+/* علامات اقتباس بسيطة باستخدام Font Awesome */
+.testimonial-text::before {
+    content: "\f10d"; /* أيقونة اقتباس يسار */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900; /* للتأكد من ظهور الأيقونة بشكل صحيح */
+    color: #007bff; /* لون علامة الاقتباس */
+    font-size: 1
+}
+
+/* تعديلات على أنماط قسم الخدمات (إذا أردت أن تكون أيقونات الخدمات أكبر قليلاً أو مختلفة) */
+/* هذا مجرد اقتراح، يمكنك تعديله أو تجاهله */
+.services-section .service-icon-container {
+    width: 90px;  /* يمكنك زيادة الحجم قليلاً */
+    height: 90px; /* يمكنك زيادة الحجم قليلاً */
+    /* background-color: #e0efff; */ /* تغيير لون خلفية الأيقونة إذا أردت */
+}
+
+.services-section.5rem; /* حجم علامة الاقتباس */
+    margin-right: 10px; /* استخدم margin-left في LTR */
+    opacity: 0.6; /* شفافية طفيفة */
+    vertical-align: top; /* لمحاذاة أفضل مع بداية النص */
+}
+
+.testimonial-text::after {
+    content: "\f10e"; /* أيقونة اقتباس يمين */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #007bff;
+    font-size: 1.5rem;
+    margin-left: 10px; /* استخدم margin-right في LTR */
+    opacity: 0.6;
+    vertical-align: top .service-item h3 {
+    font-size: 1.5rem; /* يمكنك تعديل حجم عنوان الخدمة */
+}
+
+/* يمكنك إضافة هذا الكود إذا كنت تريد أن تكون صور المقالات ذات حواف دائرية قليلاً */
+.articles-section .article-image {
+    border-top-left-radius: 8px;  /* يتوافق مع .article-card إذا كان له border-radius */
+    border-top-right-radius: 8px;
+}
