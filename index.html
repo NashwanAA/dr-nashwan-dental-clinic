@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>مركز الدكتور نشوان الخولاني لطب الأسنان | إب - رعاية متكاملة لابتسامتك</title>
-    <meta name="description" content="مركز الدكتور نشوان الخولاني لطب الأسنان في إب. نقدم خدمات طب أسنان شاملة وعالية الجودة تشمل تجميل وزراعة وتقويم الأسنان بأحدث التقنيات. فروعنا في مفرق جبلة والدائري. اتصل بنا اليوم للحجز والاستفسار.">
-    <meta name="keywords" content="طب أسنان, دكتور نشوان الخولاني, عيادة أسنان إب, طبيب أسنان إب, مفرق جبلة, الدائري, تجميل أسنان, زراعة أسنان, تقويم أسنان, ابتسامة هوليود,جراحة,جراحة وجه وفكين, تنظيف أسنان, علاج عصب, طب أسنان أطفال">
+    <meta name="description" content="مركز الدكتور نشوان الخولاني لطب الأسنان في إب. نقدم خدمات طب أسنان شاملة وعالية الجودة تشمل تجميل وزراعة وتقويم الأسنان وجراحة الوجه والفكين بأحدث التقنيات. فروعنا في مفرق جبلة والدائري. اتصل بنا اليوم للحجز والاستفسار.">
+    <meta name="keywords" content="طب أسنان, دكتور نشوان الخولاني, عيادة أسنان إب, طبيب أسنان إب, مفرق جبلة, الدائري, تجميل أسنان, زراعة أسنان, تقويم أسنان, ابتسامة هوليود, جراحة وجه وفكين, زراعة متقدمة, تنظيف أسنان, علاج عصب, طب أسنان أطفال">
 
     <!-- Google Fonts (Cairo) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +26,7 @@
     <header class="navbar">
         <div class="container">
             <a href="#home" class="logo">
-                <img src="image/clinic-logo.png" alt="شعار مركز د. نشوان الخولاني" class="logo-img">
+                <img src="image/logo-clinic.png" alt="شعار مركز د. نشوان الخولاني" class="logo-img">
             </a>
             <button class="nav-toggle" id="nav-toggle-button" aria-label="فتح/إغلاق القائمة" aria-expanded="false">
                 <span class="hamburger"></span>
@@ -37,6 +37,7 @@
                     <li><a href="#services" class="nav-link">خدماتنا</a></li>
                     <li><a href="#about" class="nav-link">من نحن</a></li>
                     <li><a href="#team" class="nav-link">فريق العمل</a></li>
+                    <li><a href="#testimonials" class="nav-link">شهادات المرضى</a></li>
                     <li><a href="#gallery" class="nav-link">معرض الصور</a></li>
                     <li><a href="#faq" class="nav-link">الأسئلة الشائعة</a></li>
                     <li><a href="#articles" class="nav-link">مقالات ونصائح</a></li>
@@ -44,13 +45,11 @@
                 </ul>
             </nav>
         </div>
-    </header>
+    </header> <!-- ****** تم التأكد من إغلاق وسم header هنا ****** -->
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <!-- إذا أردت استخدام صورة خلفية للهيرو من مجلد images/، عدل ملف style.css -->
-        <!-- .hero { background: url('images/hero-background.jpg') ...; } -->
-        <!-- الصورة المقترحة: clinic-promo-smile.jpg (إذا كانت مناسبة كخلفية) أو صورة عامة لابتسامة مشرقة -->
+        <!-- الصورة المقترحة للخلفية (تعدل في style.css): image/clinic-promo-smile.jpg أو صورة ابتسامة عامة -->
         <div class="hero-overlay"></div>
         <div class="container hero-content">
             <h1>مركز الدكتور نشوان الخولاني لطب الأسنان</h1>
@@ -70,51 +69,54 @@
             <div class="services-grid">
                 <div class="service-item">
                     <div class="service-icon-container">
-                        <!-- الصورة المقترحة: cosmetic-options-poster.jpg أو صورة عامة لتجميل الأسنان -->
                         <img src="image/service-cosmetic.jpg" alt="تجميل الأسنان" class="service-icon">
                     </div>
                     <h3>تجميل الأسنان</h3>
-                    <p>ابتسامات هوليود، تبييض بالليزر، فينير، لومينير، حشوات تجميلية.</p>
+                    <p>هل تحلم بابتسامة ساحرة كنجم سينمائي؟ نقدم في مركزنا أحدث تقنيات تجميل الأسنان، من ابتسامة هوليود المتكاملة إلى تبييض الأسنان بالليزر للحصول على بياض ناصع، بالإضافة إلى قشور الفينير واللومينير التجميلية لتعديل شكل ولون الأسنان، وحشوات تجميلية بلون السن الطبيعي.</p>
                 </div>
                 <div class="service-item">
                     <div class="service-icon-container">
-                        <!-- الصورة المقترحة: clinic-promo-implants.jpg أو advanced-implant-services.jpg -->
+                        <!-- الصورة المقترحة: image/advanced-implant-services.jpg أو image/clinic-promo-implants.jpg -->
                         <img src="image/service-implants.jpg" alt="زراعة الأسنان" class="service-icon">
                     </div>
-                    <h3>زراعة الأسنان</h3>
-                    <p>تعويض الأسنان المفقودة بأحدث تقنيات الزراعة الفورية وتقنية الزرعات المصممه ثلاثية الابعاد.</p>
+                    <h3>زراعة الأسنان (بما في ذلك المتقدمة)</h3>
+                    <p>فقدان الأسنان لم يعد مشكلة! نوفر حلول زراعة الأسنان الشاملة، من تعويض سن واحد إلى الفك بالكامل، باستخدام أجود أنواع الزرعات العالمية. نتميز بتقنيات الزراعة الفورية، الزراعة الموجهة بالكمبيوتر، وتقنية الزرعات المصممة ثلاثية الأبعاد للحالات المعقدة، بما في ذلك زراعة العظم وزراعة الـ Zygomatic لضمان أفضل النتائج حتى في أصعب الحالات.</p>
                 </div>
                 <div class="service-item">
                     <div class="service-icon-container">
-                        <!-- الصورة المقترحة: orthodontics-care-kit.jpg -->
+                         <!-- الصورة المقترحة: صورة توضيحية لجراحة الوجه والفكين، مثل صورة لكسر في الفك أو تشوه، أو صورة للدكتور نشوان أثناء إجراء جراحة (dr-nashwan-surgery.jpg) إذا كانت مناسبة -->
+                        <img src="image/oral-maxillofacial-surgery.jpg" alt="جراحة الوجه والفكين" class="service-icon"> <!-- **مهم:** ستحتاج لرفع صورة باسم oral-maxillofacial-surgery.jpg -->
+                    </div>
+                    <h3>جراحة الفم والوجه والفكين</h3>
+                    <p>يقدم الدكتور نشوان الخولاني، بخبرته كاختصاصي جراحة الوجه والفكين، مجموعة واسعة من العلاجات الجراحية الدقيقة والمعقدة، بما في ذلك خلع الأسنان الجراحي (مثل أضراس العقل المطمورة)، علاج أكياس وآفات الفكين، كسور عظام الوجه والفكين، وعلاج التشوهات الخلقية والمكتسبة للوجه والفكين.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon-container">
                         <img src="image/service-ortho.jpg" alt="تقويم الأسنان" class="service-icon">
                     </div>
                     <h3>تقويم الأسنان</h3>
-                    <p>علاج تشوهات الفكين واعوجاج الأسنان (معدني، شفاف، داخلي).</p>
+                    <p>ابتسامة منتظمة وجميلة تعزز ثقتك بنفسك. نقدم حلول تقويم الأسنان لجميع الأعمار لعلاج ازدحام الأسنان، بروز الفكين، والفراغات بين الأسنان، باستخدام أنواع مختلفة من التقويم كالمعدني، الشفاف، والداخلي (اللساني) لتناسب احتياجاتك ومظهرك.</p>
                 </div>
                 <div class="service-item">
                     <div class="service-icon-container">
-                        <!-- الصورة المقترحة: child-dental-care.jpg (صورة الطفلة وأسنانها) -->
                         <img src="image/service-children.jpg" alt="طب أسنان الأطفال" class="service-icon">
                     </div>
                     <h3>طب أسنان الأطفال</h3>
-                    <p>رعاية متخصصة لأسنان الأطفال، علاج وقائي، وحشوات.</p>
+                    <p>نولي اهتمامًا خاصًا بصحة أسنان أطفالكم منذ الصغر. يوفر مركزنا رعاية متخصصة ومريحة للأطفال تشمل الفحوصات الدورية، العلاجات الوقائية مثل تطبيق الفلورايد وسادات الحفر، علاج التسوس بحشوات مناسبة، والمتابعة لضمان نمو أسنان صحية وقوية.</p>
                 </div>
                 <div class="service-item">
                     <div class="service-icon-container">
-                        <!-- الصورة المقترحة: صورة توضيحية لعلاج العصب إذا توفرت، أو اترك service-rootcanal.jpg إذا كانت عامة -->
                         <img src="image/service-rootcanal.jpg" alt="علاج العصب" class="service-icon">
                     </div>
                     <h3>علاج الجذور والأعصاب</h3>
-                    <p>علاج التهابات العصب بأجهزة متطورة لإنقاذ السن.</p>
+                    <p>لا داعي لخلع السن بسبب التهاب العصب! نستخدم أحدث الأجهزة والمواد في علاج جذور وأعصاب الأسنان بدقة وفعالية، مما يساعد على إنقاذ السن المصاب وتخفيف الألم والحفاظ على وظيفة السن الطبيعية لأطول فترة ممكنة.</p>
                 </div>
                 <div class="service-item">
                     <div class="service-icon-container">
-                        <!-- الصورة المقترحة: dental-tools-model.jpg أو صورة عامة للعلاجات -->
                         <img src="image/service-general.jpg" alt="علاجات عامة ووقائية" class="service-icon">
                     </div>
                     <h3>علاجات عامة ووقائية</h3>
-                    <p>تنظيف الأسنان، إزالة الجير، حشوات، خلع، تركيبات ثابتة ومتحركة.</p>
+                    <p>صحة فمك تبدأ بالوقاية والفحوصات المنتظمة. نقدم مجموعة متكاملة من العلاجات العامة والوقائية كالتنظيف الاحترافي للأسنان وإزالة الجير، علاج أمراض اللثة، الحشوات بأنواعها، الخلع الجراحي وغير الجراحي، بالإضافة إلى التركيبات السنية الثابتة والمتحركة عالية الجودة.</p>
                 </div>
             </div>
         </div>
@@ -129,6 +131,7 @@
                     <h3>مهمتنا: ابتسامة صحية وجميلة لكل مريض</h3>
                     <p>في مركز الدكتور نشوان الخولاني، نسعى لتقديم تجربة علاجية فريدة تجمع بين الخبرة الطويلة، أحدث التقنيات، والاهتمام الشخصي بكل مريض. تأسس مركزنا ليكون الوجهة الأولى لصحة الفم والأسنان في مدينة إب، مع التزامنا بأعلى معايير الجودة والتعقيم.</p>
                     <p>نؤمن بأن الوقاية خير من العلاج، لذا نركز على توعية مرضانا بأهمية العناية بصحة الفم والأسنان. فريقنا مستعد دائمًا لتقديم النصح والإرشاد للحفاظ على ابتسامة مشرقة تدوم طويلاً.</p>
+                    <p><strong>فلسفتنا في الرعاية:</strong> نعتبر كل مريض فردًا من عائلتنا، ونسعى جاهدين لتوفير بيئة علاجية مريحة وآمنة تخفف من أي قلق قد يشعر به. يحرص فريقنا على الاستماع لاحتياجاتكم وتقديم خطط علاجية شفافة ومناسبة، مع التزامنا بأخلاقيات المهنة وتطبيق أحدث البروتوكولات العالمية في التعقيم وسلامة المرضى.</p>
                     <ul class="features-list">
                         <li><i class="fas fa-user-md icon-feature"></i> أطباء متخصصون بخبرات عالية.</li>
                         <li><i class="fas fa-microscope icon-feature"></i> أحدث الأجهزة والتقنيات العالمية.</li>
@@ -139,7 +142,6 @@
                     <a href="#team" class="btn btn-outline">تعرف على فريقنا</a>
                 </div>
                 <div class="about-image">
-                    <!-- الصورة المقترحة: clinic-treatment-room.jpg (غرفة العيادة) -->
                     <img src="image/clinic-treatment-room.jpg" alt="داخل مركز الدكتور نشوان الخولاني">
                 </div>
             </div>
@@ -157,20 +159,38 @@
                         <img src="image/dr-nashwan-portrait.jpg" alt="الدكتور نشوان الخولاني">
                     </div>
                     <h3>د. نشوان الخولاني</h3>
-                    <p class="member-title">مدير المركز واختصاصي جراخة الفم والوجه والفكين</p>
-                    <p class="member-bio">يمتلك الدكتور نشوان خبرة واسعة تمتد لأكثر من [20] سنوات في مختلف مجالات طب الأسنان، مع تركيز خاص على زراعة و تقويم و تجميل الأسنان. حاصل على [ دكتوراه في جراحة الوجه والفكين و زراعة الأسنان ، دبلوم في تجميل الاسنان، دبلوم جراحة وامراض اللثة ]. يحرص دائمًا على مواكبة أحدث التطورات في طب الأسنان.</p>
+                    <p class="member-title">مدير المركز واختصاصي جراحة الفم والوجه والفكين</p>
+                    <p class="member-bio">يمتلك الدكتور نشوان خبرة واسعة تمتد لأكثر من 20 عاماً في مختلف مجالات طب الأسنان، مع تركيز خاص على زراعة وتقويم وتجميل الأسنان، وجراحة الوجه والفكين. حاصل على دكتوراه في جراحة الوجه والفكين وزراعة الأسنان، بالإضافة إلى دبلومات متخصصة في تجميل الأسنان وجراحة وأمراض اللثة. يحرص دائمًا على مواكبة أحدث التطورات في طب الأسنان لتقديم أفضل رعاية ممكنة لمرضاه.</p> <!-- تم تحديث النص هنا -->
                 </div>
-                <!-- أضف أعضاء الفريق الآخرين هنا إذا أردت -->
-                <!-- مثال:
-                <div class="team-member">
-                    <div class="member-image-container">
-                        <img src="images/dr-another-photo.jpg" alt="د. [اسم الطبيب]">
-                    </div>
-                    <h3>د. [اسم الطبيب]</h3>
-                    <p class="member-title">[تخصصه]</p>
-                    <p class="member-bio">[نبذة قصيرة]</p>
+                <!-- يمكنك إضافة أعضاء فريق آخرين هنا إذا أردت -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section section-padding">
+        <div class="container">
+            <h2 class="section-title">ماذا يقول مرضانا عنا؟</h2>
+            <p class="section-subtitle">شهادات نعتز بها من بعض عملائنا الكرام.</p>
+            <div class="testimonials-grid">
+                <div class="testimonial-item">
+                    <!-- <img src="image/patient1-avatar.jpg" alt="[اسم المريض الأول]" class="testimonial-avatar"> -->
+                    <p class="testimonial-text">"تجربتي في مركز الدكتور نشوان كانت رائعة جدًا. الفريق محترف والاهتمام بالتفاصيل مذهل. حصلت على ابتسامة كنت أحلم بها!"</p>
+                    <h4 class="testimonial-author">- [اسم المريض الأول]</h4>
+                    <p class="testimonial-detail">[معلومة إضافية، مثل: من مدينة إب]</p>
                 </div>
-                -->
+                <div class="testimonial-item">
+                    <!-- <img src="image/patient2-avatar.jpg" alt="[اسم المريض الثاني]" class="testimonial-avatar"> -->
+                    <p class="testimonial-text">"كنت أعاني من قلق شديد تجاه طبيب الأسنان، لكن الدكتور نشوان وفريقه جعلوني أشعر براحة تامة. العلاج كان بدون ألم والنتيجة فاقت توقعاتي."</p>
+                    <h4 class="testimonial-author">- [اسم المريض الثاني]</h4>
+                    <p class="testimonial-detail">[معلومة إضافية]</p>
+                </div>
+                <div class="testimonial-item">
+                     <!-- <img src="image/patient3-avatar.jpg" alt="[اسم المريض الثالث]" class="testimonial-avatar"> -->
+                    <p class="testimonial-text">"خدمة ممتازة وأسعار مناسبة. أنصح بشدة بمركز الدكتور نشوان الخولاني لكل من يبحث عن جودة واحترافية في علاج الأسنان."</p>
+                    <h4 class="testimonial-author">- [اسم المريض الثالث]</h4>
+                    <p class="testimonial-detail">[معلومة إضافية]</p>
+                </div>
             </div>
         </div>
     </section>
@@ -182,35 +202,31 @@
             <p class="section-subtitle">نفتخر بمساعدة مرضانا في الحصول على ابتسامات صحية وجميلة. (جميع الصور بموافقة المرضى)</p>
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <!-- الصورة المقترحة: cosmetic-dentistry-before-after.jpg (قبل وبعد تجميل) -->
                     <img src="image/cosmetic-dentistry-before-after.jpg" alt="قبل وبعد - تجميل أسنان">
                     <div class="gallery-caption">نتائج مذهلة لتجميل الأسنان</div>
                 </div>
                 <div class="gallery-item">
-                    <!-- الصورة المقترحة: صورة أخرى لـ "قبل وبعد" أو لزراعة أسنان ناجحة -->
                     <img src="image/gallery-before-after-2.jpg" alt="قبل وبعد - حالة زراعة">
                     <div class="gallery-caption">حالة زراعة أسنان ناجحة</div>
                 </div>
                 <div class="gallery-item">
-                    <!-- الصورة المقترحة: clinic-diagnostics.jpg (طبيبة تنظر لأشعة) -->
                     <img src="image/clinic-diagnostics.jpg" alt="أحدث أجهزة التشخيص">
                     <div class="gallery-caption">تشخيص دقيق بأحدث الأجهزة</div>
                 </div>
                 <div class="gallery-item">
-                    <!-- الصورة المقترحة: zygomatic-implants-model.jpg أو advanced-dental-implants.jpg -->
+                    <!-- الصورة المقترحة لزراعة الأسنان المتقدمة: image/zygomatic-implants-model.jpg أو image/advanced-dental-implants.jpg -->
                     <img src="image/zygomatic-implants-model.jpg" alt="نموذج لزراعة متقدمة">
                     <div class="gallery-caption">تقنيات زراعة متقدمة</div>
                 </div>
                  <div class="gallery-item">
-                    <!-- صورة إضافية للمركز أو المعدات -->
                     <img src="image/gallery-equipment-1.jpg" alt="أجهزة حديثة بالمركز">
                     <div class="gallery-caption">نستخدم أحدث التقنيات</div>
                 </div>
                 <div class="gallery-item">
-                     <!-- صورة من داخل العيادة أو صورة للدكتور نشوان أثناء العمل -->
                     <img src="image/dr-nashwan-surgery.jpg" alt="الدكتور نشوان أثناء العمل">
                     <div class="gallery-caption">خبرة ودقة في العمل</div>
                 </div>
+                <!-- يمكنك إضافة المزيد من صور المعرض هنا -->
             </div>
         </div>
     </section>
@@ -257,7 +273,6 @@
                         <p>تختلف تكلفة الخدمات بناءً على نوع العلاج المطلوب وحالة المريض. يمكنكم الحصول على استشارة أولية لتقييم الحالة وتقدير التكلفة. نحن نسعى لتقديم أسعار تنافسية مع الحفاظ على أعلى معايير الجودة.</p>
                     </div>
                 </div>
-                <!-- مثال لإضافة سؤال وصورة من البوسترات -->
                 <div class="faq-item">
                     <button class="faq-question" aria-expanded="false">
                         <span>أعاني من ألم في وجهي، هل يمكن أن يكون من الأسنان؟</span>
@@ -265,7 +280,6 @@
                     </button>
                     <div class="faq-answer">
                         <p>نعم، ألم الوجه قد يكون له أسباب متعددة، ومنها ألم العصب ثلاثي التوائم الذي قد يتشابه مع ألم الأسنان. من المهم استشارة طبيبك لتشخيص دقيق. يمكن الاطلاع على هذا البوستر لمزيد من المعلومات:</p>
-                        <!-- الصورة المقترحة: trigeminal-neuralgia-poster.jpg (البوستر عن ألم العصب) -->
                         <img src="image/trigeminal-neuralgia-poster.jpg" alt="ألم العصب ثلاثي التوائم" style="max-width: 100%; margin-top: 15px; border-radius: 8px;">
                     </div>
                 </div>
@@ -280,8 +294,7 @@
             <p class="section-subtitle">معلومات مفيدة للحفاظ على ابتسامة صحية وجذابة.</p>
             <div class="articles-grid">
                 <article class="article-card">
-                    <a href="#"> <!-- يمكنك إنشاء صفحة منفصلة لكل مقال لاحقًا -->
-                        <!-- الصورة المقترحة: dental-care-poster.jpg (بوستر الحماية من التسوس) -->
+                    <a href="#">
                         <img src="image/dental-care-poster.jpg" alt="الحماية من تسوس الأسنان" class="article-image">
                         <div class="article-content">
                             <h3>نصائح ذهبية للحماية من تسوس الأسنان</h3>
@@ -292,7 +305,6 @@
                 </article>
                 <article class="article-card">
                     <a href="#">
-                        <!-- الصورة المقترحة: teeth-sensitivity-ice.jpg (صورة حساسية الأسنان) -->
                         <img src="image/teeth-sensitivity-ice.jpg" alt="حساسية الأسنان" class="article-image">
                         <div class="article-content">
                             <h3>كيف تتعامل مع حساسية الأسنان بفعالية؟</h3>
@@ -303,7 +315,6 @@
                 </article>
                 <article class="article-card">
                     <a href="#">
-                        <!-- الصورة المقترحة: decayed-teeth-models.jpg (نماذج تسوس الأسنان) أو tooth-pain-causes-poster.jpg -->
                         <img src="image/tooth-pain-causes-poster.jpg" alt="أسباب آلام الأسنان" class="article-image">
                         <div class="article-content">
                             <h3>ما هي العوامل المسببة لآلام الأسنان؟</h3>
@@ -314,7 +325,6 @@
                 </article>
                  <article class="article-card">
                     <a href="#">
-                        <!-- الصورة المقترحة: sedation-dentistry-poster.jpg (بوستر التخدير الواعي) -->
                         <img src="image/sedation-dentistry-poster.jpg" alt="التخدير الواعي في طب الأسنان" class="article-image">
                         <div class="article-content">
                             <h3>لا تخف من كرسي الأسنان: الحل مع التخدير الواعي!</h3>
@@ -352,8 +362,7 @@
                     </div>
                 </div>
                  <div class="contact-branch">
-                     <h3><i class="fas fa-concierge-bell"></i> خدمات إضافية</h3>
-                     <!-- الصورة المقترحة: clinic-services-poster.jpg -->
+                     <h3><i class="fas fa-concierge-bell"></i> معلومات إضافية</h3> <!-- تم تغيير العنوان هنا -->
                      <img src="image/clinic-services-poster.jpg" alt="خدمات مركز الدكتور نشوان الخولاني ومعلومات الاتصال" style="width:100%; border-radius:8px; margin-top:15px;">
                      <p style="margin-top:10px;">لمعرفة المزيد عن خدماتنا أو للحالات الطارئة، لا تترددوا في الاتصال بنا مباشرة.</p>
                 </div>
@@ -370,8 +379,8 @@
                     <p>نسعى لتقديم أفضل رعاية لأسنانكم باستخدام أحدث التقنيات والمعايير العالمية.</p>
                     <div class="social-links">
                         <a href="https://www.facebook.com/share/16dvoQSWrx/" target="_blank" title="فيسبوك"><i class="fab fa-facebook-f"></i></a>
-                        <a href="[https://www.instagram.com/nashwanalkhawlani?igsh=aHdpbzgyZzh5dmVl]" target="_blank" title="انستغرام"><i class="fab fa-instagram"></i></a>
-                        <a href="[رابط_تويتر_صحيح_هنا]" target="_blank" title="تويتر"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/nashwanalkhawlani?igsh=aHdpbzgyZzh5dmVl" target="_blank" title="انستغرام"><i class="fab fa-instagram"></i></a> <!-- تم إضافة الرابط الصحيح -->
+                        <a href="[ضع رابط تويتر هنا إذا وجد]" target="_blank" title="تويتر"><i class="fab fa-twitter"></i></a> <!-- !! تحتاج لوضع الرابط الصحيح !! -->
                     </div>
                 </div>
                 <div class="footer-col">
@@ -380,6 +389,7 @@
                         <li><a href="#services">خدماتنا</a></li>
                         <li><a href="#about">من نحن</a></li>
                         <li><a href="#team">فريق العمل</a></li>
+                        <li><a href="#testimonials">شهادات المرضى</a></li> <!-- تم التأكد من وجود الرابط -->
                         <li><a href="#faq">الأسئلة الشائعة</a></li>
                         <li><a href="#contact">اتصل بنا</a></li>
                     </ul>
@@ -394,6 +404,7 @@
             </div>
             <div class="footer-bottom">
                 <p>© <span id="year"></span> مركز الدكتور نشوان الخولاني لطب الأسنان. جميع الحقوق محفوظة.</p>
+                 <!-- <p>تصميم وتطوير: [اسمك أو شركتك هنا]</p> -->
             </div>
         </div>
     </footer>
