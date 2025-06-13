@@ -1087,3 +1087,32 @@ a:hover {
     border-top-left-radius: 8px;  /* يتوافق مع .article-card إذا كان له border-radius */
     border-top-right-radius: 8px;
 }
+
+/* === Social Posts Section (للمنشورات المضمنة) === */
+.social-posts-grid {
+    display: grid;
+    /* يمكنك البدء بعمود واحد ثم تعديله إذا أضفت المزيد من المنشورات */
+    /* grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); */
+    grid-template-columns: 1fr; /* عمود واحد مبدئيًا */
+    gap: 30px; /* مسافة بين المنشورات */
+    margin-top: 30px;
+}
+
+.social-post-item {
+    background: #ffffff; /* خلفية بيضاء لكل منشور */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    /* قد تحتاج إلى ضبط الارتفاع أو العرض الأقصى هنا إذا لم تكن المنشورات المضمنة متجاوبة بشكل جيد */
+    /* مثال: max-width: 550px; margin: 0 auto; */
+}
+
+/* لمحاولة جعل iframes/embeds من فيسبوك وانستغرام متجاوبة */
+.social-post-item iframe,
+.social-post-item .fb-post, /* حاوية فيسبوك */
+.social-post-item .instagram-media { /* حاوية انستغرام */
+    max-width: 100% !important;
+    width: 100% !important; /* قد تحتاج لتجربة هذا */
+    min-width: 300px !important; /* لمنعها من أن تصبح ضيقة جدًا */
+    margin: 0 auto !important; /* لتوسيطها إذا كان العرض أقل من الحاوية */
+}
