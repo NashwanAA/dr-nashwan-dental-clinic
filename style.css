@@ -8,23 +8,23 @@
 }
 
 html {
-    scroll-behavior: smooth; /* انتقال سلس عند النقر على الروابط الداخلية */
-    font-size: 16px; /* أساس حجم الخط */
+    scroll-behavior: smooth;
+    font-size: 16px;
 }
 
 body {
     font-family: 'Cairo', 'Tahoma', sans-serif;
     line-height: 1.7;
-    color: #4A4A4A; /* لون نص أساسي أغمق قليلاً */
-    background-color: #f8f9fa; /* خلفية فاتحة جدًا */
+    color: #4A4A4A;
+    background-color: #f8f9fa;
     direction: rtl;
-    overflow-x: hidden; /* لمنع التمرير الأفقي غير المرغوب فيه */
+    overflow-x: hidden;
 }
 
 /* === Utility Classes === */
 .container {
     width: 90%;
-    max-width: 1200px; /* عرض أقصى أكبر قليلاً */
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -34,14 +34,14 @@ body {
 }
 
 .bg-light {
-    background-color: #ffffff; /* خلفية بيضاء للأقسام المحددة */
+    background-color: #ffffff;
 }
 
 .section-title {
     text-align: center;
     font-size: 2.8rem;
     font-weight: 700;
-    color: #0056b3; /* لون أزرق رئيسي للعنوان */
+    color: #0056b3;
     margin-bottom: 20px;
     position: relative;
     padding-bottom: 15px;
@@ -55,7 +55,7 @@ body {
     transform: translateX(-50%);
     width: 100px;
     height: 4px;
-    background-color: #007bff; /* لون أزرق ثانوي للخط */
+    background-color: #007bff;
     border-radius: 2px;
 }
 
@@ -81,7 +81,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: #007bff; /* لون رابط أساسي */
+    color: #007bff;
     transition: color 0.3s ease;
 }
 
@@ -96,7 +96,7 @@ a:hover {
     font-size: 1rem;
     font-weight: 600;
     text-align: center;
-    border-radius: 50px; /* حواف دائرية أكثر */
+    border-radius: 50px;
     transition: all 0.3s ease;
     cursor: pointer;
     border: 2px solid transparent;
@@ -145,8 +145,8 @@ a:hover {
     font-size: 1.1rem;
 }
 
-.btn i { /* للأيقونات داخل الأزرار */
-    margin-left: 8px; /* استخدم margin-right في LTR */
+.btn i {
+    margin-left: 8px;
 }
 
 
@@ -165,7 +165,7 @@ a:hover {
 
 .navbar.scrolled {
     padding: 0.75rem 0;
-    background-color: rgba(255, 255, 255, 0.98); /* خلفية شبه شفافة عند التمرير */
+    background-color: rgba(255, 255, 255, 0.98);
 }
 
 .navbar .container {
@@ -175,23 +175,22 @@ a:hover {
 }
 
 .logo .logo-img {
-    height: 50px; /* اضبط ارتفاع الشعار */
+    height: 50px;
     width: auto;
     vertical-align: middle;
 }
-.logo { /* إذا كان الشعار نصيًا */
+.logo {
     font-size: 1.8rem;
     font-weight: 800;
     color: #0056b3;
 }
-
 
 .nav-menu ul {
     display: flex;
 }
 
 .nav-menu li {
-    margin-right: 25px; /* استخدم margin-left في LTR */
+    margin-right: 25px;
 }
 .nav-menu li:last-child {
     margin-right: 0;
@@ -226,8 +225,8 @@ a:hover {
     color: #007bff;
 }
 
-.nav-toggle { /* زر القائمة للهواتف */
-    display: none; /* مخفي على الشاشات الكبيرة */
+.nav-toggle {
+    display: none;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -257,7 +256,6 @@ a:hover {
 .hamburger::after {
     top: 8px;
 }
-/* أنماط زر القائمة عند الفتح */
 .nav-toggle.open .hamburger {
     transform: rotate(45deg);
 }
@@ -268,31 +266,34 @@ a:hover {
 .nav-toggle.open .hamburger::after {
     top: 0;
     transform: rotate(90deg);
-    opacity: 0; /* إخفاء الخط الأوسط */
+    opacity: 0;
 }
 
 
 /* === Hero Section === */
 .hero {
-    background: linear-gradient(rgba(0, 60, 130, 0.6), rgba(0, 100, 200, 0.5)), url('images/hero-background.jpg') no-repeat center center/cover;
-    /* **مهم:** استبدل 'images/hero-background.jpg' بمسار صورة خلفية مناسبة عالية الجودة */
+    /* ****** تأكد أن هذا المسار صحيح بناءً على هيكل مجلداتك واسم الملف الفعلي ****** */
+    /* ****** إذا كان مجلد الصور اسمه "image" (بالمفرد) وملف style.css في الجذر: ****** */
+    background: linear-gradient(rgba(0, 60, 130, 0.6), rgba(0, 100, 200, 0.5)), url('image/hero-background-image.jpg') no-repeat center center/cover;
+    /* ****** أو إذا كان مجلد الصور "image" وملف style.css في مجلد css/: ****** */
+    /* background: linear-gradient(rgba(0, 60, 130, 0.6), rgba(0, 100, 200, 0.5)), url('../image/hero-background-image.jpg') no-repeat center center/cover; */
     color: #fff;
-    height: 90vh; /* ارتفاع ليملأ جزء كبير من الشاشة */
+    height: 90vh;
     min-height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    position: relative; /* للـ overlay */
-    padding-top: 80px; /* لمراعاة ارتفاع الـ navbar الثابت */
+    position: relative;
+    padding-top: 80px;
 }
-.hero-overlay { /* طبقة لونية إضافية فوق صورة الخلفية */
+.hero-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(10, 30, 60, 0.2); /* يمكنك تعديل هذا اللون والشفافية */
+    background-color: rgba(10, 30, 60, 0.2);
     z-index: 1;
 }
 .hero-content {
@@ -338,23 +339,23 @@ a:hover {
     box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
 }
 .service-icon-container {
-    width: 100px;
-    height: 100px;
+    width: 90px;  /* تم التعديل بناءً على اقتراحك السابق */
+    height: 90px; /* تم التعديل بناءً على اقتراحك السابق */
     margin: 0 auto 25px auto;
     border-radius: 50%;
-    background-color: #e9f5ff; /* خلفية فاتحة للأيقونة */
+    background-color: #e9f5ff;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
 }
 .service-item .service-icon {
-    width: 100%; /* أو حجم ثابت أصغر إذا كانت الصور كبيرة جدًا */
+    width: 100%;
     height: 100%;
     object-fit: cover;
 }
 .service-item h3 {
-    font-size: 1.6rem;
+    font-size: 1.5rem; /* تم التعديل بناءً على اقتراحك السابق */
     font-weight: 600;
     color: #0056b3;
     margin-bottom: 15px;
@@ -390,10 +391,10 @@ a:hover {
     align-items: center;
 }
 .icon-feature {
-    color: #28a745; /* لون أخضر لأيقونات الميزات */
+    color: #28a745;
     font-size: 1.3em;
-    margin-left: 10px; /* استخدم margin-right في LTR */
-    width: 25px; /* لتوحيد عرض الأيقونات */
+    margin-left: 10px;
+    width: 25px;
 }
 .about-image {
     flex: 1;
@@ -403,7 +404,7 @@ a:hover {
 .about-image img {
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    max-height: 450px; /* تحديد ارتفاع أقصى للصورة */
+    max-height: 450px;
     object-fit: cover;
 }
 
@@ -455,6 +456,83 @@ a:hover {
     color: #555;
 }
 
+/* === Testimonials Section === */
+.testimonials-section {
+    /* background-color: #f0f8ff; */
+}
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+.testimonial-item {
+    background: #ffffff;
+    padding: 30px 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.testimonial-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+.testimonial-avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #007bff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.testimonial-text {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-style: italic;
+    position: relative;
+    padding: 0 15px;
+}
+.testimonial-text::before {
+    content: "\f10d";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #007bff;
+    font-size: 1.5rem;
+    position: absolute;
+    top: -5px;
+    right: 0; /* تم التعديل من -10px */
+    opacity: 0.6;
+}
+.testimonial-text::after {
+    content: "\f10e";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #007bff;
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: -5px;
+    left: 0; /* تم التعديل من -10px */
+    opacity: 0.6;
+}
+.testimonial-author {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #0056b3;
+    margin-bottom: 5px;
+    margin-top: auto;
+}
+.testimonial-detail {
+    font-size: 0.9rem;
+    color: #777777;
+}
+
 /* === Gallery Section === */
 .gallery-grid {
     display: grid;
@@ -466,7 +544,7 @@ a:hover {
     overflow: hidden;
     position: relative;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    cursor: pointer; /* ليدل على إمكانية التكبير لاحقًا */
+    cursor: pointer;
 }
 .gallery-item img {
     width: 100%;
@@ -504,7 +582,7 @@ a:hover {
     margin-bottom: 15px;
     border-radius: 8px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.06);
-    overflow: hidden; /* مهم للأكورديون */
+    overflow: hidden;
 }
 .faq-question {
     display: flex;
@@ -514,7 +592,7 @@ a:hover {
     padding: 20px 25px;
     background: transparent;
     border: none;
-    text-align: right; /* للغة العربية */
+    text-align: right;
     font-family: inherit;
     font-size: 1.2rem;
     font-weight: 600;
@@ -537,16 +615,15 @@ a:hover {
     font-size: 1rem;
     color: #555;
     line-height: 1.8;
-    max-height: 0; /* أساس عمل الأكورديون */
+    max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease-out, padding 0.4s ease-out; /* تعديل الانتقال */
+    transition: max-height 0.4s ease-out, padding 0.4s ease-out;
 }
-.faq-item.open .faq-answer { /* عندما يكون السؤال مفتوحًا */
-    /* max-height سيتم تعديله بـ JS */
-    padding-top: 10px; /* إضافة padding عند الفتح */
+.faq-item.open .faq-answer {
+    padding-top: 10px;
 }
 
-/* === Articles Section === */
+/* === Articles Section (for cards) === */
 .articles-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -565,12 +642,14 @@ a:hover {
 }
 .article-card a {
     display: block;
-    color: inherit; /* ليرث لون النص الأساسي */
+    color: inherit;
 }
 .article-image {
     width: 100%;
     height: 220px;
     object-fit: cover;
+    border-top-left-radius: 8px; /* مضافة بناءً على اقتراحك السابق */
+    border-top-right-radius: 8px; /* مضافة بناءً على اقتراحك السابق */
 }
 .article-content {
     padding: 20px;
@@ -587,7 +666,6 @@ a:hover {
     color: #555;
     margin-bottom: 15px;
     line-height: 1.6;
-    /* تحديد عدد الأسطر (اختياري، يتطلب بعض الحيل) */
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
@@ -597,6 +675,32 @@ a:hover {
     font-size: 0.8rem;
     color: #888;
 }
+
+/* === Social Posts Section (للمنشورات المضمنة من فيسبوك/انستغرام) === */
+.social-posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+.social-post-item {
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+.social-post-item iframe,
+.social-post-item .fb-post,
+.social-post-item .instagram-media {
+    max-width: 100% !important;
+    width: 100% !important;
+    min-width: 300px !important;
+    display: block !important;
+    margin: 0 auto !important;
+    border-radius: 6px;
+}
+
 
 /* === Contact Section === */
 .contact-info-grid {
@@ -619,7 +723,7 @@ a:hover {
     align-items: center;
 }
 .contact-branch h3 i {
-    margin-left: 10px; /* استخدم margin-right في LTR */
+    margin-left: 10px;
     color: #007bff;
 }
 .contact-branch p {
@@ -631,19 +735,19 @@ a:hover {
 .contact-branch p i {
     margin-left: 10px;
     color: #007bff;
-    width: 20px; /* لتوحيد عرض الأيقونات */
+    width: 20px;
 }
 .map-container {
     margin-top: 25px;
     border-radius: 8px;
-    overflow: hidden; /* مهم للحواف الدائرية للخريطة */
-    height: 250px; /* تحديد ارتفاع ثابت للخريطة */
+    overflow: hidden;
+    height: 250px;
 }
 .map-container iframe {
-    border-radius: 8px; /* قد لا يعمل هذا دائمًا بسبب iframe */
+    border-radius: 8px;
 }
 
-/* Contact Form (إذا تم استخدامه) */
+/* Contact Form */
 .contact-form {
     background: #fff;
     padding: 30px;
@@ -686,14 +790,14 @@ a:hover {
     outline: none;
 }
 .form-group textarea {
-    resize: vertical; /* السماح بتغيير الحجم عموديًا فقط */
+    resize: vertical;
     min-height: 120px;
 }
 
 /* === Footer === */
 .footer {
-    background-color: #212529; /* لون خلفية أغمق للتذييل */
-    color: #adb5bd; /* لون نص فاتح */
+    background-color: #212529;
+    color: #adb5bd;
     padding: 60px 0 20px 0;
 }
 .footer-content {
@@ -710,11 +814,11 @@ a:hover {
     position: relative;
     padding-bottom: 10px;
 }
-.footer-col h4::after { /* خط صغير تحت عناوين التذييل */
+.footer-col h4::after {
     content: '';
     position: absolute;
     bottom: 0;
-    right: 0; /* للغة العربية */
+    right: 0;
     width: 50px;
     height: 2px;
     background-color: #007bff;
@@ -730,18 +834,18 @@ a:hover {
 }
 .footer-col ul li a:hover {
     color: #fff;
-    padding-right: 5px; /* تأثير بسيط عند التمرير */
+    padding-right: 5px;
 }
 .social-links a {
     display: inline-block;
     width: 40px;
     height: 40px;
-    line-height: 40px; /* لتوسيط الأيقونة عموديًا */
+    line-height: 40px;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.1);
     color: #fff;
     border-radius: 50%;
-    margin-left: 8px; /* استخدم margin-right في LTR */
+    margin-left: 8px;
     font-size: 1.1rem;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
@@ -763,7 +867,7 @@ a:hover {
 .back-to-top {
     position: fixed;
     bottom: 25px;
-    right: 25px; /* استخدم left في LTR */
+    right: 25px;
     background-color: #007bff;
     color: #fff;
     width: 45px;
@@ -774,7 +878,7 @@ a:hover {
     border-radius: 50%;
     box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
     z-index: 999;
-    opacity: 0; /* مخفي افتراضيًا */
+    opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
 }
@@ -790,8 +894,8 @@ a:hover {
 /* === Fixed Action Buttons === */
 .fixed-action-buttons {
     position: fixed;
-    bottom: 90px; /* أعلى من زر العودة للأعلى */
-    left: 25px; /* للغة العربية، استخدم right إذا كان أفضل */
+    bottom: 90px;
+    left: 25px;
     z-index: 998;
     display: flex;
     flex-direction: column;
@@ -814,9 +918,9 @@ a:hover {
 .fab-btn:hover {
     transform: scale(1.1) translateY(-2px);
 }
-.phone-btn { background-color: #28a745; } /* أخضر للاتصال */
+.phone-btn { background-color: #28a745; }
 .phone-btn:hover { background-color: #1e7e34; }
-.whatsapp-btn { background-color: #25D366; } /* لون واتساب */
+.whatsapp-btn { background-color: #25D366; }
 .whatsapp-btn:hover { background-color: #128C7E; }
 
 
@@ -827,9 +931,9 @@ a:hover {
     .hero .subtitle { font-size: 1.3rem; }
 
     .nav-menu {
-        display: none; /* مخفية افتراضيًا على الشاشات الصغيرة */
+        display: none;
         position: absolute;
-        top: 100%; /* تحت الـ navbar */
+        top: 100%;
         left: 0;
         width: 100%;
         background-color: #fff;
@@ -837,7 +941,7 @@ a:hover {
         padding: 15px 0;
     }
     .nav-menu.open {
-        display: block; /* تظهر عند النقر */
+        display: block;
     }
     .nav-menu ul {
         flex-direction: column;
@@ -855,21 +959,21 @@ a:hover {
         padding: 10px;
         border-radius: 5px;
     }
-    .nav-menu .nav-link::after { display: none; /* إخفاء الخط تحت الروابط في القائمة المنسدلة */ }
+    .nav-menu .nav-link::after { display: none; }
     .nav-menu .nav-link:hover,
     .nav-menu .nav-link.active {
         background-color: #e9f5ff;
     }
-    .nav-toggle { display: block; /* إظهار زر القائمة */ }
+    .nav-toggle { display: block; }
 
     .about-content {
-        flex-direction: column-reverse; /* الصورة فوق النص على الشاشات الصغيرة */
+        flex-direction: column-reverse;
     }
     .about-image { margin-bottom: 30px; }
 }
 
 @media (max-width: 768px) {
-    html { font-size: 15px; } /* تصغير حجم الخط الأساسي قليلاً */
+    html { font-size: 15px; }
     .section-padding { padding: 60px 0; }
     .section-title { font-size: 2rem; }
     .section-title::after { width: 80px; height: 3px;}
@@ -881,21 +985,22 @@ a:hover {
     .hero-buttons .btn { margin-bottom: 15px; display: block; width: 80%; margin-left:auto; margin-right:auto;}
     .hero-buttons .btn:last-child { margin-bottom: 0;}
 
-
     .services-grid,
     .team-grid,
     .gallery-grid,
-    .articles-grid,
+    .articles-grid, /* هذا سيؤثر على البطاقات العادية إذا استخدمتها */
+    .social-posts-grid, /* وهذا سيؤثر على المنشورات المضمنة */
     .contact-info-grid,
-    .footer-content {
-        grid-template-columns: 1fr; /* عمود واحد لمعظم الشبكات */
+    .footer-content,
+    .testimonials-grid { /* تمت إضافة testimonials-grid هنا */
+        grid-template-columns: 1fr;
     }
 
     .contact-branch { margin-bottom: 30px; }
     .contact-branch:last-child { margin-bottom: 0; }
 
     .fixed-action-buttons {
-        bottom: 75px; /* تعديل طفيف للموقع */
+        bottom: 75px;
         left: 20px;
     }
     .fab-btn { width: 50px; height: 50px; font-size: 1.3rem; }
@@ -909,216 +1014,4 @@ a:hover {
     .service-item { padding: 25px 20px; }
     .service-icon-container { width: 80px; height: 80px; margin-bottom: 20px;}
     .service-item h3 { font-size: 1.4rem; }
-}
-
-/* === Testimonials Section === */
-.testimonials-section {
-    /* يمكنك إلغاء التعليق عن السطر التالي إذا أردت خلفية بلون مختلف لهذا القسم */
-    /* background-color: #f0f8ff; */ /* مثال: لون أزرق فاتح جدًا */
-}
-
-.testimonials-grid {
-    display: grid;
-    /* سيعرض شهادة واحدة في كل صف على الشاشات الصغيرة، واثنتين على المتوسطة، وثلاث على الكبيرة إذا سمحت المساحة */
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 30px; /* المسافة بين بطاقات الشهادات */
-    margin-top: 30px; /* مسافة علوية من عنوان القسم الفرعي */
-}
-
-.testimonial-item {
-    background: #ffffff; /* خلفية بيضاء لبطاقة الشهادة */
-    padding: 30px 25px;
-    border-radius: 10px; /* حواف دائرية */
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); /* ظل خفيف */
-    text-align: center;
-    display: flex; /* لتوسيط المحتوى بشكل أفضل إذا كانت الصورة والنص عموديين */
-    flex-direction: column; /* ترتيب العناصر عموديًا */
-    align-items: center; /* توسيط العناصر أفقيًا */
-    transition: transform 0.3s ease, boxن-shadow 0.3s ease;
-}
-
-.testimonial-item:hover {
-    transform: translateYعم، بما أننا أضفنا قسمًا جديدًا وهو "شهادات(-8px); /* تأثير بسيط عند التمرير */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
-}
-
-.testimonial- المرضى (`#testimonials`)", فسنحتاج إلى إضافة الأنماط الخاصة به إلى ملف `style.css`avatar {
-    width: 90px;  /* حجم صورة الأفاتار */
-    height: 90px لكي يظهر بشكل جيد.
-
-أيضًا، قمنا بإضافة خدمة "جراحة الفم والوجه والفكين" كعنصر جديد في قسم الخدمات. التصميم الحالي لـ `service-item` يجب أن يعمل;
-    border-radius: 50%; /* لجعلها دائرية */
-    object-fit: cover; /* لضمان ملاءمة الصورة بشكل جيد دون تشويه */
-    margin-bottom: 20px معها بشكل جيد، ولكن إذا أردت تمييزها بشكل خاص، يمكنك إضافة بعض التعديلات الطفيفة.
-
-إليك الأنماط المقترحة لملف `style.css`. يمكنك **إضافة هذه الأ;
-    border: 4px solid #007bff; /* إطار بلون مميز حول الصورة */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);نماط إلى نهاية ملف `style.css` الحالي لديك.**
-
-```css
-/* === Testimonials Section === */
-.testimonials-section {
-    /* background-color: #f0f8ff; /* يمكنك تفعيل هذا إذا أ
-}
-
-.testimonial-text {
-    font-size: 1rem;    /* حجم خط نص الشهادة */
-    color: #555;       /* لون نص الشهادة */
-    line-height: 1.8;   /* تباعد الأسطر */
-    margin-bottom: 20px;
-    ردت لون خلفية مختلف قليلاً */
-}
-
-.testimonials-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* لعرض الشهادات في أعمدة متجاوبة */
-    gap: 30px; /* المسافة بين بطfont-style: italic; /* جعل النص مائلاً قليلاً */
-    position: relative; /* لوضع علامات الاقتباس */
-    padding: 0 15px; /* مسافة داخلية لنص الشهادة */
-}
-
-.testimonial-text::before { /* علامة اقتباس قبل النص */
-    content: "\fاقات الشهادات */
-    margin-top: 30px; /* مسافة من العنوان الفرعي للقسم */
-}
-
-.testimonial-item {
-    background: #fff; /* خلفية بيضاء لبطاقة الشهادة */
-    padding: 30px;
-    border-radius: 10px; /* حواف دائرية */
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 010d"; /* أيقونة اقتباس يسار من Font Awesome */
-    font-family: "Font Awesome 6 Free"; /* تأكد من استخدام اسم الخط الصحيح لـ Font Awesome */
-    font-weight: 900; /* لتظهر الأيقونة بشكل صحيح */
-    color: #007bff;   /* لون علامة الاقتباس */
-    font-size: 1.5rem; /* حجم علامة الاقتباس.08); /* ظل خفيف */
-    text-align: center;
-    position: relative; /* مهم إذا أردت إضافة أيقونات اقتباس بشكل مطلق لاحقًا */
-    display: flex; /* لتوسيط المحتوى بشكل أفضل إذا لم تكن هناك صورة */
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.testimonial-avatar {
-    width */
-    position: absolute;
-    top: -5px; /* تعديل الموقع الرأسي قليلاً */
-    right: -10px; /* للغة العربية (استخدم left للغة الإنجليزية) */
-    opacity: 0.6;
-}
-
-.testimonial-text::after { /* علامة اقتباس بعد النص */
-    content: "\f10e"; /* أيقونة اقتباس يمين من Font Awesome */
-    font-family: ": 80px;
-    height: 80px;
-    border-radius: 50%; /* لجعل الصورة دائرية */
-    object-fit: cover; /* لضمان ملء الصورة للدائرة بشكل جيد */
-    margin: 0 auto 20px auto; /* توسيط الصورة ومسافة تحتها */
-    border: 3px solid #007bff; /* إطار بلون مميز (يمكنك تغييره) */Font Awesome 6 Free";
-    font-weight: 900;
-    color: #007bff;
-    font-size: 1.5rem;
-    position: absolute;
-    bottom: -5px; /* تعديل الموقع الرأسي قليلاً */
-    left: -10px; /* للغة العربية (استخدم right للغة الإنجليزية) */
-    opacity: 0.6;
-}
-
-.testimonial-author {
-    font-size: 1.15rem; /* حجم خط اسم صاحب
-}
-
-.testimonial-text {
-    font-size: 1rem; /* حجم خط نص الشهادة */
-    color: #555; /* لون نص الشهادة */
-    line-height: 1.8; /* تباعد الأسطر */
-    margin-bottom: 20px;
-    font-style: italic; /* لجعل النص مائلاً قليلاً */
-    position: relative; /* لوضع علامات الاقتباس */
-    padding الشهادة */
-    font-weight: 700;   /* جعل الخط أعرض */
-    color: #0056b3;   /* لون اسم صاحب الشهادة */
-    margin-bottom: 5px;
-    margin-top: auto; /* لدفع الاسم للأسفل إذا كان ارتفاع البطاقات مختلفًا */
-}
-
-.testimonial-detail {
-    font-size: 0.9rem;  /* حجم خط التفاصيل الإضافية */
-    color: #777777;     /* لون التفاصيل الإضافية */: 0 15px; /* مسافة داخلية للنص إذا كان طويلاً */
-}
-
-/* علامات اقتباس بسيطة باستخدام Font Awesome */
-.testimonial-text::before {
-    content: "\f10d"; /* أيقونة اقتباس يسار */
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900; /* للتأكد من ظهور الأيقونة بشكل صحيح */
-    color: #007bff; /* لون علامة الاقتباس */
-    font-size: 1
-}
-
-/* تعديلات على أنماط قسم الخدمات (إذا أردت أن تكون أيقونات الخدمات أكبر قليلاً أو مختلفة) */
-/* هذا مجرد اقتراح، يمكنك تعديله أو تجاهله */
-.services-section .service-icon-container {
-    width: 90px;  /* يمكنك زيادة الحجم قليلاً */
-    height: 90px; /* يمكنك زيادة الحجم قليلاً */
-    /* background-color: #e0efff; */ /* تغيير لون خلفية الأيقونة إذا أردت */
-}
-
-.services-section.5rem; /* حجم علامة الاقتباس */
-    margin-right: 10px; /* استخدم margin-left في LTR */
-    opacity: 0.6; /* شفافية طفيفة */
-    vertical-align: top; /* لمحاذاة أفضل مع بداية النص */
-}
-
-.testimonial-text::after {
-    content: "\f10e"; /* أيقونة اقتباس يمين */
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    color: #007bff;
-    font-size: 1.5rem;
-    margin-left: 10px; /* استخدم margin-right في LTR */
-    opacity: 0.6;
-    vertical-align: top .service-item h3 {
-    font-size: 1.5rem; /* يمكنك تعديل حجم عنوان الخدمة */
-}
-
-/* يمكنك إضافة هذا الكود إذا كنت تريد أن تكون صور المقالات ذات حواف دائرية قليلاً */
-.articles-section .article-image {
-    border-top-left-radius: 8px;  /* يتوافق مع .article-card إذا كان له border-radius */
-    border-top-right-radius: 8px;
-}
-
-/* === Social Posts Section (للمنشورات المضمنة) === */
-.social-posts-grid {
-    display: grid;
-    /* ابدأ بعمود واحد أو اثنين، ثم يمكنك تعديل هذا لاحقًا */
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* يسمح بعرض أكثر من عمود إذا كانت الشاشة واسعة */
-    /* أو استخدم عمود واحد دائمًا إذا كان ذلك أفضل للعرض: grid-template-columns: 1fr; */
-    gap: 30px; /* مسافة بين المنشورات */
-    margin-top: 30px;
-}
-
-.social-post-item {
-    background: #ffffff; /* خلفية بيضاء لكل منشور */
-    padding: 10px; /* هوامش داخلية بسيطة حول الإطار المضمن */
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    overflow: hidden; /* لإخفاء أي أجزاء من iframe تتجاوز الحواف الدائرية */
-}
-
-/* لمحاولة جعل iframes/embeds من فيسبوك وانستغرام متجاوبة */
-.social-post-item iframe,
-.social-post-item .fb-post, /* حاوية فيسبوك (قد لا تحتاجها إذا كنت تستخدم iframe مباشرة) */
-.social-post-item .instagram-media { /* حاوية انستغرام */
-    max-width: 100% !important; /* مهم جدًا للتجاوب */
-    width: 100% !important;    /* اجعل العرض يملأ الحاوية social-post-item */
-    min-width: 300px !important; /* لمنعها من أن تصبح ضيقة جدًا */
-    display: block !important; /* لإزالة أي مسافات إضافية أسفل iframe */
-    margin: 0 auto !important; /* لتوسيطها إذا كان العرض أقل من الحاوية */
-    border-radius: 6px; /* حواف دائرية للإطار نفسه إذا أمكن */
-}
-/* في style.css، داخل أو بعد تعريف .hero */
-.hero {
-    background: linear-gradient(rgba(0, 60, 130, 0.6), rgba(0, 100, 200, 0.5)), url('../image/hero-background-image.jpg') no-repeat center center/cover; /* استبدل بالمسار الصحيح لصورتك */
-    /* ... باقي خصائص .hero ... */
 }
