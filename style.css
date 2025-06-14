@@ -1117,3 +1117,8 @@ a:hover {
     margin: 0 auto !important; /* لتوسيطها إذا كان العرض أقل من الحاوية */
     border-radius: 6px; /* حواف دائرية للإطار نفسه إذا أمكن */
 }
+/* في style.css، داخل أو بعد تعريف .hero */
+.hero {
+    background: linear-gradient(rgba(0, 60, 130, 0.6), rgba(0, 100, 200, 0.5)), url('../image/hero-background-image.jpg') no-repeat center center/cover; /* استبدل بالمسار الصحيح لصورتك */
+    /* ... باقي خصائص .hero ... */
+}
