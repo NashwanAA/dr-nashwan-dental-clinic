@@ -1091,28 +1091,29 @@ a:hover {
 /* === Social Posts Section (للمنشورات المضمنة) === */
 .social-posts-grid {
     display: grid;
-    /* يمكنك البدء بعمود واحد ثم تعديله إذا أضفت المزيد من المنشورات */
-    /* grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); */
-    grid-template-columns: 1fr; /* عمود واحد مبدئيًا */
+    /* ابدأ بعمود واحد أو اثنين، ثم يمكنك تعديل هذا لاحقًا */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* يسمح بعرض أكثر من عمود إذا كانت الشاشة واسعة */
+    /* أو استخدم عمود واحد دائمًا إذا كان ذلك أفضل للعرض: grid-template-columns: 1fr; */
     gap: 30px; /* مسافة بين المنشورات */
     margin-top: 30px;
 }
 
 .social-post-item {
     background: #ffffff; /* خلفية بيضاء لكل منشور */
-    padding: 15px;
+    padding: 10px; /* هوامش داخلية بسيطة حول الإطار المضمن */
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    /* قد تحتاج إلى ضبط الارتفاع أو العرض الأقصى هنا إذا لم تكن المنشورات المضمنة متجاوبة بشكل جيد */
-    /* مثال: max-width: 550px; margin: 0 auto; */
+    overflow: hidden; /* لإخفاء أي أجزاء من iframe تتجاوز الحواف الدائرية */
 }
 
 /* لمحاولة جعل iframes/embeds من فيسبوك وانستغرام متجاوبة */
 .social-post-item iframe,
-.social-post-item .fb-post, /* حاوية فيسبوك */
+.social-post-item .fb-post, /* حاوية فيسبوك (قد لا تحتاجها إذا كنت تستخدم iframe مباشرة) */
 .social-post-item .instagram-media { /* حاوية انستغرام */
-    max-width: 100% !important;
-    width: 100% !important; /* قد تحتاج لتجربة هذا */
+    max-width: 100% !important; /* مهم جدًا للتجاوب */
+    width: 100% !important;    /* اجعل العرض يملأ الحاوية social-post-item */
     min-width: 300px !important; /* لمنعها من أن تصبح ضيقة جدًا */
+    display: block !important; /* لإزالة أي مسافات إضافية أسفل iframe */
     margin: 0 auto !important; /* لتوسيطها إذا كان العرض أقل من الحاوية */
+    border-radius: 6px; /* حواف دائرية للإطار نفسه إذا أمكن */
 }
