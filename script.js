@@ -158,3 +158,15 @@ document.getElementById('booking-form').addEventListener('submit', function(e) {
     alert('تم استلام طلبك، سنتصل بك لتأكيد الموعد');
 });
 }); // End of DOMContentLoaded
+    // ... كل الكود الموجود حاليًا في script.js ...
+
+    }); // هذا هو وسم الإغلاق لدالة DOMContentLoaded
+
+// ****** بداية تهيئة AOS ******
+AOS.init({
+    duration: 800, // مدة التحريك بالمللي ثانية (يمكنك تغييرها)
+    once: true, // هل يتم التحريك مرة واحدة فقط؟ (true) أم في كل مرة يظهر العنصر (false)
+    offset: 50, // إزاحة (بالبكسل) من أسفل الشاشة لبدء التحريك
+    easing: 'ease-in-out', // نوع منحنى التسارع
+});
+// ****** نهاية تهيئة AOS ******
