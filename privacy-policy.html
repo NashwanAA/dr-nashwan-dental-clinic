@@ -1,23 +1,135 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <!-- نفس الهيد الرئيسي -->
-    <title>سياسة الخصوصية - مركز د. نشوان الخولاني</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سياسة الخصوصية - مركز الدكتور نشوان الخولاني لطب الأسنان</title>
+    <!-- وصف مختلف لهذه الصفحة -->
+    <meta name="description" content="تعرف على سياسة الخصوصية لمركز الدكتور نشوان الخولاني لطب الأسنان وكيفية تعاملنا مع معلومات المرضى والزوار بسرية وأمان.">
+    <!-- لا نريد لمحركات البحث أن تفهرس هذه الصفحة بنفس قوة الصفحة الرئيسية (اختياري) -->
+    <meta name="robots" content="noindex, follow">
+
+    <!-- Google Fonts (Cairo) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Main Stylesheet (نفس ملف الأنماط) -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="image/favicon.png" type="image/png">
 </head>
 <body>
-    <!-- نفس الهيدر -->
-    
-    <main class="privacy-container">
-        <h1>سياسة الخصوصية</h1>
-        
-        <section>
-            <h2>جمع المعلومات</h2>
-            <p>نقوم بجمع المعلومات التالية عند حجز المواعيد...</p>
-        </section>
-        
-        <!-- الأقسام الأخرى -->
+    <!-- Navbar (نفس شريط التنقل من الصفحة الرئيسية) -->
+    <!-- ملاحظة: قد تحتاج لتعديل JavaScript لجعل الرابط "النشط" يتغير بناءً على الصفحة الحالية -->
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo"> <!-- الرابط هنا يوجه للصفحة الرئيسية -->
+                <img src="image/clinic-logo.png" alt="شعار مركز د. نشوان الخولاني" class="logo-img">
+            </a>
+            <button class="nav-toggle" id="nav-toggle-button" aria-label="فتح/إغلاق القائمة" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav-menu" id="nav-menu-items">
+                <ul>
+                    <li><a href="index.html" class="nav-link">الرئيسية</a></li> <!-- رابط للرئيسية -->
+                    <li><a href="index.html#services" class="nav-link">خدماتنا</a></li>
+                    <li><a href="index.html#about" class="nav-link">من نحن</a></li>
+                    <!-- أضف بقية الروابط بنفس الطريقة إذا أردت -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content for Privacy Policy -->
+    <main class="static-page-container section-padding">
+        <div class="container">
+            <h1 class="section-title">سياسة الخصوصية</h1>
+            
+            <div class="static-page-content">
+                <p><strong>آخر تحديث:</strong> 6 يونيو 2024</p>
+
+                <p>في مركز الدكتور نشوان الخولاني لطب الأسنان ("نحن"، "المركز")، نلتزم بحماية خصوصية معلومات مرضانا وزوار موقعنا الإلكتروني. توضح سياسة الخصوصية هذه كيفية جمع واستخدام وحماية معلوماتكم الشخصية.</p>
+
+                <section>
+                    <h2>1. المعلومات التي نجمعها</h2>
+                    <p>قد نقوم بجمع الأنواع التالية من المعلومات:</p>
+                    <ul>
+                        <li><strong>معلومات شخصية:</strong> مثل الاسم، رقم الهاتف، وعنوان البريد الإلكتروني عند قيامكم بحجز موعد أو التواصل معنا عبر نماذج الاتصال.</li>
+                        <li><strong>معلومات صحية:</strong> أي معلومات تتعلق بتاريخكم الطبي أو حالتكم الصحية الحالية التي تقدمونها لنا طواعية أثناء الاستشارة أو العلاج، وتعتبر هذه المعلومات سرية للغاية.</li>
+                        <li><strong>معلومات تقنية:</strong> عند زيارتكم لموقعنا، قد نجمع معلومات غير شخصية مثل نوع المتصفح، عنوان IP (بشكل مجهول)، ونوع الجهاز، وذلك لأغراض تحليلية لتحسين تجربة المستخدم.</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2>2. كيف نستخدم معلوماتكم</h2>
+                    <p>نستخدم المعلومات التي نجمعها للأغراض التالية:</p>
+                    <ul>
+                        <li>لتحديد وتأكيد المواعيد والتواصل معكم بشأنها.</li>
+                        <li>لتقديم الرعاية الصحية والعلاج المناسب لحالتكم.</li>
+                        <li>لتحسين خدماتنا ومحتوى موقعنا الإلكتروني.</li>
+                        <li>لإرسال تذكيرات بالمواعيد أو معلومات صحية هامة (بعد موافقتكم).</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>3. حماية المعلومات</h2>
+                    <p>نتخذ جميع الإجراءات الأمنية المعقولة، سواء كانت إدارية أو تقنية، لحماية معلوماتكم الشخصية والصحية من الوصول غير المصرح به أو الكشف أو التعديل أو الإتلاف. يتم التعامل مع جميع المعلومات الصحية بسرية تامة وفقًا لأخلاقيات المهنة الطبية.</p>
+                </section>
+
+                <section>
+                    <h2>4. مشاركة المعلومات مع أطراف ثالثة</h2>
+                    <p>نحن لا نبيع أو نؤجر أو نشارك معلوماتكم الشخصية مع أطراف ثالثة لأغراض تسويقية. قد نشارك المعلومات فقط في الحالات التالية:</p>
+                    <ul>
+                        <li>مع مختبرات الأسنان أو الأخصائيين الآخرين كجزء من خطة علاجكم، وبعد أخذ موافقتكم.</li>
+                        <li>إذا طُلب منا ذلك بموجب القانون أو أمر قضائي.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>5. ملفات تعريف الارتباط (Cookies)</h2>
+                    <p>قد يستخدم موقعنا ملفات تعريف الارتباط الأساسية لتحسين تجربتكم على الموقع. هذه الملفات لا تجمع معلومات شخصية. يمكنكم ضبط متصفحكم لرفض ملفات تعريف الارتباط، ولكن هذا قد يؤثر على بعض وظائف الموقع.</p>
+                </section>
+                
+                <section>
+                    <h2>6. التعديلات على سياسة الخصوصية</h2>
+                    <p>نحتفظ بالحق في تحديث سياسة الخصوصية هذه من وقت لآخر. سيتم نشر أي تغييرات على هذه الصفحة مع تحديث تاريخ "آخر تحديث" في الأعلى.</p>
+                </section>
+
+                <section>
+                    <h2>7. اتصل بنا</h2>
+                    <p>إذا كانت لديكم أي أسئلة أو استفسارات حول سياسة الخصوصية، يرجى التواصل معنا عبر معلومات الاتصال المتاحة في صفحة <a href="index.html#contact">"تواصل معنا"</a>.</p>
+                </section>
+            </div>
+        </div>
     </main>
     
-    <!-- نفس الفوتر -->
+    <!-- Footer (نفس التذييل من الصفحة الرئيسية) -->
+    <footer class="footer">
+        <div class="container">
+            <!-- ... انسخ والصق محتوى الـ div.footer-content و div.footer-bottom بالكامل من ملف index.html هنا ... -->
+            <div class="footer-content">
+                <!-- ... محتوى التذييل ... -->
+            </div>
+            <div class="footer-bottom">
+                <p>© <span id="year-privacy"></span> مركز الدكتور نشوان الخولاني لطب الأسنان. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files (نفس الملفات) -->
+    <!-- ملاحظة: ملف script.js يجب أن يكون موجودًا لعمل القائمة المنسدلة بشكل صحيح -->
+    <script>
+        // كود بسيط لتحديث السنة في التذييل لهذه الصفحة
+        const yearSpanPrivacy = document.getElementById('year-privacy');
+        if (yearSpanPrivacy) {
+            yearSpanPrivacy.textContent = new Date().getFullYear();
+        }
+    </script>
+    <script src="script.js"></script>
 </body>
 </html>
