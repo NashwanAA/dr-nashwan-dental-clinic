@@ -185,6 +185,7 @@ a:hover {
     color: #0056b3;
 }
 
+
 .nav-menu ul {
     display: flex;
 }
@@ -272,11 +273,10 @@ a:hover {
 
 /* === Hero Section === */
 .hero {
-    /* ****** تأكد أن هذا المسار صحيح بناءً على هيكل مجلداتك واسم الملف الفعلي ****** */
-    /* ****** إذا كان مجلد الصور اسمه "image" (بالمفرد) وملف style.css في الجذر: ****** */
+    /* !! مهم جدًا: تأكد أن هذا المسار صحيح بناءً على هيكل ملفاتك واسم الملف الفعلي !! */
+    /* بما أن مجلد الصور لديك اسمه 'image' (بالمفرد) وملف style.css في الجذر، فهذا هو المسار الصحيح: */
     background: linear-gradient(rgba(0, 60, 130, 0.6), rgba(0, 100, 200, 0.5)), url('image/hero-background-image.jpg') no-repeat center center/cover;
-    /* ****** أو إذا كان مجلد الصور "image" وملف style.css في مجلد css/: ****** */
-    /* background: linear-gradient(rgba(0, 60, 130, 0.6), rgba(0, 100, 200, 0.5)), url('../image/hero-background-image.jpg') no-repeat center center/cover; */
+    
     color: #fff;
     height: 90vh;
     min-height: 500px;
@@ -339,8 +339,8 @@ a:hover {
     box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
 }
 .service-icon-container {
-    width: 90px;  /* تم التعديل بناءً على اقتراحك السابق */
-    height: 90px; /* تم التعديل بناءً على اقتراحك السابق */
+    width: 90px;
+    height: 90px;
     margin: 0 auto 25px auto;
     border-radius: 50%;
     background-color: #e9f5ff;
@@ -355,7 +355,7 @@ a:hover {
     object-fit: cover;
 }
 .service-item h3 {
-    font-size: 1.5rem; /* تم التعديل بناءً على اقتراحك السابق */
+    font-size: 1.5rem;
     font-weight: 600;
     color: #0056b3;
     margin-bottom: 15px;
@@ -507,7 +507,7 @@ a:hover {
     font-size: 1.5rem;
     position: absolute;
     top: -5px;
-    right: 0; /* تم التعديل من -10px */
+    right: 0;
     opacity: 0.6;
 }
 .testimonial-text::after {
@@ -518,7 +518,7 @@ a:hover {
     font-size: 1.5rem;
     position: absolute;
     bottom: -5px;
-    left: 0; /* تم التعديل من -10px */
+    left: 0;
     opacity: 0.6;
 }
 .testimonial-author {
@@ -623,8 +623,8 @@ a:hover {
     padding-top: 10px;
 }
 
-/* === Articles Section (for cards) === */
-.articles-grid {
+/* === Articles Section === */
+.articles-grid { /* هذا للبطاقات التقليدية إذا استخدمتها */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
@@ -648,8 +648,8 @@ a:hover {
     width: 100%;
     height: 220px;
     object-fit: cover;
-    border-top-left-radius: 8px; /* مضافة بناءً على اقتراحك السابق */
-    border-top-right-radius: 8px; /* مضافة بناءً على اقتراحك السابق */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 .article-content {
     padding: 20px;
@@ -676,7 +676,7 @@ a:hover {
     color: #888;
 }
 
-/* === Social Posts Section (للمنشورات المضمنة من فيسبوك/انستغرام) === */
+/* === Social Posts Section (للمنشورات المضمنة) === */
 .social-posts-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -988,11 +988,11 @@ a:hover {
     .services-grid,
     .team-grid,
     .gallery-grid,
-    .articles-grid, /* هذا سيؤثر على البطاقات العادية إذا استخدمتها */
-    .social-posts-grid, /* وهذا سيؤثر على المنشورات المضمنة */
+    .articles-grid,
+    .social-posts-grid,
     .contact-info-grid,
     .footer-content,
-    .testimonials-grid { /* تمت إضافة testimonials-grid هنا */
+    .testimonials-grid {
         grid-template-columns: 1fr;
     }
 
