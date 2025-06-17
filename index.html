@@ -14,19 +14,14 @@
 
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <head>
-    <!-- ... جميع وسوم meta و title و links الأخرى ... -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="image/favicon.png" type="image/png">
-
-    <!-- ****** بداية إضافة AOS CSS ****** -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!-- ****** نهاية إضافة AOS CSS ****** -->
-</head>
 
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- ****** بداية إضافة AOS CSS ****** -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- ****** نهاية إضافة AOS CSS ****** -->
+    
     <!-- Favicon -->
     <link rel="icon" href="image/favicon.png" type="image/png">
 </head>
@@ -60,9 +55,9 @@
     <section id="home" class="hero">
         <div class="hero-overlay"></div>
         <div class="container hero-content">
-            <h1>مركز الدكتور نشوان الخولاني لطب الأسنان</h1>
-            <p class="subtitle">نعتني بابتسامتك بأحدث التقنيات وأفضل الخبرات في قلب مدينة إب.</p>
-            <div class="hero-buttons">
+            <h1 data-aos="fade-down">مركز الدكتور نشوان الخولاني لطب الأسنان</h1>
+            <p class="subtitle" data-aos="fade-up" data-aos-delay="200">نعتني بابتسامتك بأحدث التقنيات وأفضل الخبرات في قلب مدينة إب.</p>
+            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
                 <a href="#contact" class="btn btn-primary btn-lg"><i class="fas fa-calendar-check"></i> احجز موعدك الآن</a>
                 <a href="#services" class="btn btn-secondary btn-lg"><i class="fas fa-briefcase-medical"></i> اكتشف خدماتنا</a>
             </div>
@@ -72,59 +67,50 @@
     <!-- Services Section -->
     <section id="services" class="services-section section-padding">
         <div class="container">
-            <h2 class="section-title">خدماتنا المتميزة</h2>
-            <p class="section-subtitle">نقدم مجموعة شاملة من علاجات الأسنان لتلبية جميع احتياجاتكم.</p>
+            <h2 class="section-title" data-aos="fade-up">خدماتنا المتميزة</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">نقدم مجموعة شاملة من علاجات الأسنان لتلبية جميع احتياجاتكم.</p>
             <div class="services-grid">
-                <div class="service-item">
+                <div class="service-item" data-aos="zoom-in" data-aos-delay="100">
                     <div class="service-icon-container">
                         <img src="image/service-cosmetic.jpg" alt="تجميل الأسنان" class="service-icon">
                     </div>
                     <h3>تجميل الأسنان</h3>
-                    <p>هل تحلم بابتسامة ساحرة كنجم سينمائي؟ نقدم في مركزنا أحدث تقنيات تجميل الأسنان، من ابتسامة هوليود المتكاملة إلى تبييض الأسنان بالليزر للحصول على بياض ناصع، بالإضافة إلى قشور الفينير واللومينير التجميلية لتعديل شكل ولون الأسنان، وحشوات تجميلية بلون السن الطبيعي.</p>
+                    <p>هل تحلم بابتسامة ساحرة كنجم سينمائي؟ نقدم أحدث تقنيات تجميل الأسنان، من ابتسامة هوليود، تبييض الأسنان بالليزر، قشور الفينير واللومينير، وحشوات تجميلية بلون السن الطبيعي.</p>
                 </div>
-                <div class="service-item">
+                <div class="service-item" data-aos="zoom-in" data-aos-delay="200">
                     <div class="service-icon-container">
-                        <!-- الصورة المقترحة: image/advanced-implant-services.jpg أو image/zygomatic-implants-model.jpg أو image/clinic-promo-implants.jpg -->
                         <img src="image/service-implants.jpg" alt="زراعة الأسنان" class="service-icon">
                     </div>
                     <h3>زراعة الأسنان والزراعة المتقدمة</h3>
-                    <p>فقدان الأسنان لم يعد مشكلة! نوفر حلول زراعة الأسنان الشاملة، من تعويض سن واحد إلى الفك بالكامل، باستخدام أجود أنواع الزرعات العالمية. نتميز بتقنيات الزراعة الفورية، الزراعة الموجهة بالكمبيوتر، وتقنية الزرعات المصممة والمطبوعة ثلاثية الأبعاد (3D Printed Implants) للحالات المعقدة، بما في ذلك زراعة العظم وزراعة الـ Zygomatic لضمان أفضل النتائج حتى في أصعب الحالات.</p>
+                    <p>نوفر حلول زراعة الأسنان الشاملة، من تعويض سن واحد إلى الفك بالكامل. نتميز بتقنيات الزراعة الفورية، الموجهة بالكمبيوتر، والزرعات المصممة ثلاثية الأبعاد للحالات المعقدة.</p>
                 </div>
-                <div class="service-item">
+                <div class="service-item" data-aos="zoom-in" data-aos-delay="300">
                     <div class="service-icon-container">
-                         <!-- !! مهم: ستحتاج إلى صورة مناسبة لهذه الخدمة باسم oral-maxillofacial-surgery.jpg في مجلد image !! -->
                         <img src="image/oral-maxillofacial-surgery.jpg" alt="جراحة الوجه والفكين" class="service-icon">
                     </div>
                     <h3>جراحة الفم والوجه والفكين</h3>
-                    <p>يقدم الدكتور نشوان الخولاني، بخبرته كاختصاصي جراحة الوجه والفكين، مجموعة واسعة من العلاجات الجراحية الدقيقة والمعقدة، بما في ذلك خلع الأسنان الجراحي (مثل أضراس العقل المطمورة)، علاج أكياس وآفات الفكين، كسور عظام الوجه والفكين، وعلاج التشوهات الخلقية والمكتسبة للوجه والفكين.</p>
+                    <p>علاجات جراحية دقيقة ومعقدة، بما في ذلك خلع أضراس العقل المطمورة، علاج أكياس وآفات الفكين، وكسور عظام الوجه والفكين.</p>
                 </div>
-                <div class="service-item">
+                <div class="service-item" data-aos="zoom-in" data-aos-delay="100">
                     <div class="service-icon-container">
                         <img src="image/service-ortho.jpg" alt="تقويم الأسنان" class="service-icon">
                     </div>
                     <h3>تقويم الأسنان</h3>
-                    <p>ابتسامة منتظمة وجميلة تعزز ثقتك بنفسك. نقدم حلول تقويم الأسنان لجميع الأعمار لعلاج ازدحام الأسنان، بروز الفكين، والفراغات بين الأسنان، باستخدام أنواع مختلفة من التقويم كالمعدني، الشفاف، والداخلي (اللساني) لتناسب احتياجاتك ومظهرك.</p>
+                    <p>نقدم حلول تقويم الأسنان لجميع الأعمار لعلاج ازدحام الأسنان وبروز الفكين باستخدام أنواع مختلفة من التقويم كالمعدني، الشفاف، والداخلي.</p>
                 </div>
-                <div class="service-item">
+                <div class="service-item" data-aos="zoom-in" data-aos-delay="200">
                     <div class="service-icon-container">
                         <img src="image/service-children.jpg" alt="طب أسنان الأطفال" class="service-icon">
                     </div>
                     <h3>طب أسنان الأطفال</h3>
-                    <p>نولي اهتمامًا خاصًا بصحة أسنان أطفالكم منذ الصغر. يوفر مركزنا رعاية متخصصة ومريحة للأطفال تشمل الفحوصات الدورية، العلاجات الوقائية مثل تطبيق الفلورايد وسادات الحفر، علاج التسوس بحشوات مناسبة، والمتابعة لضمان نمو أسنان صحية وقوية.</p>
+                    <p>رعاية متخصصة ومريحة للأطفال تشمل الفحوصات الدورية، العلاجات الوقائية، والمتابعة لضمان نمو أسنان صحية وقوية.</p>
                 </div>
-                <div class="service-item">
+                <div class="service-item" data-aos="zoom-in" data-aos-delay="300">
                     <div class="service-icon-container">
                         <img src="image/service-rootcanal.jpg" alt="علاج العصب" class="service-icon">
                     </div>
                     <h3>علاج الجذور والأعصاب</h3>
-                    <p>لا داعي لخلع السن بسبب التهاب العصب! نستخدم أحدث الأجهزة والمواد في علاج جذور وأعصاب الأسنان بدقة وفعالية، مما يساعد على إنقاذ السن المصاب وتخفيف الألم والحفاظ على وظيفة السن الطبيعية لأطول فترة ممكنة.</p>
-                </div>
-                <div class="service-item">
-                    <div class="service-icon-container">
-                        <img src="image/service-general.jpg" alt="علاجات عامة ووقائية" class="service-icon">
-                    </div>
-                    <h3>علاجات عامة ووقائية</h3>
-                    <p>صحة فمك تبدأ بالوقاية والفحوصات المنتظمة. نقدم مجموعة متكاملة من العلاجات العامة والوقائية كالتنظيف الاحترافي للأسنان وإزالة الجير، علاج أمراض اللثة، الحشوات بأنواعها، الخلع البسيط، بالإضافة إلى التركيبات السنية الثابتة والمتحركة عالية الجودة.</p>
+                    <p>نستخدم أحدث الأجهزة والمواد في علاج جذور وأعصاب الأسنان بدقة وفعالية، لإنقاذ السن المصاب وتخفيف الألم.</p>
                 </div>
             </div>
         </div>
@@ -133,23 +119,21 @@
     <!-- About Section -->
     <section id="about" class="about-section section-padding bg-light">
         <div class="container">
-            <h2 class="section-title">لماذا تختار مركز الدكتور نشوان الخولاني؟</h2>
+            <h2 class="section-title" data-aos="fade-up">لماذا تختار مركز الدكتور نشوان الخولاني؟</h2>
             <div class="about-content">
-                <div class="about-text">
+                <div class="about-text" data-aos="fade-left">
                     <h3>مهمتنا: ابتسامة صحية وجميلة لكل مريض</h3>
-                    <p>في مركز الدكتور نشوان الخولاني، نسعى لتقديم تجربة علاجية فريدة تجمع بين الخبرة الطويلة، أحدث التقنيات، والاهتمام الشخصي بكل مريض. تأسس مركزنا ليكون الوجهة الأولى لصحة الفم والأسنان في مدينة إب، مع التزامنا بأعلى معايير الجودة والتعقيم.</p>
-                    <p>نؤمن بأن الوقاية خير من العلاج، لذا نركز على توعية مرضانا بأهمية العناية بصحة الفم والأسنان. فريقنا مستعد دائمًا لتقديم النصح والإرشاد للحفاظ على ابتسامة مشرقة تدوم طويلاً.</p>
-                    <p><strong>فلسفتنا في الرعاية:</strong> نعتبر كل مريض فردًا من عائلتنا، ونسعى جاهدين لتوفير بيئة علاجية مريحة وآمنة تخفف من أي قلق قد يشعر به. يحرص فريقنا على الاستماع لاحتياجاتكم وتقديم خطط علاجية شفافة ومناسبة، مع التزامنا بأخلاقيات المهنة وتطبيق أحدث البروتوكولات العالمية في التعقيم وسلامة المرضى.</p>
+                    <p>في مركزنا، نسعى لتقديم تجربة علاجية فريدة تجمع بين الخبرة الطويلة، أحدث التقنيات، والاهتمام الشخصي بكل مريض. تأسس المركز ليكون الوجهة الأولى لصحة الفم والأسنان في مدينة إب، مع التزامنا بأعلى معايير الجودة والتعقيم.</p>
+                    <p><strong>فلسفتنا في الرعاية:</strong> نعتبر كل مريض فردًا من عائلتنا، ونسعى لتوفير بيئة علاجية مريحة وآمنة. يحرص فريقنا على الاستماع لاحتياجاتكم وتقديم خطط علاجية شفافة ومناسبة.</p>
                     <ul class="features-list">
                         <li><i class="fas fa-user-md icon-feature"></i> أطباء متخصصون بخبرات عالية.</li>
                         <li><i class="fas fa-microscope icon-feature"></i> أحدث الأجهزة والتقنيات العالمية.</li>
                         <li><i class="fas fa-shield-virus icon-feature"></i> معايير تعقيم صارمة لضمان سلامتكم.</li>
                         <li><i class="fas fa-smile icon-feature"></i> بيئة مريحة واستقبال ودود.</li>
-                        <li><i class="fas fa-hand-holding-medical icon-feature"></i> خطط علاجية مخصصة لكل حالة.</li>
                     </ul>
                     <a href="#team" class="btn btn-outline">تعرف على فريقنا</a>
                 </div>
-                <div class="about-image">
+                <div class="about-image" data-aos="fade-right">
                     <img src="image/clinic-treatment-room.jpg" alt="داخل مركز الدكتور نشوان الخولاني">
                 </div>
             </div>
@@ -159,146 +143,110 @@
     <!-- Team Section -->
     <section id="team" class="team-section section-padding">
         <div class="container">
-            <h2 class="section-title">فريقنا الطبي الخبير</h2>
-            <p class="section-subtitle">نخبة من الأطباء المتخصصين لتقديم أفضل رعاية لأسنانكم.</p>
+            <h2 class="section-title" data-aos="fade-up">فريقنا الطبي الخبير</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">نخبة من الأطباء المتخصصين لتقديم أفضل رعاية لأسنانكم.</p>
             <div class="team-grid">
-                <div class="team-member">
+                <div class="team-member" data-aos="fade-up" data-aos-delay="100">
                     <div class="member-image-container">
                         <img src="image/dr-nashwan-portrait.jpg" alt="الدكتور نشوان الخولاني">
                     </div>
                     <h3>د. نشوان الخولاني</h3>
                     <p class="member-title">مدير المركز واختصاصي جراحة الفم والوجه والفكين</p>
-                    <p class="member-bio">يمتلك الدكتور نشوان خبرة واسعة تمتد لأكثر من 20 عاماً في مختلف مجالات طب الأسنان، مع تركيز خاص على زراعة وتقويم وتجميل الأسنان، وجراحة الوجه والفكين. حاصل على دكتوراه في جراحة الوجه والفكين وزراعة الأسنان، بالإضافة إلى دبلومات متخصصة في تجميل الأسنان وجراحة وأمراض اللثة. يحرص دائمًا على مواكبة أحدث التطورات في طب الأسنان لتقديم أفضل رعاية ممكنة لمرضاه.</p>
+                    <p class="member-bio">يمتلك خبرة واسعة تمتد لأكثر من 20 عاماً في مختلف مجالات طب الأسنان. حاصل على دكتوراه في جراحة الوجه والفكين وزراعة الأسنان، ودبلومات متخصصة في تجميل الأسنان وجراحة وأمراض اللثة.</p>
                 </div>
-
-                <div class="team-member">
+                <div class="team-member" data-aos="fade-up" data-aos-delay="200">
                     <div class="member-image-container">
-                        <!-- !! مهم: ضع صورة د. وفاء هنا باسم image/dr-wafa-alifrisi.jpg أو اسم مشابه !! -->
                         <img src="image/placeholder-doctor.jpg" alt="د. وفاء اليفرسي">
                     </div>
                     <h3>د. وفاء اليفرسي</h3>
                     <p class="member-title">اخصائية طب الفم والأسنان</p>
-                    <p class="member-bio">تتمتع الدكتورة وفاء بخبرة طويلة في مجال طب الأسنان العام، وتتميز بمهاراتها العالية في تقديم مختلف العلاجات مع اهتمام خاص براحة المريض. تدربت وعملت بشكل مباشر مع الدكتور نشوان، مما أكسبها خبرة عملية قيمة.</p>
+                    <p class="member-bio">تتمتع الدكتورة وفاء بخبرة طويلة في مجال طب الأسنان العام، وتتميز بمهاراتها العالية في تقديم مختلف العلاجات مع اهتمام خاص براحة المريض.</p>
                 </div>
-
-                <div class="team-member">
+                <div class="team-member" data-aos="fade-up" data-aos-delay="300">
                     <div class="member-image-container">
-                        <!-- !! مهم: ضع صورة د. الزهراء هنا باسم image/dr-alzahraa-mokhtar.jpg أو اسم مشابه !! -->
                         <img src="image/placeholder-doctor.jpg" alt="د. الزهراء مختار">
                     </div>
                     <h3>د. الزهراء مختار</h3>
                     <p class="member-title">اخصائية طب الفم والأسنان</p>
-                    <p class="member-bio">خبرة طويلة في مجال طب الأسنان، وتختص الدكتورة الزهراء بتقديم علاجات متنوعة بدقة وعناية. اكتسبت خبرة عملية مميزة من خلال تدريبها وعملها المستمر تحت إشراف الدكتور نشوان منذ تخرجها.</p>
+                    <p class="member-bio">خبرة طويلة في مجال طب الأسنان، وتختص الدكتورة الزهراء بتقديم علاجات متنوعة بدقة وعناية، واكتسبت خبرة عملية مميزة تحت إشراف الدكتور نشوان.</p>
                 </div>
-
-                <div class="team-member">
+                 <div class="team-member" data-aos="fade-up" data-aos-delay="400">
                     <div class="member-image-container">
-                        <!-- !! مهم: ضع صورة د. رحاب هنا باسم image/dr-rehab-aldais.jpg أو اسم مشابه !! -->
                         <img src="image/placeholder-doctor.jpg" alt="د. رحاب الدعيس">
                     </div>
                     <h3>د. رحاب الدعيس</h3>
                     <p class="member-title">اخصائية طب الفم والأسنان</p>
-                    <p class="member-bio">تتمتع الدكتورة رحاب بكفاءة عالية في تشخيص وعلاج مختلف حالات الأسنان. عملت بشكل وثيق مع الدكتور نشوان لاكتساب الخبرات العملية المتقدمة وتقديم أفضل مستويات الرعاية للمرضى.</p>
+                    <p class="member-bio">تتمتع الدكتورة رحاب بكفاءة عالية في تشخيص وعلاج مختلف حالات الأسنان، وعملت بشكل وثيق مع الدكتور نشوان لاكتساب الخبرات العملية المتقدمة.</p>
                 </div>
-
-                <div class="team-member">
+                <div class="team-member" data-aos="fade-up" data-aos-delay="500">
                     <div class="member-image-container">
-                        <!-- !! مهم: ضع صورة د. إيهاب هنا باسم image/dr-ehab-aljomaie.jpg أو اسم مشابه !! -->
                         <img src="image/placeholder-doctor.jpg" alt="د. إيهاب الجماعي">
                     </div>
                     <h3>د. إيهاب الجماعي</h3>
                     <p class="member-title">اخصائي طب الفم والأسنان</p>
-                    <p class="member-bio">الدكتور إيهاب طبيب أسنان متمكن يتميز بحرصه على تقديم أحدث العلاجات. استفاد بشكل كبير من التدريب العملي المباشر مع الدكتور نشوان، مما صقل مهاراته في مختلف تخصصات طب الأسنان.</p>
+                    <p class="member-bio">الدكتور إيهاب طبيب أسنان متمكن يتميز بحرصه على تقديم أحدث العلاجات، واستفاد بشكل كبير من التدريب العملي المباشر مع الدكتور نشوان.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials-section section-padding">
+    <section id="testimonials" class="testimonials-section section-padding bg-light">
         <div class="container">
-            <h2 class="section-title">ماذا يقول مرضانا عنا؟</h2>
-            <p class="section-subtitle">شهادات نعتز بها من بعض عملائنا الكرام.</p>
+            <h2 class="section-title" data-aos="fade-up">ماذا يقول مرضانا عنا؟</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">شهادات نعتز بها من بعض عملائنا الكرام.</p>
             <div class="testimonials-grid">
-                <div class="testimonial-item">
-                    <!-- !! مهم: إذا كان لديك صورة لإلهام، ضعها هنا باسم image/patient-ilham.jpg أو اسم مشابه !! -->
-                    <!-- <img src="image/patient-ilham.jpg" alt="المريضة إلهام" class="testimonial-avatar"> -->
-                    <p class="testimonial-text">"لقد أعادت إلي ثقتي بنفسي وجعلتني أبتسم بثقة. والآن لن أسلم فمي إلا لمركز الدكتور نشوان وكل أهلي وأصدقائي أقوم بإرسالهم إلى مركز الدكتور نشوان بالرغم أننا نأتي إليه من خارج المحافظة - من محافظة تعز."</p>
+                <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
+                    <p class="testimonial-text">"لقد أعادت إلي ثقتي بنفسي وجعلتني أبتسم بثقة. الآن لن أسلم فمي إلا لمركز الدكتور نشوان وكل أهلي وأصدقائي أقوم بإرسالهم إليه بالرغم أننا نأتي من محافظة أخرى."</p>
                     <h4 class="testimonial-author">- إلهام، 40 عامًا</h4>
-                    <p class="testimonial-detail">عانت من تصبغات الفلوروسيس، تم عمل عدسات أسنان.</p>
+                    <p class="testimonial-detail">عدسات أسنان لعلاج تصبغات الفلوروسيس</p>
                 </div>
-                <div class="testimonial-item">
-                    <!-- !! مهم: إذا كان لديك صورة لعبد الله، ضعها هنا باسم image/patient-abdullah.jpg أو اسم مشابه !! -->
-                    <!-- <img src="image/patient-abdullah.jpg" alt="المريض عبد الله" class="testimonial-avatar"> -->
-                    <p class="testimonial-text">"أنصح كل من يرغب بعمل زرعات أسنان أن يتوجه للدكتور نشوان فهو طبيب متمكن وحريص على عمله وبنفس الوقت هو أخصائي زراعة أسنان. قمنا بعمل زرعات الأسنان له في عام 2010 وإلى الآن ولله الحمد وهو بصحة جيدة والزرعات ما زالت في غاية القوة."</p>
+                <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+                    <p class="testimonial-text">"أنصح كل من يرغب بعمل زرعات أسنان أن يتوجه للدكتور نشوان فهو طبيب متمكن وحريص. قمنا بعمل زرعات الأسنان له في عام 2010 وإلى الآن ولله الحمد وهو بصحة جيدة."</p>
                     <h4 class="testimonial-author">- عبد الله</h4>
-                    <p class="testimonial-detail">فقدان أسنان خلفية، تم عمل زرعات أسنان.</p>
+                    <p class="testimonial-detail">زرعات أسنان لتعويض فقدان أسنان خلفية</p>
                 </div>
-                <div class="testimonial-item">
-                    <!-- !! مهم: إذا كان لديك صورة لأم رائد، ضعها هنا باسم image/patient-om-raed.jpg أو اسم مشابه !! -->
-                    <!-- <img src="image/patient-om-raed.jpg" alt="المريضة أم رائد" class="testimonial-avatar"> -->
-                    <p class="testimonial-text">"بالرغم أن عمرها كان كبيرًا حسب قول البعض فإن حالتها لا يمكن علاجها بالتقويم وكانت تقول: (مستعدة) أدفع نص عمري من أجل أعدل شكلي وأحسن ابتسامتي. قمنا بعمل التقويم لها وبفضل الله عدلت أسنانها وتحسنت ابتسامتها وتغيرت نفسيتها للأفضل وهي الآن من أفضل عملائنا."</p>
+                <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
+                    <p class="testimonial-text">"بالرغم أن عمرها كان كبيرًا، فقدت الأمل في علاج بروز أسنانها. بفضل الله ثم الدكتور نشوان، تم عمل التقويم وتحسنت ابتسامتها وتغيرت نفسيتها للأفضل."</p>
                     <h4 class="testimonial-author">- أم رائد</h4>
-                    <p class="testimonial-detail">عانت من بروز الأسنان والفكين، تم عمل تقويم.</p>
-                </div>
-                <div class="testimonial-item">
-                     <!-- !! مهم: إذا كان لديك صورة لمريضة ضرس العقل، ضعها هنا باسم image/patient-wisdom-tooth.jpg أو اسم مشابه !! -->
-                    <!-- <img src="image/patient-wisdom-tooth.jpg" alt="مريضة ضرس العقل" class="testimonial-avatar"> -->
-                    <p class="testimonial-text">"كانت تعاني من سن عقل مطمور كليًا وقريب من عصب الفك. حاول بعض الزملاء قلعه ولكن دون جدوى. وصلت تعاني من الألم الذي كان موجود من قبل محاولة القلع والذي ازداد أكثر بعد محاولة القلع لدى زميل في عيادة أخرى. قمنا بتحضير الحالة جيدًا وتمت بعده العملية بمنتهى السلاسة والإتقان وبأقل تعب ممكن. الآن هي تدعو لنا في كل وقت ودائمًا ما ترسل لنا تحياتها مع كل ما يأتي من طرفها."</p>
-                    <h4 class="testimonial-author">- مريضة ضرس العقل</h4>
-                    <p class="testimonial-detail">خلع ضرس عقل مطمور كليًا.</p>
-                </div>
-                <div class="testimonial-item">
-                    <!-- !! مهم: إذا كان لديك صورة لعلي محمد، ضعها هنا باسم image/patient-ali-mohammed.jpg أو اسم مشابه !! -->
-                    <!-- <img src="image/patient-ali-mohammed.jpg" alt="المريض علي محمد" class="testimonial-avatar"> -->
-                    <p class="testimonial-text">"يعاني من فقدان شديد بالعظم وقد أخبره الكثير من الأطباء الذين زارهم أنه لا يمكن عمل زراعة له وأن الحل لديه سوى الطقم المتحرك. جاء لزيارتنا مع مريضة كنا قد عملنا لها زرعات من قبل سنوات. وعندما أخبرته أن هناك حلاً لحالته باستخدام زرعات أسنان مصممة ثلاثية الأبعاد! تفاجأ بعد أن كان فقد الأمل. والآن بعد وضع الزرعات الخاصة والتي لا تحتاج إلى زراعة عظم بل ويمكن وضع تركيبات ثابتة عليها خلال فترة قليلة من العملية. الآن هو يستخدم أسنانه وينصح كل من يحتاج إلى زراعة مهما كان وضع العظم عليه التوجه إلى مركز الدكتور نشوان الخولاني لأن لديه زرعات مطبوعة ثلاثية الأبعاد تناسب حتى الحالات التي تعاني من امتصاص شديد بالعظم بل والدكتور نشوان تخصصه الدقيق في هذا النوع من الزرعات."</p>
-                    <h4 class="testimonial-author">- علي محمد</h4>
-                    <p class="testimonial-detail">فقدان شديد بالعظم، تم عمل زرعات مصممة ثلاثية الأبعاد.</p>
+                    <p class="testimonial-detail">تقويم لعلاج بروز الأسنان والفكين</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Gallery Section -->
-    <section id="gallery" class="gallery-section section-padding bg-light">
+    <section id="gallery" class="gallery-section section-padding">
         <div class="container">
-            <h2 class="section-title">شاهد نتائجنا</h2>
-            <p class="section-subtitle">نفتخر بمساعدة مرضانا في الحصول على ابتسامات صحية وجميلة. (جميع الصور بموافقة المرضى)</p>
+            <h2 class="section-title" data-aos="fade-up">شاهد نتائجنا</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">نفتخر بمساعدة مرضانا في الحصول على ابتسامات صحية وجميلة.</p>
             <div class="gallery-grid">
-                <div class="gallery-item">
+                <div class="gallery-item" data-aos="zoom-in-up" data-aos-delay="100">
                     <img src="image/cosmetic-dentistry-before-after.jpg" alt="قبل وبعد - تجميل أسنان">
                     <div class="gallery-caption">نتائج مذهلة لتجميل الأسنان</div>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-aos="zoom-in-up" data-aos-delay="200">
                     <img src="image/gallery-before-after-2.jpg" alt="قبل وبعد - حالة زراعة">
                     <div class="gallery-caption">حالة زراعة أسنان ناجحة</div>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-aos="zoom-in-up" data-aos-delay="300">
                     <img src="image/clinic-diagnostics.jpg" alt="أحدث أجهزة التشخيص">
                     <div class="gallery-caption">تشخيص دقيق بأحدث الأجهزة</div>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-aos="zoom-in-up" data-aos-delay="400">
                     <img src="image/zygomatic-implants-model.jpg" alt="نموذج لزراعة متقدمة">
                     <div class="gallery-caption">تقنيات زراعة متقدمة</div>
-                </div>
-                 <div class="gallery-item">
-                    <img src="image/gallery-equipment-1.jpg" alt="أجهزة حديثة بالمركز">
-                    <div class="gallery-caption">نستخدم أحدث التقنيات</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="image/dr-nashwan-surgery.jpg" alt="الدكتور نشوان أثناء العمل">
-                    <div class="gallery-caption">خبرة ودقة في العمل</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- FAQ Section -->
-    <section id="faq" class="faq-section section-padding">
+    <section id="faq" class="faq-section section-padding bg-light">
         <div class="container">
-            <h2 class="section-title">أسئلة شائعة</h2>
-            <p class="section-subtitle">نجيب على أكثر استفساراتكم شيوعًا حول خدماتنا.</p>
-            <div class="faq-accordion">
+            <h2 class="section-title" data-aos="fade-up">أسئلة شائعة</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">نجيب على أكثر استفساراتكم شيوعًا حول خدماتنا.</p>
+            <div class="faq-accordion" data-aos="fade-up" data-aos-delay="200">
                 <div class="faq-item">
                     <button class="faq-question" aria-expanded="false">
                         <span>ما هي مواعيد عمل المركز؟</span>
@@ -319,15 +267,6 @@
                 </div>
                 <div class="faq-item">
                     <button class="faq-question" aria-expanded="false">
-                        <span>هل تقبلون بطاقات التأمين الصحي؟</span>
-                        <i class="fas fa-chevron-down icon-toggle"></i>
-                    </button>
-                    <div class="faq-answer">
-                        <p>حاليًا، لا نتعامل بشكل مباشر مع جميع شركات التأمين، ولكن يمكننا تزويدكم بالفواتير والتقارير اللازمة لتقديمها لشركة التأمين الخاصة بكم. يرجى الاستفسار عن تفاصيل الدفع عند الحجز.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
                         <span>ما هي تكلفة الخدمات؟</span>
                         <i class="fas fa-chevron-down icon-toggle"></i>
                     </button>
@@ -335,52 +274,33 @@
                         <p>تختلف تكلفة الخدمات بناءً على نوع العلاج المطلوب وحالة المريض. يمكنكم الحصول على استشارة أولية لتقييم الحالة وتقدير التكلفة. نحن نسعى لتقديم أسعار تنافسية مع الحفاظ على أعلى معايير الجودة.</p>
                     </div>
                 </div>
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        <span>أعاني من ألم في وجهي، هل يمكن أن يكون من الأسنان؟</span>
-                        <i class="fas fa-chevron-down icon-toggle"></i>
-                    </button>
-                    <div class="faq-answer">
-                        <p>نعم، ألم الوجه قد يكون له أسباب متعددة، ومنها ألم العصب ثلاثي التوائم الذي قد يتشابه مع ألم الأسنان. من المهم استشارة طبيبك لتشخيص دقيق. يمكن الاطلاع على هذا البوستر لمزيد من المعلومات:</p>
-                        <img src="image/trigeminal-neuralgia-poster.jpg" alt="ألم العصب ثلاثي التوائم" style="max-width: 100%; margin-top: 15px; border-radius: 8px;">
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- Articles Section - (New Structure for Embedded Posts) -->
-    <section id="articles" class="articles-section section-padding bg-light">
+    <!-- Articles Section -->
+    <section id="articles" class="articles-section section-padding">
         <div class="container">
-            <h2 class="section-title">أحدث المقالات والنصائح من صفحتنا</h2>
-            <p class="section-subtitle">تابع آخر منشوراتنا المفيدة مباشرة من فيسبوك.</p>
+            <h2 class="section-title" data-aos="fade-up">أحدث المقالات والنصائح من صفحتنا</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">تابع آخر منشوراتنا المفيدة مباشرة من فيسبوك.</p>
             <div class="social-posts-grid">
-                <div class="social-post-item">
+                <div class="social-post-item" data-aos="fade-up" data-aos-delay="100">
                     <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02CN1Hb8T3LaAPktwrCgxcucb2DPgpDvsNRZ1dqYrWsvs7iP1b3WnP8fDtoekKV2C6l%26id%3D100069492888181&show_text=true&width=500" width="500" height="762" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" title="Facebook Post 1"></iframe>
                 </div>
-                <div class="social-post-item">
+                <div class="social-post-item" data-aos="fade-up" data-aos-delay="200">
                     <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid027zdyUwTuXEbPscqw8Jq4NKJKrs5vf6pWTbHvhmD5mjPyjA1P1CCxdvtEsDPcKPnZl%26id%3D100069492888181&show_text=true&width=500" width="500" height="659" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" title="Facebook Post 2"></iframe>
-                </div>
-                <div class="social-post-item">
-                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02p4X8BWUCJBBbSKMz5jWdVLTMY9aVMaz3AjAcdgpBhn35SMvj9vNU7mcw7nFRZHi7l%26id%3D100069492888181&show_text=true&width=500" width="500" height="612" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" title="Facebook Post 3"></iframe>
-                </div>
-                <div class="social-post-item">
-                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0sY1kverYa9Lr7maKAz4DzmPsyv6cKVZZgr7kDdj3V7aUoTcLgRTSccmx3WsECW4sl%26id%3D100069492888181&show_text=true&width=500" width="500" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" title="Facebook Post 4"></iframe>
-                </div>
-                <div class="social-post-item">
-                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0hfReKJRGyGzep1wx6upjtgxwLAXDBsnKxckV79hTrRzTiN1wGfQhLNcXB7P6caJFl%26id%3D100069492888181&show_text=true&width=500" width="500" height="688" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" title="Facebook Post 5"></iframe>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section section-padding">
+    <section id="contact" class="contact-section section-padding bg-light">
         <div class="container">
-            <h2 class="section-title">تواصل معنا</h2>
-            <p class="section-subtitle">نحن هنا لمساعدتك! لا تتردد في الاتصال بنا أو زيارتنا في أحد فروعنا.</p>
+            <h2 class="section-title" data-aos="fade-up">تواصل معنا</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">نحن هنا لمساعدتك! لا تتردد في الاتصال بنا أو زيارتنا في أحد فروعنا.</p>
             <div class="contact-info-grid">
-                <div class="contact-branch">
+                <div class="contact-branch" data-aos="fade-up" data-aos-delay="100">
                     <h3><i class="fas fa-clinic-medical"></i> الفرع الرئيسي: إب - مفرق جبلة</h3>
                     <p><i class="fas fa-map-marker-alt"></i> <strong>الموقع:</strong> جوار الكريمي للصرافة</p>
                     <p><i class="fas fa-phone"></i> <strong>الهاتف:</strong> <a href="tel:+967779690850">779690850</a></p>
@@ -389,7 +309,7 @@
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3872.2382402332323!2d44.17711620000001!3d13.944415399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x161ce95388b27451%3A0x606a6de265e0d1c1!2z2YXYsdmD2LIg2KfZhNiv2YPYqtmI2LEvINmG2LTZiNin2YYg2KfZhNiu2YjZhNin2YbZiiDYp9mE2LfYqNmKINin2YTYqtiu2LXYtdmK!5e0!3m2!1sar!2s!4v1749322069463!5m2!1sar!2s" width="100%" height="300" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="موقع فرع مفرق جبلة"></iframe>
                     </div>
                 </div>
-                <div class="contact-branch">
+                <div class="contact-branch" data-aos="fade-up" data-aos-delay="200">
                     <h3><i class="fas fa-clinic-medical"></i> فرع الدائري</h3>
                     <p><i class="fas fa-map-marker-alt"></i> <strong>الموقع:</strong> مبنى مختبرات نيولاب، مقابل حلويات موكا</p>
                     <p><i class="fas fa-phone"></i> <strong>الهاتف:</strong> <a href="tel:+967783443899">783443899</a></p>
@@ -398,7 +318,7 @@
                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241.99126942793515!2d44.161639556540266!3d13.966919155155933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x161ceb00546b6aa3%3A0xf6847900ef96771a!2z2YXYrtiq2KjYsdin2Kog2KjYsdisINmG2YrZiNmE2KfYqCDYp9mE2KrYrti12LXZitip!5e0!3m2!1sar!2s!4v1749322221009!5m2!1sar!2s" width="100%" height="300" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="موقع فرع الدائري"></iframe>
                     </div>
                 </div>
-                 <div class="contact-branch">
+                <div class="contact-branch" data-aos="fade-up" data-aos-delay="300">
                      <h3><i class="fas fa-concierge-bell"></i> معلومات إضافية</h3>
                      <img src="image/clinic-services-poster.jpg" alt="خدمات مركز الدكتور نشوان الخولاني ومعلومات الاتصال" style="width:100%; border-radius:8px; margin-top:15px;">
                      <p style="margin-top:10px;">لمعرفة المزيد عن خدماتنا أو للحالات الطارئة، لا تترددوا في الاتصال بنا مباشرة.</p>
@@ -417,7 +337,7 @@
                     <div class="social-links">
                         <a href="https://www.facebook.com/share/16dvoQSWrx/" target="_blank" title="فيسبوك"><i class="fab fa-facebook-f"></i></a>
                         <a href="https://www.instagram.com/nashwanalkhawlani?igsh=aHdpbzgyZzh5dmVl" target="_blank" title="انستغرام"><i class="fab fa-instagram"></i></a>
-                        <a href="[ضع رابط تويتر هنا إذا وجد]" target="_blank" title="تويتر"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank" title="تويتر"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
                 <div class="footer-col">
@@ -458,28 +378,15 @@
         </a>
     </div>
 
-    <!-- Facebook JavaScript SDK (أضفه مرة واحدة فقط قبل نهاية Body إذا كنت ستضمن منشورات فيسبوك) -->
+    <!-- Facebook JavaScript SDK (needed for embedded posts) -->
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ar_AR/sdk.js#xfbml=1&version=v19.0" nonce="[إذا_كان_لديك_nonce_من_فيسبوك_ضعه_هنا]"></script>
-
-    <body>
-    <!-- ... كل محتوى الصفحة ... -->
-
-    <a href="#home" class="back-to-top" id="back-to-top-button" title="العودة للأعلى"><i class="fas fa-arrow-up"></i></a>
-    <div class="fixed-action-buttons">
-        <!-- ... أزرار الاتصال ... -->
-    </div>
-
-    <!-- ... Facebook SDK ... -->
 
     <!-- ****** بداية إضافة AOS JS ****** -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- ****** نهاية إضافة AOS JS ****** -->
-
-    <script src="script.js"></script> <!-- ملف الجافاسكربت الخاص بك يأتي بعده -->
-</body>
-</html>
-    <!-- JavaScript File -->
+    
+    <!-- Your Custom JavaScript File -->
     <script src="script.js"></script>
 </body>
 </html>
