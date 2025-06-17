@@ -1,28 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- الصفحة الرئيسية للموقع -->
   <url>
-    <loc>https://NashwanAA.github.io/dr-nashwan-dental-clinic/</loc>
-    <lastmod>2023-10-28</lastmod> <!-- 06-06-2025 -->
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <loc>https://nashwanaa.github.io/dr-nashwan-dental-clinic/</loc>
+    <lastmod>2024-06-06</lastmod> <!-- تم تحديث التاريخ ليعكس آخر التعديلات -->
+    <changefreq>monthly</changefreq> <!-- 'شهريًا' مناسب لصفحة لا تتغير كثيرًا -->
+    <priority>1.0</priority> <!-- الأولوية القصوى للصفحة الرئيسية -->
   </url>
-  <!-- إذا كان لديك صفحات مقالات منفصلة، أضفها هنا، مثال: -->
-  <!--
-  <url>
-    <loc>https://NashwanAA.github.io/dr-nashwan-dental-clinic/article-detail-1.html</loc>
-    <lastmod>2023-10-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  -->
-</urlset>
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- 
+    ملاحظة للمستقبل:
+    إذا قمت بإنشاء صفحات مقالات منفصلة، قم بإضافتها هنا بنفس التنسيق.
+    مثال لصفحة مقال (قم بإزالة التعليق وأضف الرابط الصحيح عند إنشائها):
+  
     <url>
-        <loc>https://example.com/</loc>
-        <lastmod>2023-11-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
+      <loc>https://nashwanaa.github.io/dr-nashwan-dental-clinic/article-name.html</loc>
+      <lastmod>تاريخ_نشر_أو_تعديل_المقال</lastmod>
+      <changefreq>yearly</changefreq> 
+      <priority>0.8</priority> 
     </url>
-    <!-- إضافة جميع الصفحات -->
+  -->
+  
 </urlset>
