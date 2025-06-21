@@ -183,5 +183,41 @@ AOS.init({
     once: true,    // هل يتم التحريك مرة واحدة فقط؟ (true)
     offset: 50,    // إزاحة (بالبكسل) من أسفل الشاشة لبدء التحريك
     easing: 'ease-in-out', // نوع منحنى التسارع
+   // في ملف script.js
+
+document.addEventListener('DOMContentLoaded', function() {
+    // ... كل الكود السابق (Navbar, FAQ, Back to Top, etc.) ...
+
+    // 5. Update Copyright Year
+    const yearSpan = document.getElementById('year');
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
+
+
+    // ****** بداية إضافة Lightbox لمعرض الصور ******
+    const galleryItems = document.querySelectorAll('.gallery-grid .gallery-item a');
+    
+    if (galleryItems.length > 0) {
+        galleryItems.forEach(item => {
+            item.addEventListener('click', (e) => {
+                e.preventDefault(); // منع الرابط من الفتح في صفحة جديدة
+
+                const imageSrc = item.getAttribute('href'); // الحصول على رابط الصورة الكبيرة
+
+                // إنشاء وعرض الـ Lightbox
+                const instance = basicLightbox.create(`
+                    <img src="${imageSrc}" width="1600" height="900">
+                `);
+                
+                instance.show();
+            });
+        });
+    }
+    // ****** نهاية إضافة Lightbox لمعرض الصور ******
+
+}); // ****** هذا هو وسم الإغلاق الوحيد لـ DOMContentLoaded ******
+
+// AOS.init({...}); // كود تهيئة AOS يبقى خارج هذه الدالة 
 });
 // ****** نهاية تهيئة AOS ******
