@@ -217,53 +217,39 @@
         </div>
     </section>
 
-    <!-- Gallery Section -->
-    <!-- ****** بداية تصحيح قسم معرض الصور ****** -->
+    <!-- Gallery Section (with Lightbox functionality) -->
     <section id="gallery" class="gallery-section section-padding">
         <div class="container">
             <h2 class="section-title" data-aos="fade-up">شاهد نتائجنا</h2>
-            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">نفتخر بمساعدة مرضانا في الحصول على ابتسامات صحية وجميلة.</p>
-            <div class="gallery-grid">
-                <div class="gallery-item" data-aos="zoom-in-up" data-aos-delay="100">
-                    <a href="image/cosmetic-dentistry-before-after.jpg">
-                        <img src="image/cosmetic-dentistry-before-after.jpg" alt="قبل وبعد - تجميل أسنان">
-                        <div class="gallery-caption">نتائج مذهلة لتجميل الأسنان</div>
-                    </a>
-                </div>
-                <div class="gallery-item" data-aos="zoom-in-up" data-aos-delay="200">
-                    <a href="image/gallery-before-after-2.jpg">
-                        <img src="image/gallery-before-after-2.jpg" alt="قبل وبعد - حالة زراعة">
-                        <div class="gallery-caption">حالة زراعة أسنان ناجحة</div>
-                    </a>
-                </div>
-                <div class="gallery-item" data-aos="zoom-in-up" data-aos-delay="300">
-                    <a href="image/clinic-diagnostics.jpg">
-                        <img src="image/clinic-diagnostics.jpg" alt="أحدث أجهزة التشخيص">
-                        <div class="gallery-caption">تشخيص دقيق بأحدث الأجهزة</div>
-                    </a>
-                </div>
-                <div class="gallery-item" data-aos="zoom-in-up" data-aos-delay="400">
-                    <a href="image/zygomatic-implants-model.jpg">
-                        <img src="image/zygomatic-implants-model.jpg" alt="نموذج لزراعة متقدمة">
-                        <div class="gallery-caption">تقنيات زراعة متقدمة</div>
-                    </a>
-                </div>
-                 <div class="gallery-item" data-aos="zoom-in-up" data-aos-delay="100">
-                    <a href="image/gallery-equipment-1.jpg">
-                        <img src="image/gallery-equipment-1.jpg" alt="أجهزة حديثة بالمركز">
-                        <div class="gallery-caption">نستخدم أحدث التقنيات</div>
-                    </a>
-                </div>
-                <div class="gallery-item" data-aos="zoom-in-up" data-aos-delay="200">
-                    <a href="image/dr-nashwan-surgery.jpg">
-                        <img src="image/dr-nashwan-surgery.jpg" alt="الدكتور نشوان أثناء العمل">
-                        <div class="gallery-caption">خبرة ودقة في العمل</div>
-                    </a>
-                </div>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">انقر على أي صورة لتكبيرها. (جميع الصور بموافقة المرضى)</p>
+            <div class="gallery-grid" id="gallery-container">
+                <a href="image/cosmetic-dentistry-before-after.jpg" class="gallery-item" data-aos="zoom-in-up" data-aos-delay="100">
+                    <img src="image/cosmetic-dentistry-before-after.jpg" alt="قبل وبعد - تجميل أسنان">
+                    <div class="gallery-caption">نتائج مذهلة لتجميل الأسنان</div>
+                </a>
+                <a href="image/gallery-before-after-2.jpg" class="gallery-item" data-aos="zoom-in-up" data-aos-delay="200">
+                    <img src="image/gallery-before-after-2.jpg" alt="قبل وبعد - حالة زراعة">
+                    <div class="gallery-caption">حالة زراعة أسنان ناجحة</div>
+                </a>
+                <a href="image/clinic-diagnostics.jpg" class="gallery-item" data-aos="zoom-in-up" data-aos-delay="300">
+                    <img src="image/clinic-diagnostics.jpg" alt="أحدث أجهزة التشخيص">
+                    <div class="gallery-caption">تشخيص دقيق بأحدث الأجهزة</div>
+                </a>
+                <a href="image/zygomatic-implants-model.jpg" class="gallery-item" data-aos="zoom-in-up" data-aos-delay="400">
+                    <img src="image/zygomatic-implants-model.jpg" alt="نموذج لزراعة متقدمة">
+                    <div class="gallery-caption">تقنيات زراعة متقدمة</div>
+                </a>
+                 <a href="image/gallery-equipment-1.jpg" class="gallery-item" data-aos="zoom-in-up" data-aos-delay="100">
+                    <img src="image/gallery-equipment-1.jpg" alt="أجهزة حديثة بالمركز">
+                    <div class="gallery-caption">نستخدم أحدث التقنيات</div>
+                </a>
+                <a href="image/dr-nashwan-surgery.jpg" class="gallery-item" data-aos="zoom-in-up" data-aos-delay="200">
+                    <img src="image/dr-nashwan-surgery.jpg" alt="الدكتور نشوان أثناء العمل">
+                    <div class="gallery-caption">خبرة ودقة في العمل</div>
+                </a>
             </div>
         </div>
     </section>
-    <!-- ****** نهاية تصحيح قسم معرض الصور ****** -->
 
     <!-- FAQ Section -->
     <section id="faq" class="faq-section section-padding bg-light">
@@ -403,10 +389,11 @@
         </a>
     </div>
 
+    <!-- JavaScript Libraries -->
     <!-- Facebook JavaScript SDK (needed for embedded posts) -->
     <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ar_AR/sdk.js#xfbml=1&version=v19.0" nonce="[إذا_كان_لديك_nonce_من_فيسبوك_ضعه_هنا]"></script>
-    
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ar_AR/sdk.js#xfbml=1&version=v19.0"></script>
+
     <!-- basicLightbox JS -->
     <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.js"></script>
 
