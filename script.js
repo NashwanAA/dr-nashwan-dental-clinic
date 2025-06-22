@@ -6,7 +6,7 @@
     3. أكورديون الأسئلة الشائعة (FAQ Accordion)
     4. زر العودة للأعلى (Back to Top Button)
     5. تحديث سنة الحقوق تلقائيًا (Copyright Year)
-    6. تفعيل Lightbox لمعرض الصور
+    6. تفعيل Lightbox لمعرض الصور (BasicLightbox)
     7. تهيئة مكتبة التأثيرات الحركية (AOS)
     8. (معلق مؤقتًا) كود للتحميل البطيء للصور ونموذج الحجز
 */
@@ -120,24 +120,28 @@ document.addEventListener('DOMContentLoaded', function() {
         yearSpan.textContent = new Date().getFullYear();
     }
 
-    // 6. Lightbox for Gallery
-    const galleryItems = document.querySelectorAll('.gallery-grid .gallery-item a');
-    if (galleryItems.length > 0) {
-        galleryItems.forEach(item => {
-            item.addEventListener('click', (e) => {
-                e.preventDefault();
-                const imageSrc = item.getAttribute('href');
-                
-                // التأكد من أن مكتبة basicLightbox متاحة
+    // 6. Lightbox for Gallery (using Event Delegation)
+    const galleryContainer = document.getElementById('gallery-container'); // تأكد من أن هذا الـ ID موجود على .gallery-grid في HTML
+    if (galleryContainer) {
+        galleryContainer.addEventListener('click', function(event) {
+            // تحقق من أن العنصر الذي تم النقر عليه هو رابط gallery-item أو شيء بداخله
+            const galleryLink = event.target.closest('.gallery-item');
+            
+            if (galleryLink) {
+                event.preventDefault(); // امنع الرابط من الفتح في صفحة جديدة
+
+                const imageSrc = galleryLink.getAttribute('href'); // احصل على رابط الصورة الكبيرة
+
+                // التأكد من أن مكتبة basicLightbox متاحة قبل استخدامها
                 if (typeof basicLightbox !== 'undefined') {
                     const instance = basicLightbox.create(`
-                        <img src="${imageSrc}">
+                        <img src="${imageSrc}" style="max-width: 90vw; max-height: 90vh;">
                     `);
                     instance.show();
                 } else {
-                    console.error('basicLightbox is not loaded.');
+                    console.error('basicLightbox library is not loaded.');
                 }
-            });
+            }
         });
     }
 
