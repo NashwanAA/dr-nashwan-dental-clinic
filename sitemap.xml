@@ -1,25 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <!-- الصفحة الرئيسية للموقع -->
+
+  <!-- الصفحة الرئيسية -->
   <url>
     <loc>https://nashwanaa.github.io/dr-nashwan-dental-clinic/</loc>
-    <lastmod>2024-06-06</lastmod> <!-- تم تحديث التاريخ ليعكس آخر التعديلات -->
-    <changefreq>monthly</changefreq> <!-- 'شهريًا' مناسب لصفحة لا تتغير كثيرًا -->
-    <priority>1.0</priority> <!-- الأولوية القصوى للصفحة الرئيسية -->
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
-  
-  <!-- 
-    ملاحظة للمستقبل:
-    إذا قمت بإنشاء صفحات مقالات منفصلة، قم بإضافتها هنا بنفس التنسيق.
-    مثال لصفحة مقال (قم بإزالة التعليق وأضف الرابط الصحيح عند إنشائها):
-  
-    <url>
-      <loc>https://nashwanaa.github.io/dr-nashwan-dental-clinic/article-name.html</loc>
-      <lastmod>تاريخ_نشر_أو_تعديل_المقال</lastmod>
-      <changefreq>yearly</changefreq> 
-      <priority>0.8</priority> 
-    </url>
-  -->
-  
+
+  <!-- ألم ضرس العقل -->
+  <url>
+    <loc>https://nashwanaa.github.io/dr-nashwan-dental-clinic/wisdom-tooth-ib.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- هل زراعة الأسنان مؤلمة -->
+  <url>
+    <loc>https://nashwanaa.github.io/dr-nashwan-dental-clinic/implant-pain-ib.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- زراعة الأسنان -->
+  <url>
+    <loc>https://nashwanaa.github.io/dr-nashwan-dental-clinic/implant-ib.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- جراحة الفم والفكين -->
+  <url>
+    <loc>https://nashwanaa.github.io/dr-nashwan-dental-clinic/oral-surgery-ib.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
 </urlset>
