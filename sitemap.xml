@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- الصفحة الرئيسية -->
+  <url>
+    <loc>https://nashwanaa.github.io/dr-nashwan-dental-clinic/</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- ألم ضرس العقل -->
+  <url>
+    <loc>https://nashwanaa.github.io/dr-nashwan-dental-clinic/wisdom-tooth-ib.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- هل زراعة الأسنان مؤلمة -->
+  <url>
+    <loc>https://nashwanaa.github.io/dr-nashwan-dental-clinic/implant-pain-ib.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- زراعة الأسنان -->
+  <url>
+    <loc>https://nashwanaa.github.io/dr-nashwan-dental-clinic/implant-ib.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- جراحة الفم والفكين -->
+  <url>
+    <loc>https://nashwanaa.github.io/dr-nashwan-dental-clinic/oral-surgery-ib.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+</urlset>
