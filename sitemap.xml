@@ -1,65 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <!-- الصفحة الرئيسية - الأولوية القصوى -->
+  <!-- الصفحة الرئيسية -->
   <url>
     <loc>https://nashwanaa.github.io/dr-nashwan-dental-clinic/</loc>
-    <lastmod>2026-05-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <priority>1.00</priority>
   </url>
-
-  <!-- مقال: ألم ضرس العقل -->
+  <!-- صفحة زراعة الأسنان في إب -->
   <url>
-    <loc>https://nashwanaa.github.io/dr-nashwan-dental-clinic/wisdom-tooth-ib.html</loc>
-    <lastmod>2026-05-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://nashwanaa.github.io/dr-nashwan-dental-clinic/implant-ibb.html</loc>
+    <priority>0.80</priority>
   </url>
-
-  <!-- مقال: هل زراعة الأسنان مؤلمة -->
+  <!-- صفحة ضرس العقل في إب -->
   <url>
-    <loc>https://nashwanaa.github.io/dr-nashwan-dental-clinic/implant-pain-ib.html</loc>
-    <lastmod>2026-05-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://nashwanaa.github.io/dr-nashwan-dental-clinic/wisdom-tooth-ibb.html</loc>
+    <priority>0.80</priority>
   </url>
-
-  <!-- مقال: التهاب اللثة (جديد) -->
+  <!-- صفحة جراحة الفم -->
   <url>
-    <loc>https://nashwanaa.github.io/dr-nashwan-dental-clinic/gum-disease-ib.html</loc>
-    <lastmod>2026-05-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://nashwanaa.github.io/dr-nashwan-dental-clinic/oral-surgery-ibb.html</loc>
+    <priority>0.80</priority>
   </url>
-
-  <!-- مقال: رائحة الفم الكريهة (جديد) -->
+  <!-- صفحة رائحة الفم -->
   <url>
-    <loc>https://nashwanaa.github.io/dr-nashwan-dental-clinic/bad-breath-ib.html</loc>
-    <lastmod>2026-05-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://nashwanaa.github.io/dr-nashwan-dental-clinic/bad-breath-ibb.html</loc>
+    <priority>0.70</priority>
   </url>
-
-<url>
-  <loc>https://nashwanaa.github.io/dr-nashwan-dental-clinic/tmj-disorders-ib.html</loc>
-  <lastmod>2026-05-04</lastmod>
-  <priority>0.8</priority>
-</url>
-
-  <!-- صفحات الخدمات التخصصية -->
-  <url>
-    <loc>https://nashwanaa.github.io/dr-nashwan-dental-clinic/implant-ib.html</loc>
-    <lastmod>2026-05-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://nashwanaa.github.io/dr-nashwan-dental-clinic/oral-surgery-ib.html</loc>
-    <lastmod>2026-05-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
 </urlset>
