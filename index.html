@@ -3,29 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>د. نشوان الخولاني | رائد جراحة الفكين والزراعة الرقمية في إب</title>
+    <title>د. نشوان الخولاني | جراحة الفكين وزراعة الأسنان الرقمية</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <style>
-        /* تنسيقات إضافية لضمان استقرار المظهر */
         :root { --main-color: #00b894; --dark-color: #2c3e50; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; line-height: 1.6; color: #333; }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; padding: 0; background-color: #fcfcfc; scroll-behavior: smooth; }
         header { background: white; box-shadow: 0 2px 15px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
         nav { display: flex; justify-content: space-between; align-items: center; padding: 10px 5%; max-width: 1200px; margin: auto; }
         .hero { 
             background-image: linear-gradient(rgba(20, 30, 48, 0.75), rgba(20, 30, 48, 0.75)), url('image/dr-nashwan-surgery.jpg'); 
-            background-size: cover; background-position: center; height: 85vh; 
+            background-size: cover; background-position: center; height: 75vh; 
             display: flex; align-items: center; justify-content: center; text-align: center; color: white;
         }
-        .section-padding { padding: 60px 5%; }
-        .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; max-width: 1200px; margin: auto; }
-        .card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: 0.3s; border: 1px solid #eee; text-align: center; }
-        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        .section-title { text-align: center; color: var(--dark-color); margin: 60px 0 40px; font-size: 2.2rem; position: relative; padding-bottom: 10px; }
+        .section-title::after { content: ''; width: 80px; height: 4px; background: var(--main-color); position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); }
+        .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 0 5%; max-width: 1200px; margin: auto; }
+        .card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: 0.3s; border: 1px solid #eee; display: flex; flex-direction: column; height: 100%; }
+        .card:hover { transform: translateY(-8px); box-shadow: 0 12px 30px rgba(0,0,0,0.1); }
         .card img { width: 100%; height: 200px; object-fit: cover; }
-        .card-content { padding: 20px; }
-        .btn-main { background: var(--main-color); color: white; padding: 12px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; }
-        .read-more { color: var(--main-color); text-decoration: none; font-weight: bold; font-size: 0.9rem; }
-        footer { background: var(--dark-color); color: white; text-align: center; padding: 40px 0; margin-top: 50px; }
+        .card-content { padding: 20px; flex-grow: 1; }
+        .card-content h3 { font-size: 1.25rem; color: var(--dark-color); margin-top: 0; }
+        .btn-main { background: var(--main-color); color: white; padding: 12px 30px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; transition: 0.3s; border: none; }
+        .read-more { color: var(--main-color); text-decoration: none; font-weight: bold; font-size: 0.9rem; margin-top: auto; display: block; }
+        footer { background: var(--dark-color); color: white; padding: 60px 5% 30px; margin-top: 80px; text-align: center; }
+        .whatsapp-float { position: fixed; bottom: 25px; left: 25px; background: #25d366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; box-shadow: 2px 5px 15px rgba(0,0,0,0.3); z-index: 2000; text-decoration: none; }
     </style>
 </head>
 <body>
@@ -33,180 +35,153 @@
     <header>
         <nav>
             <div style="display: flex; align-items: center; gap: 15px;">
-                <img src="image/clinic-logo.png" alt="شعار المركز" style="height: 70px;">
+                <img src="image/clinic-logo.png" alt="د. نشوان الخولاني" style="height: 65px;">
                 <div style="display: flex; flex-direction: column; border-right: 2px solid var(--main-color); padding-right: 15px;">
-                    <span style="font-weight: bold; font-size: 1.4rem; color: var(--dark-color);">د. نشوان الخولاني</span>
-                    <span style="font-size: 0.8rem; color: var(--main-color); font-weight: 600;">جراحة الوجه والفكين وزراعة الأسنان</span>
+                    <span style="font-weight: bold; font-size: 1.4rem;">د. نشوان الخولاني</span>
+                    <span style="font-size: 0.8rem; color: var(--main-color); font-weight: bold;">جراحة الوجه والفكين وزراعة الأسنان</span>
                 </div>
             </div>
             <ul style="display: flex; list-style: none; gap: 20px;">
-                <li><a href="#services" style="text-decoration: none; color: var(--dark-color); font-weight: 600;">خدماتنا</a></li>
-                <li><a href="#articles" style="text-decoration: none; color: var(--dark-color); font-weight: 600;">المقالات</a></li>
-                <li><a href="https://wa.me/967779690850" class="btn-main">احجز موعدك</a></li>
+                <li><a href="#services" style="text-decoration: none; color: var(--dark-color); font-weight: bold;">خدماتنا</a></li>
+                <li><a href="#articles" style="text-decoration: none; color: var(--dark-color); font-weight: bold;">المقالات</a></li>
+                <li><a href="https://wa.me/967779690850" class="btn-main">احجز الآن</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="hero">
-        <div style="max-width: 900px; padding: 20px;">
-            <h1 style="font-size: 3rem; margin-bottom: 20px;">رائد زراعة الأسنان المطبوعة ثلاثية الأبعاد في اليمن</h1>
-            <p style="font-size: 1.4rem; margin-bottom: 35px; opacity: 0.9;">نجمع بين العلم الأكاديمي والخبرة الجراحية لنعيد إليك ابتسامتك بأدق التقنيات الرقمية.</p>
-            <a href="https://wa.me/967779690850" class="btn-main" style="padding: 15px 40px; font-size: 1.1rem;">استشارة تخصصية مجانية</a>
+        <div style="max-width: 850px; padding: 20px;">
+            <h1 style="font-size: 3rem; margin-bottom: 20px;">التميز في جراحة الوجه والفكين والزراعة الرقمية</h1>
+            <p style="font-size: 1.3rem; opacity: 0.9; margin-bottom: 35px;">بناءً على أحدث الأبحاث الأكاديمية وتقنيات الطباعة ثلاثية الأبعاد، نقدم لك رعاية طبية متكاملة في قلب مدينة إب.</p>
+            <a href="https://wa.me/967779690850" class="btn-main" style="padding: 15px 45px; font-size: 1.1rem;">استشارة تخصصية مجانية</a>
         </div>
     </section>
 
-    <section id="services" class="section-padding">
-        <h2 style="text-align: center; color: var(--dark-color); margin-bottom: 40px;">تخصصاتنا الدقيقة</h2>
+    <!-- الخدمات الأساسية -->
+    <section id="services">
+        <h2 class="section-title">تخصصات المركز الرئيسي</h2>
         <div class="grid-container">
             <div class="card">
-                <img src="image/service-implants.jpg" alt="زراعة الأسنان">
-                <div class="card-content">
-                    <h3>زراعة الأسنان الحديثة</h3>
-                    <p>تعويض الأسنن المفقودة باستخدام أجود أنواع الزرعات والعالمية.</p>
-                </div>
+                <img src="image/service-implants.jpg" alt="الزراعة">
+                <div class="card-content"><h3>زراعة الأسنان الرقمية</h3><p>تعويض الأسنان المفقودة بدقة متناهية تضمن استعادة الوظيفة والجمال.</p></div>
             </div>
             <div class="card">
-                <img src="image/dr-nashwan-surgery.jpg" alt="جراحة الفكين">
-                <div class="card-content">
-                    <h3>جراحة الوجه والفكين</h3>
-                    <p>علاج الحالات المعقدة، الكسور، وتصحيح انحراف الفكين جراحياً.</p>
-                </div>
+                <img src="image/dr-nashwan-surgery.jpg" alt="الجراحة">
+                <div class="card-content"><h3>جراحة الوجه والفكين</h3><p>علاج الحالات المعقدة والكسور وأورام الفم بجودة أكاديمية.</p></div>
             </div>
             <div class="card">
-                <img src="image/service-ortho.jpg" alt="تقويم الأسنان">
-                <div class="card-content">
-                    <h3>تقويم الأسنان التجميلي</h3>
-                    <p>حلول تقويمية متطورة للأطفال والكبار للحصول على إطباق مثالي.</p>
-                </div>
+                <img src="image/service-ortho.jpg" alt="التقويم">
+                <div class="card-content"><h3>تقويم الأسنان</h3><p>حلول تقويمية للأطفال والكبار للحصول على إطباق سليم وابتسامة واثقة.</p></div>
             </div>
         </div>
     </section>
 
-    <section id="articles" class="section-padding" style="background: #fdfdfd;">
-        <h2 style="text-align: center; color: var(--dark-color); margin-bottom: 40px;">مكتبة المقالات الطبية</h2>
+    <!-- المقالات الطبية -->
+    <section id="articles" style="background: #f4f7f6; padding-bottom: 80px;">
+        <h2 class="section-title">مكتبة د. نشوان للتوعية الطبية</h2>
         <div class="grid-container">
             
+            <!-- 1. انكماش العظم -->
             <article class="card">
-                <img src="image/zygomatic-implants-model.jpg" alt="الزراعة الرقمية">
+                <img src="image/zygomatic-implants-model.jpg" alt="عظام الفك">
+                <div class="card-content">
+                    <h3>ماذا يحدث للفك بعد فقدان الأسنان؟</h3>
+                    <p>انكماش العظم وتغير شكل الوجه.. لماذا التأخير في التعويض خطر؟</p>
+                    <a href="bone-loss-ibb.html" class="read-more">التفاصيل ←</a>
+                </div>
+            </article>
+
+            <!-- 2. ألم الحشو -->
+            <article class="card">
+                <img src="image/dental-care-poster.jpg" alt="ألم الحشو">
+                <div class="card-content">
+                    <h3>لماذا يعود الألم بعد الحشو؟</h3>
+                    <p>معلومات قد تفاجئك حول أسباب حساسية السن بعد العلاج وكيفية حلها.</p>
+                    <a href="pain-after-filling.html" class="read-more">التفاصيل ←</a>
+                </div>
+            </article>
+
+            <!-- 3. تشخيص ألم الفك -->
+            <article class="card">
+                <img src="image/oral-maxillofacial-surgery.jpg" alt="ألم الفك">
+                <div class="card-content">
+                    <h3>ليس كل ألم في الفك سببه الأسنان</h3>
+                    <p>التشخيص الخاطئ قد يؤدي لخلع سن سليم.. ابحث عن السبب الحقيقي.</p>
+                    <a href="jaw-pain-diagnosis.html" class="read-more">التفاصيل ←</a>
+                </div>
+            </article>
+
+            <!-- 4. تبييض الأسنان -->
+            <article class="card">
+                <img src="image/clinic-promo-smile.jpg" alt="تبييض الأسنان">
+                <div class="card-content">
+                    <h3>تبييض الأسنان.. لمسة تجميلية فورية</h3>
+                    <p>استعد إشراقتك في أقل من ساعة بأحدث التقنيات الطبية الآمنة.</p>
+                    <a href="teeth-whitening-ibb.html" class="read-more">التفاصيل ←</a>
+                </div>
+            </article>
+
+            <!-- 5. تقويم الأطفال -->
+            <article class="card">
+                <img src="image/service-ortho.jpg" alt="أسنان الأطفال">
+                <div class="card-content">
+                    <h3>أخطاء تغير شكل ابتسامة طفلك للأبد</h3>
+                    <p>التنفس من الفم ومص الأصابع.. عادات بسيطة تسبب مشاكل تقويمية كبرى.</p>
+                    <a href="kids-dental-habits.html" class="read-more">التفاصيل ←</a>
+                </div>
+            </article>
+
+            <!-- 6. مرضى السرطان -->
+            <article class="card">
+                <img src="image/advanced-dental-implants.jpg" alt="العلاج الإشعاعي">
+                <div class="card-content">
+                    <h3>العلاج الكيميائي وصحة فمك</h3>
+                    <p>إجراءات احترازية هامة للمرضى الذين خضعوا للعلاج الإشعاعي أو الكيميائي.</p>
+                    <a href="cancer-patient-dental.html" class="read-more">التفاصيل ←</a>
+                </div>
+            </article>
+
+            <!-- 7. قرحة الفم -->
+            <article class="card">
+                <img src="image/teeth-sensitivity-ice.jpg" alt="قرحة الفم">
+                <div class="card-content">
+                    <h3>قرحة لا تختفي؟ انتبه لهذه العلامات</h3>
+                    <p>قاعدة الأسبوعين: متى يجب أن تقلق من جروح الفم الصغيرة؟</p>
+                    <a href="mouth-ulcers-warning.html" class="read-more">التفاصيل ←</a>
+                </div>
+            </article>
+
+            <!-- 8. الزراعة 3D -->
+            <article class="card">
+                <img src="image/dr-nashwan-surgery.jpg" alt="الطباعة ثلاثية الأبعاد">
                 <div class="card-content">
                     <h3>الزراعة المطبوعة ثلاثية الأبعاد</h3>
-                    <p>تعرف على مستقبل زراعة الأسنان وكيف يتم تصميم زرعة خصيصاً لك.</p>
-                    <a href="3d-printed-implants-ibb.html" class="read-more">اقرأ المقال ←</a>
+                    <p>كيف توظف التكنولوجيا الرقمية لضمان نجاح الزراعة في الحالات الصعبة.</p>
+                    <a href="3d-printed-implants-ibb.html" class="read-more">التفاصيل ←</a>
                 </div>
             </article>
-
-            <article class="card">
-                <img src="image/facial-pain-ibb.jpg" alt="ألم العصب الخامس">
-                <div class="card-content">
-                    <h3>ألم العصب الخامس والأسنان</h3>
-                    <p>كيف تفرق بين الصدمة الكهربائية للعصب الخامس وألم الأسنان التقليدي؟</p>
-                    <a href="trigeminal-neuralgia-ibb.html" class="read-more">اقرأ المقال ←</a>
-                </div>
-            </article>
-
-           <article class="card">
-                <img src="image/service-cosmetic.jpg" alt="تجميل اللثة">
-                <div
- class="card-content">
-                    <h3>توريد اللثة (اللثة الوردية)</h3>
-                    <p>تخلص من التصبغات الداكنة واستعد حيوية ابتسامتك في جلسة واحدة.</p>
-                    <a href="gum-depigmentation-ibb.html" class="read-more">اقرأ المقال ←</a>
-                </div>
-            </article> 
-
-            <article class="card">
-                <img src="image/advanced-dental-implants.jpg" alt="الزراعة الوجنية">
-                <div class="card-content">
-                    <h3>الزراعة الوجنية (Zygomatic)</h3>
-                    <p>الحل السحري لتعويض الأسنان في حالات الضمور الشديد لعظم الفك العلوي.</p>
-                    <a href="zygomatic-implants-ibb.html" class="read-more">اقرأ المقال ←</a>
-                </div>
-            </article>
-
-            <article class="card">
-                <img src="image/teeth-sensitivity-ice.jpg" alt="حساسية الأسنان">
-                <div class="card-content">
-                    <h3>علاج حساسية الأسنان المفرطة</h3>
-                    <p>لماذا تشعر بالألم عند شرب البارد؟ وكيف نعيد لثتك لوضعها الطبيعي؟</p>
-                    <a href="teeth-sensitivity-ibb.html" class="read-more">اقرأ المقال ←</a>
-                </div>
-            </article>
-
-            <article class="card">
-                <img src="image/oral-maxillofacial-surgery.jpg" alt="جراحة ضرس العقل">
-                <div class="card-content">
-                    <h3>ضرس العقل المطمور</h3>
-                    <p>متى يكون الخلع الجراحي ضرورياً؟ وما هي تعليمات ما بعد العملية؟</p>
-                    <a href="wisdom-tooth-ibb.html" class="read-more">اقرأ المقال ←</a>
-                </div>
-            </article>
-
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تقويم الأسنان للبالغين | د. نشوان الخولاني</title>
-    <meta name="description" content="هل فات الأوان لتقويم أسنانك؟ تعرف على فوائد تقويم الأسنان للكبار وأحدث التقنيات المريحة في مركز الدكتور نشوان الخولاني بمدينة إب.">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">د. نشوان الخولاني</div>
-            <ul>
-                <li><a href="index.html">الرئيسية</a></li>
-                <li><a href="index.html#articles">نصائح طبية</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main style="padding: 120px 20px; max-width: 800px; margin: auto; line-height: 1.8;">
-        <article>
-            <h1 style="color: #0984e3; text-align: center; border-bottom: 3px solid #00b894; padding-bottom: 15px;">😁 تقويم الأسنان للبالغين… هل فات الأوان؟</h1>
-            
-            <img src="image/service-ortho.jpg" alt="تقويم الأسنان للكبار في إب" style="width: 100%; border-radius: 15px; margin: 30px 0; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
-
-            <p style="font-size: 1.2rem; color: #2c3e50;">يعتقد كثير من الناس أن تقويم الأسنان مخصص للمراهقين فقط… <strong>لكن الحقيقة أن التقويم ممكن في أي عمر.</strong></p>
-            
-            <div style="background: #f1f8ff; padding: 25px; border-radius: 10px; margin: 30px 0;">
-                <h2 style="color: #0984e3;"><i class="fas fa-search"></i> التقويم لا يحسن المظهر فقط، بل يساعد أيضاً على:</h2>
-                <ul style="list-style: none; padding: 0;">
-                    <li><i class="fas fa-check-circle" style="color: #00b894;"></i> تحسين الإطباق بين الفكين والأسنان.</li>
-                    <li><i class="fas fa-check-circle" style="color: #00b894;"></i> تسهيل عملية تنظيف الأسنان وحمايتها من التسوس.</li>
-                    <li><i class="fas fa-check-circle" style="color: #00b894;"></i> تقليل مشاكل اللثة والتهاباتها.</li>
-                    <li><i class="fas fa-check-circle" style="color: #00b894;"></i> تعزيز الثقة بالنفس بابتسامة متناسقة.</li>
-                </ul>
-            </div>
-
-            <p>💡 بفضل التقنيات الحديثة التي نعتمدها، أصبح التقويم أكثر راحة، أسرع، وأقل ظهوراً من أي وقت مضى، مما يجعله خياراً مثالياً للمحترفين والبالغين.</p>
-
-            <div style="text-align: center; margin-top: 40px; background: #2c3e50; color: white; padding: 30px; border-radius: 15px;">
-                <h3>ابدأ رحلة ابتسامتك اليوم</h3>
-                <p>في مركز د. نشوان الخولاني لطب الأسنان، نقيّم حالتك بدقة ونقترح الخيار الأنسب (سواء التقويم التقليدي أو الشفاف) للحصول على ابتسامة صحية وجميلة.</p>
-                <p><i class="fas fa-map-marker-alt"></i> إب – مفرق جبلة – جوار الكريمي</p>
-                <a href="https://wa.me/967779690850" style="display: inline-block; padding: 15px 35px; background: #25d366; color: white; border-radius: 50px; text-decoration: none; font-weight: bold; margin-top: 15px;">
-                    <i class="fab fa-whatsapp"></i> استشارة التقويم
-                </a>
-            </div>
-
-            <p style="text-align: center; font-style: italic; margin-top: 20px;">"ابتسامة جميلة قد تغيّر الكثير في حياتك."</p>
-        </article>
-    </main>
-
-    <footer style="text-align: center; padding: 20px; background: #f8f9fa;">
-        <p>© 2026 مركز الدكتور نشوان الخولاني - إب</p>
-    </footer>
-</body>
-</html>
         </div>
     </section>
 
     <footer>
-        <p>📍 إب - مفرق جبلة - جوار الكريمي | 📞 779690850</p>
-        <p>© 2026 مركز الدكتور نشوان الخولاني. جميع الحقوق محفوظة.</p>
+        <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: center; gap: 50px;">
+            <div style="flex: 1; min-width: 300px;">
+                <h3 style="color: var(--main-color);">د. نشوان الخولاني</h3>
+                <p>📍 إب - مفرق جبلة - جوار الكريمي</p>
+                <p>📲 الحجز والاستفسار: 779690850</p>
+                <p>#صحة_فمك_حياتك #ابتسامة_دائمة</p>
+            </div>
+        </div>
+        <div style="margin-top: 30px; border-top: 1px solid #34495e; padding-top: 20px;">
+            <p>© 2026 مركز الدكتور نشوان الخولاني. جميع الحقوق محفوظة.</p>
+            <div style="font-size: 1.5rem; gap: 20px; display: flex; justify-content: center; margin-top: 10px;">
+                <a href="https://wa.me/967779690850" style="color: #25d366;"><i class="fab fa-whatsapp"></i></a>
+                <i class="fab fa-facebook"></i> <i class="fab fa-instagram"></i>
+            </div>
+        </div>
     </footer>
+
+    <a href="https://wa.me/967779690850" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
 
 </body>
 </html>
