@@ -498,3 +498,91 @@ footer {
     line-height: 1.7;
 
 }
+
+/* =========================
+   TESTIMONIALS SECTION
+========================= */
+
+.testimonials {
+
+    padding: 90px 0;
+
+    background: var(--light-color);
+
+}
+
+.testimonials-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 25px;
+
+    margin-top: 50px;
+
+}
+
+.testimonial-box {
+
+    background: white;
+
+    padding: 30px 25px;
+
+    border-radius: 16px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+
+    position: relative;
+
+    transition: 0.3s ease;
+
+}
+
+.testimonial-box:hover {
+
+    transform: translateY(-8px);
+
+}
+
+.testimonial-box p {
+
+    font-size: 1rem;
+
+    line-height: 1.8;
+
+    color: #444;
+
+    margin-bottom: 20px;
+
+    position: relative;
+
+}
+
+.testimonial-box p::before {
+
+    content: "“";
+
+    font-size: 3rem;
+
+    color: var(--secondary-color);
+
+    position: absolute;
+
+    top: -20px;
+
+    right: -10px;
+
+    opacity: 0.3;
+
+}
+
+.testimonial-box h4 {
+
+    color: var(--secondary-color);
+
+    font-weight: bold;
+
+    font-size: 0.95rem;
+
+}
