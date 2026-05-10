@@ -1,0 +1,229 @@
+:root {
+    --primary-color: #0F4C81;
+    --secondary-color: #14B8A6;
+    --accent-color: #D4A373;
+    --dark-color: #1E293B;
+    --light-color: #F8FAFC;
+    --text-color: #334155;
+    --white: #ffffff;
+
+    --shadow-soft: 0 10px 30px rgba(0,0,0,0.08);
+    --radius: 18px;
+    --transition: 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background: var(--light-color);
+    color: var(--text-color);
+    line-height: 1.8;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    height: 65px;
+}
+
+.logo-text h1 {
+    font-size: 1.3rem;
+    color: var(--dark-color);
+}
+
+.logo-text p {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--dark-color);
+    font-weight: 700;
+    transition: var(--transition);
+}
+
+.nav-links a:hover {
+    color: var(--secondary-color);
+}
+
+.btn-main {
+    background: var(--secondary-color);
+    color: white;
+    padding: 12px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: var(--transition);
+    display: inline-block;
+}
+
+.btn-main:hover {
+    transform: translateY(-3px);
+}
+
+.hero {
+    min-height: 85vh;
+    background:
+        linear-gradient(rgba(15,76,129,0.82), rgba(15,76,129,0.82)),
+        url('../images/dr-nashwan-surgery.jpg');
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 850px;
+    margin: auto;
+}
+
+.hero h2 {
+    font-size: 3.2rem;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 35px;
+    opacity: 0.95;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--dark-color);
+    font-size: 2.2rem;
+}
+
+.services {
+    padding: 100px 0;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+    transition: var(--transition);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.card-content h3 {
+    margin-bottom: 15px;
+    color: var(--dark-color);
+}
+
+footer {
+    background: var(--dark-color);
+    color: white;
+    padding: 70px 0 30px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    background: #25d366;
+    color: white;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    text-decoration: none;
+    box-shadow: var(--shadow-soft);
+    z-index: 2000;
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+}
