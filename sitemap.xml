@@ -1,28 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- الصفحة الرئيسية -->
-  <url>
-    <loc>https://nashwanaa.github.io/dr-nashwan-dental-clinic/</loc>
-    <priority>1.00</priority>
-  </url>
-  <!-- صفحة زراعة الأسنان في إب -->
-  <url>
-    <loc>https://nashwanaa.github.io/dr-nashwan-dental-clinic/implant-ibb.html</loc>
-    <priority>0.80</priority>
-  </url>
-  <!-- صفحة ضرس العقل في إب -->
-  <url>
-    <loc>https://nashwanaa.github.io/dr-nashwan-dental-clinic/wisdom-tooth-ibb.html</loc>
-    <priority>0.80</priority>
-  </url>
-  <!-- صفحة جراحة الفم -->
-  <url>
-    <loc>https://nashwanaa.github.io/dr-nashwan-dental-clinic/oral-surgery-ibb.html</loc>
-    <priority>0.80</priority>
-  </url>
-  <!-- صفحة رائحة الفم -->
-  <url>
-    <loc>https://nashwanaa.github.io/dr-nashwan-dental-clinic/bad-breath-ibb.html</loc>
-    <priority>0.70</priority>
-  </url>
+
+<url>
+<loc>https://nashwanaa.github.io/dr-nashwan-dental-clinic/</loc>
+</url>
+
 </urlset>
