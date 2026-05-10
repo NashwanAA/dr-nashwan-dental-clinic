@@ -773,3 +773,31 @@ img {
     height: auto;
     display: block;
 }
+
+/* =========================
+   MOBILE OPTIMIZATION
+========================= */
+
+@media (max-width: 768px) {
+
+    h1, h2, h3 {
+
+        text-align: center;
+
+    }
+
+    .container {
+
+        width: 92%;
+
+    }
+
+    .btn-main, .nav-btn {
+
+        width: 100%;
+
+        text-align: center;
+
+    }
+
+}
