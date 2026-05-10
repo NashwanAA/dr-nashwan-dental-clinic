@@ -763,3 +763,13 @@ footer {
     font-size: 0.9rem;
 
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
