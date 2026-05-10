@@ -1,34 +1,12 @@
-# 🦷 مركز الدكتور نشوان الخولاني لطب الأسنان (Dr. Nashwan Dental Clinic)
+# Dr. Nashwan Dental Center Website
 
-## 🌟 نظرة عامة على المشروع
-هذا المستودع يحتوي على الكود المصدري لموقع **مركز الدكتور نشوان الخولاني لطب الأسنان** في مدينة إب، اليمن. الموقع عبارة عن منصة ويب ثابتة (Static Website) احترافية تهدف إلى تعزيز الوجود الرقمي للمركز، وتقديم محتوى توعوي طبي، وتسهيل عملية التواصل وحجز المواعيد للمرضى.
+Official website for Dr. Nashwan Alkhawlani Dental Center.
 
-## ✨ المميزات الرئيسية
-*   **تصميم متجاوب (Responsive Design):** تجربة تصفح مثالية على جميع الأجهزة (Mobile, Tablet, Desktop).
-*   **تحسين محركات البحث (SEO Optimized):** مهيأ بالكامل لتصدر نتائج البحث المحلية في إب واليمن باستخدام تقنيات Metadata و Schema Markup.
-*   **مدونة طبية توعوية:** يحتوي على مقالات متخصصة في (زراعة الأسنان، جراحة الفكين، ضرس العقل، وصحة اللثة).
-*   **تكامل مع WhatsApp:** أزرار تواصل مباشرة وسريعة لرفع معدل تحويل الزوار إلى عملاء.
-*   **سرعة وأداء:** كود نظيف وخفيف يضمن سرعة تحميل عالية.
+## Services
+- Dental Implants
+- Oral & Maxillofacial Surgery
+- Orthodontics
+- Cosmetic Dentistry
 
-## 🛠 التقنيات المستخدمة
-*   **HTML5 & CSS3:** هيكلة وتصميم عصري.
-*   **JavaScript (Vanilla):** تفاعلية ذكية بدون مكتبات ثقيلة.
-*   **Font Awesome:** للأيقونات الاحترافية.
-*   **Google Fonts (Cairo):** لتحسين تجربة القراءة للمستخدم العربي.
-*   **AOS Library:** لتأثيرات الحركة السلسة عند التمرير.
-
-## 📂 هيكل المشروع (Project Structure)
-```text
-dr-nashwan-dental-clinic/
-├── index.html            # الصفحة الرئيسية (Landing Page)
-├── style.css             # ملف التنسيقات الرئيسي (محدث)
-├── script.js            # المنطق البرمجي والتفاعلات
-├── imlpant-pain-ib.html  # مقال زراعة الأسنان
-├── wisdom-tooth-ib.html  # مقال جراحة ضرس العقل
-├── gum-disease-ib.html   # مقال علاج اللثة
-├── bad-breath-ib.html    # مقال علاج رائحة الفم
-├── privacy-policy.html   # سياسة الخصوصية
-├── LICENSE               # رخصة MIT
-├── robots.txt            # تعليمات محركات البحث
-├── sitemap.xml           # خريطة الموقع للأرشفة
-└── images/               # مجلد الوسائط والصور المحسنة
+## Location
+Ibb - Yemen
