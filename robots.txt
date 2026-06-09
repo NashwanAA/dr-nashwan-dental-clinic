@@ -1,9 +1,9 @@
 User-agent: *
+
 Allow: /
 
-Sitemap: https://nashwanaa.github.io/dr-nashwan-dental-clinic/sitemap.xml
-
-User-agent: *
-Allow: /
+Disallow: /assets/private/
+Disallow: /analytics/
+Disallow: /temp/
 
 Sitemap: https://nashwanaa.github.io/dr-nashwan-dental-clinic/sitemap.xml
