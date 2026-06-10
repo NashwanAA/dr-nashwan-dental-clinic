@@ -312,3 +312,59 @@ body {
     .btn-secondary { margin-right: 0; margin-top: 15px; display: block; }
     .btn-primary { display: block; width: 100%; }
 }
+/* ─── ADDITIONAL LUXURY STYLES FOR INDEX ─── */
+.hero-badge {
+    display: inline-block;
+    background: rgba(212, 175, 55, 0.1);
+    border: 1px solid var(--gold-primary);
+    color: var(--gold-primary);
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.stats-bar {
+    background: var(--bg-surface);
+    border-top: 1px solid rgba(212, 175, 55, 0.15);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+    padding: 40px 0;
+    text-align: center;
+}
+.stat-item h3 {
+    font-size: 2.5rem;
+    color: var(--gold-primary);
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+.stat-item p {
+    color: var(--text-white);
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+.card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.card-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: var(--text-white);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    transition: var(--transition-smooth);
+}
+.card:hover .card-link {
+    color: var(--gold-primary);
+    transform: translateX(-5px);
+}
+.gold-text {
+    color: var(--gold-primary) !important;
+}
