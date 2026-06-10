@@ -1,801 +1,314 @@
-/* ===================================
-   DR NASHWAN DENTAL CENTER
-   ENTERPRISE MEDICAL UI SYSTEM
-=================================== */
-
-/* RESET */
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-scroll-behavior:smooth;
-}
-
-:root{
-
---primary:#00b894;
---secondary:#2c3e50;
---light:#f7fafc;
---dark:#1f2937;
---white:#ffffff;
---gray:#6b7280;
-
---shadow:
-0 10px 30px rgba(0,0,0,.08);
-
---radius:18px;
-
---transition:.3s ease;
-
-}
-
-body{
-
-font-family:
-"Tajawal",
-"Cairo",
-Arial,
-sans-serif;
-
-background:#ffffff;
-
-color:#2c3e50;
-
-line-height:1.9;
-
-overflow-x:hidden;
-
-}
-
-/* ==========================
-CONTAINER
-========================== */
-
-.container{
-
-width:90%;
-
-max-width:1200px;
-
-margin:auto;
-
-}
-
-/* ==========================
-HEADER
-========================== */
-
-.header{
-
-position:sticky;
-
-top:0;
-
-z-index:1000;
-
-background:#fff;
-
-box-shadow:
-0 2px 20px rgba(0,0,0,.05);
-
-}
-
-.header-container{
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-padding:15px 0;
-
-}
-
-.logo-area{
-
-display:flex;
-
-align-items:center;
-
-gap:15px;
-
-}
-
-.logo{
-
-width:80px;
-
-height:auto;
-
-}
-
-.logo-area h1{
-
-font-size:1.1rem;
-
-margin-bottom:4px;
-
-}
-
-.logo-area p{
-
-font-size:.85rem;
-
-color:var(--gray);
-
-}
-
-.nav-menu{
-
-display:flex;
-
-list-style:none;
-
-gap:25px;
-
-}
-
-.nav-menu a{
-
-text-decoration:none;
-
-color:var(--secondary);
-
-font-weight:600;
-
-transition:var(--transition);
-
-}
-
-.nav-menu a:hover{
-
-color:var(--primary);
-
-}
-
-/* ==========================
-HERO
-========================== */
-
-.hero{
-
-background:
-linear-gradient(
-135deg,
-#00b894,
-#009879
-);
-
-padding:120px 0;
-
-text-align:center;
-
-color:white;
-
-}
-
-.hero h2{
-
-font-size:3rem;
-
-margin-bottom:20px;
-
-line-height:1.4;
-
-}
-
-.hero p{
-
-max-width:700px;
-
-margin:auto;
-
-font-size:1.2rem;
-
-opacity:.95;
-
-}
-
-.hero-buttons{
-
-margin-top:35px;
-
-display:flex;
-
-justify-content:center;
-
-gap:15px;
-
-flex-wrap:wrap;
-
-}
-
-/* ==========================
-BUTTONS
-========================== */
-
-.btn-primary{
-
-display:inline-block;
-
-padding:14px 30px;
-
-background:white;
-
-color:#00b894;
-
-border-radius:50px;
-
-text-decoration:none;
-
-font-weight:700;
-
-transition:var(--transition);
-
-box-shadow:var(--shadow);
-
-}
-
-.btn-primary:hover{
-
-transform:translateY(-3px);
-
-}
-
-.btn-secondary{
-
-display:inline-block;
-
-padding:14px 30px;
-
-border:2px solid white;
-
-color:white;
-
-border-radius:50px;
-
-text-decoration:none;
-
-font-weight:700;
-
-transition:var(--transition);
-
-}
-
-.btn-secondary:hover{
-
-background:white;
-
-color:#00b894;
-
-}
-
-/* ==========================
-SECTIONS
-========================== */
-
-.section{
-
-padding:90px 0;
-
-}
-
-.light-section{
-
-background:#f8fafc;
-
-}
-
-.dark-section{
-
-background:#2c3e50;
-
-color:white;
-
-}
-
-.section-title{
-
-text-align:center;
-
-margin-bottom:50px;
-
-}
-
-.section-title h2{
-
-font-size:2.2rem;
-
-margin-bottom:15px;
-
-}
-
-.section-title p{
-
-color:#6b7280;
-
-}
-
-.dark-section .section-title p{
-
-color:#d1d5db;
-
-}
-
-/* ==========================
-SERVICES
-========================== */
-
-.services-grid{
-
-display:grid;
-
-grid-template-columns:
-repeat(auto-fit,minmax(280px,1fr));
-
-gap:25px;
-
-}
-
-.service-card{
-
-background:white;
-
-padding:30px;
-
-border-radius:var(--radius);
-
-box-shadow:var(--shadow);
-
-transition:var(--transition);
-
-}
-
-.service-card:hover{
-
-transform:translateY(-10px);
-
-}
-
-.service-card h3{
-
-margin-bottom:15px;
-
-color:#00b894;
-
-}
-
-/* ==========================
-SPECIALTIES
-========================== */
-
-.specialties-grid{
-
-display:grid;
-
-grid-template-columns:
-repeat(auto-fit,minmax(280px,1fr));
-
-gap:25px;
-
-}
-
-.specialty-card{
-
-background:white;
-
-padding:30px;
-
-border-radius:var(--radius);
-
-text-decoration:none;
-
-color:#2c3e50;
-
-box-shadow:var(--shadow);
-
-transition:var(--transition);
-
-}
-
-.specialty-card:hover{
-
-transform:translateY(-10px);
-
-}
-
-/* ==========================
-ARTICLES
-========================== */
-
-.articles-grid{
-
-display:grid;
-
-grid-template-columns:
-repeat(auto-fit,minmax(280px,1fr));
-
-gap:25px;
-
-}
-
-.article-card{
-
-background:white;
-
-padding:30px;
-
-border-radius:var(--radius);
-
-text-decoration:none;
-
-color:#2c3e50;
-
-box-shadow:var(--shadow);
-
-transition:var(--transition);
-
-}
-
-.article-card:hover{
-
-transform:translateY(-10px);
-
-}
-
-.article-card h3{
-
-color:#00b894;
-
-margin-bottom:10px;
-
-}
-
-/* ==========================
-FEATURES
-========================== */
-
-.features-grid{
-
-display:grid;
-
-grid-template-columns:
-repeat(auto-fit,minmax(250px,1fr));
-
-gap:25px;
-
-}
-
-.feature-box{
-
-background:
-rgba(255,255,255,.08);
-
-padding:30px;
-
-border-radius:var(--radius);
-
-}
-
-.feature-box h3{
-
-margin-bottom:12px;
-
-}
-
-/* ==========================
-FAQ
-========================== */
-
-.faq-item{
-
-background:white;
-
-padding:25px;
-
-margin-bottom:20px;
-
-border-radius:var(--radius);
-
-box-shadow:var(--shadow);
-
-}
-
-.faq-item h3{
-
-color:#00b894;
-
-margin-bottom:10px;
-
-}
-
-/* ==========================
-CONTACT
-========================== */
-
-.contact-grid{
-
-display:grid;
-
-grid-template-columns:
-repeat(auto-fit,minmax(250px,1fr));
-
-gap:25px;
-
+/* 
+   🎯 STYLE: LUXURY MEDICAL BRANDING (DARK & GOLD AESTHETIC)
+   DESIGNED FOR: DR. NASHWAN AL-KHAWLANI DENTAL CENTER
+   YEAR: 2026
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap');
+
+:root {
+    --bg-dark: #0f141c;         /* خلفية داكنة ملكية */
+    --bg-surface: #161f2d;      /* أسطح البطاقات */
+    --gold-primary: #d4af37;    /* ذهبي ملكي برّاق */
+    --gold-hover: #b8972f;      /* ذهبي داكن عند التمرير */
+    --text-white: #ffffff;      /* نصوص أساسية */
+    --text-muted: #a0aec0;      /* نصوص ثانوية */
+    --accent-red: #e74c3c;      /* للحالات الطارئة والجراحية */
+    --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
-
-.contact-card{
 
-background:white;
-
-padding:30px;
-
-border-radius:var(--radius);
-
-text-align:center;
-
-box-shadow:var(--shadow);
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+    scroll-behavior: smooth;
 }
-
-/* ==========================
-FOOTER
-========================== */
 
-.footer{
-
-background:#111827;
-
-color:white;
-
-padding:60px 0;
-
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+    line-height: 1.8;
+    overflow-x: hidden;
 }
-
-.footer-grid{
-
-display:grid;
 
-grid-template-columns:
-repeat(auto-fit,minmax(250px,1fr));
-
-gap:30px;
-
-margin-bottom:30px;
-
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
-.footer h3,
-.footer h4{
-
-margin-bottom:15px;
-
+/* ─── HEADER & NAVIGATION ─── */
+.header {
+    background: rgba(22, 31, 45, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 15px 0;
+    transition: var(--transition-smooth);
 }
-
-.footer ul{
 
-list-style:none;
-
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
-.footer li{
-
-margin-bottom:10px;
 
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
-
-.footer hr{
-
-margin:25px 0;
-
-border:none;
 
-height:1px;
-
-background:#374151;
-
+.logo-area img {
+    height: 60px;
+    filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.4));
 }
-
-.copyright{
 
-text-align:center;
-
-opacity:.8;
-
+.logo-area h1 {
+    font-size: 1.1rem;
+    color: var(--gold-primary);
+    font-weight: 700;
 }
-
-/* ==========================
-WHATSAPP FLOAT
-========================== */
 
-.whatsapp-float{
-
-position:fixed;
-
-bottom:25px;
-
-left:25px;
-
-width:65px;
-
-height:65px;
-
-border-radius:50%;
-
-background:#25d366;
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-font-size:28px;
-
-text-decoration:none;
-
-color:white;
-
-box-shadow:
-0 10px 25px rgba(37,211,102,.35);
-
-z-index:999;
-
-animation:pulse 2s infinite;
-
+.logo-area p {
+    font-size: 0.8rem;
+    color: var(--text-muted);
 }
-
-@keyframes pulse{
 
-0%{
-
-transform:scale(1);
-
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 25px;
 }
-
-50%{
 
-transform:scale(1.08);
-
+.nav-menu a {
+    color: var(--text-white);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: var(--transition-smooth);
+    padding: 5px 10px;
+    position: relative;
 }
-
-100%{
-
-transform:scale(1);
 
+.nav-menu a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--gold-primary);
+    transition: var(--transition-smooth);
+    transform: translateX(-50%);
 }
 
+.nav-menu a:hover::after, .nav-menu a.active::after {
+    width: 100%;
 }
 
-/* ==========================
-RESPONSIVE
-========================== */
-
-@media(max-width:768px){
-
-.header-container{
-
-flex-direction:column;
-
-gap:15px;
-
+.nav-menu a:hover, .nav-menu a.active {
+    color: var(--gold-primary);
 }
-
-.nav-menu{
 
-flex-wrap:wrap;
-
-justify-content:center;
-
+/* ─── CINEMATIC HERO SECTION ─── */
+.hero {
+    padding: 100px 0;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(22, 31, 45, 0.5) 0%, var(--bg-dark) 100%), 
+                radial-gradient(circle at top right, rgba(212, 175, 55, 0.15), transparent 40%);
+    position: relative;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
 }
-
-.hero{
 
-padding:90px 0;
-
+.hero h2 {
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: var(--text-white);
+    line-height: 1.4;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5);
 }
-
-.hero h2{
-
-font-size:2rem;
 
+.hero h2 span {
+    color: var(--gold-primary);
+    display: block;
+    font-size: 3.2rem;
 }
 
-.hero p{
-
-font-size:1rem;
-
+.hero p {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    max-width: 800px;
+    margin: 0 auto 35px auto;
 }
-
-.section{
 
-padding:70px 0;
-
+/* ─── PREMIUM BUTTONS ─── */
+.btn-primary, .btn-secondary {
+    display: inline-block;
+    padding: 14px 35px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: var(--transition-smooth);
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
-
-.section-title h2{
-
-font-size:1.8rem;
 
+.btn-primary {
+    background: linear-gradient(135deg, var(--gold-primary), var(--gold-hover));
+    color: var(--bg-dark);
+    border: none;
 }
 
-.logo{
-
-width:65px;
-
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
 }
 
+.btn-secondary {
+    background: transparent;
+    color: var(--gold-primary);
+    border: 2px solid var(--gold-primary);
+    margin-right: 15px;
 }
-/* ==========================
-ANIMATION SYSTEM
-========================== */
-
-.hidden-element {
-
-opacity:0;
-
-transform:translateY(40px);
-
-transition:
-all .8s ease;
 
+.btn-secondary:hover {
+    background: rgba(212, 175, 55, 0.1);
+    transform: translateY(-3px);
 }
 
-.show-element {
-
-opacity:1;
-
-transform:translateY(0);
-
+/* ─── LUXURY CARDS & SECTIONS ─── */
+.section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--gold-primary);
+    margin-bottom: 50px;
+    position: relative;
 }
-
-/* ==========================
-BACK TO TOP
-========================== */
-
-#backToTop {
-
-position:fixed;
-
-right:25px;
-
-bottom:100px;
-
-width:50px;
-
-height:50px;
-
-border:none;
-
-border-radius:50%;
 
-background:#00b894;
-
-color:white;
-
-font-size:22px;
-
-cursor:pointer;
-
-opacity:0;
-
-visibility:hidden;
-
-transition:.3s;
-
-z-index:999;
-
-box-shadow:
-0 10px 25px rgba(0,0,0,.15);
-
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--gold-primary);
+    margin: 15px auto 0 auto;
+    border-radius: 2px;
 }
-
-#backToTop.show {
-
-opacity:1;
-
-visibility:visible;
 
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: var(--bg-surface);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    padding: 30px;
+    transition: var(--transition-smooth);
+    position: relative;
+    overflow: hidden;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--gold-primary);
+    transform: scaleX(0);
+    transition: var(--transition-smooth);
+    transform-origin: right;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(212, 175, 55, 0.3);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+}
+
+.card:hover::before {
+    transform: scaleX(1);
+}
+
+.card h3 {
+    color: var(--gold-primary);
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* ─── CLINICAL CONVERSION HUB ─── */
+.landing-cta-box {
+    background: radial-gradient(circle at top right, rgba(22, 31, 45, 1), rgba(15, 20, 28, 1));
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    padding: 40px;
+    border-radius: 16px;
+    text-align: center;
+    margin-top: 40px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+/* ─── FLOATING WHATSAPP ─── */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    background: #25d366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-decoration: none;
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+    z-index: 1000;
+    transition: var(--transition-smooth);
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1) rotate(15deg);
+}
+
+/* ─── FOOTER ─── */
+.footer {
+    background: #090d12;
+    padding: 30px 0;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container { flex-direction: column; gap: 15px; text-align: center; }
+    .nav-menu { flex-wrap: wrap; justify-content: center; gap: 15px; }
+    .hero h2 { font-size: 2rem; }
+    .hero h2 span { font-size: 2.3rem; }
+    .btn-secondary { margin-right: 0; margin-top: 15px; display: block; }
+    .btn-primary { display: block; width: 100%; }
 }
