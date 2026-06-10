@@ -1,67 +1,150 @@
-تقويم الأسنان في إب
-تقويم الأسنان اليمن
-تقويم الأسنان للكبار
-تقويم الأسنان للأطفال
-Orthodontics Ibb
-<title>
-تقويم الأسنان في إب | مركز الدكتور نشوان عبد الوهاب الخولاني لطب الأسنان
-</title>
-<section class="hero">
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
 
-<div class="container">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تقويم الأسنان وتعديل الفكين في إب | مركز د. نشوان الخولاني</title>
+    <meta name="description" content="استعد تناسق ابتسامتك وإطباق فكيك بأحدث تقنيات تقويم الأسنان للكبار والأطفال في إب. تقويم معدني، تجميلي، وشفاف بإشراف د. نشوان الخولاني.">
+    <meta name="keywords" content="تقويم الأسنان في إب، تقويم الأسنان اليمن، تقويم الأسنان للكبار، تقويم الأسنان للأطفال، التقويم الشفاف إب، سوء الإطباق، Orthodontics Ibb، الدكتور نشوان الخولاني">
+    <link rel="canonical" href="https://nashwanaa.github.io/dr-nashwan-dental-clinic/specialties/orthodontics.html">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../assets/logo/favicon.ico">
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MedicalProcedure",
+        "name": "Orthodontic and Dentofacial Orthopedic Treatment",
+        "procedureType": "MedicalProcedure",
+        "anatomy": "Teeth and Jaw structure",
+        "provider": {
+            "@type": "Dentist",
+            "name": "مركز الدكتور نشوان عبد الوهاب الخولاني لطب الأسنان وجراحة الفكين",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "إب",
+                "addressCountry": "YE"
+            }
+        }
+    }
+    </script>
+</head>
 
-<h1>تقويم الأسنان</h1>
+<body>
 
-<p>
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo-area">
+                <img src="../assets/logo/logo.png" alt="شعار مركز الدكتور نشوان الخولاني" class="logo">
+                <div>
+                    <h1>مركز الدكتور نشوان عبد الوهاب الخولاني</h1>
+                    <p>لطب الأسنان وجراحة الفم والوجه والفكين</p>
+                </div>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="../index.html">الرئيسية</a></li>
+                    <li><a href="../about.html">عن الدكتور</a></li>
+                    <li><a href="../services.html" class="active">خدماتنا</a></li>
+                    <li><a href="../index.html#specialties">التخصصات الجراحية</a></li>
+                    <li><a href="../index.html#articles">المدونة الطبية</a></li>
+                    <li><a href="../contact.html">اتصل بنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-تحسين انتظام الأسنان والإطباق للحصول على ابتسامة صحية ومتناسقة.
+    <section class="hero">
+        <div class="container">
+            <p class="hero-badge" style="background: rgba(212, 175, 55, 0.1); color: var(--gold-primary); border: 1px solid var(--gold-primary);">📐 هندسة الإطباق الحيوية وتناسق الوجه</p>
+            <h2>تقويم الأسنان وتوجيه نمو الفكين للبالغين والأطفال</h2>
+            <p>أكثر من مجرد تجميل مظهر؛ نحن نعيد صياغة وهندسة إطباق الأسنان والفكين وظيفياً وصحياً لابتسامة مثالية تدوم مدى الحياة.</p>
+        </div>
+    </section>
 
-</p>
+    <section class="section">
+        <div class="container" style="max-width: 850px; text-align: right;">
 
-</div>
+            <div class="landing-cta-box" style="margin-bottom: 40px; border-right: 4px solid var(--gold-primary);">
+                <h3 style="color: var(--gold-primary); margin-bottom: 15px;">ما هو تقويم الأسنان بمفهومه الشامل؟</h3>
+                <p style="color: var(--text-white); text-align: justify; line-height: 1.8;">
+                    علم <strong>تقويم الأسنان وعظام الوجه (Orthodontics & Dentofacial Orthopedics)</strong> هو فرع طبي تخصصي دقيق لا تقتصر غايته على رص الأسنان وتعديل اعوجاجها الظاهري فحسب، بل يمتد بشكل أساسي إلى تصحيح علاقة الفك العلوي بالفك السفلي، وضبط سوء الإطباق المستعصي، وتحسين مجرى التنفس، وحماية مفصل الفك ($TMJ$) من الإجهاد المزمن. إن إرساء إطباق متوازن هندسياً هو المفتاح الجوهري لحماية الأسنان من التآكل وتسهيل عملية النطق ومضغ الطعام بالشكل السليم.
+                </p>
+            </div>
 
-</section>
-<h2>ما هو تقويم الأسنان؟</h2>
+            <h3 style="color: var(--gold-primary); margin-bottom: 25px;">⚠️ علامات ومشاكل تستدعي الاستشارة الفورية:</h3>
+            <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 40px;">
+                <div style="flex: 1; min-width: 250px; background: var(--bg-surface); padding: 20px; border-radius: 8px; border-right: 3px solid var(--gold-primary);">
+                    <h4 style="color: var(--text-white); margin-bottom: 10px;">🦷 ازدحام وتراكب الأسنان</h4>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">خروج الأسنان عن مسارها الطبيعي بسبب ضيق قوس الفك، مما يعوق تنظيفها ويحفز التسوس والتهاب اللثة.</p>
+                </div>
+                <div style="flex: 1; min-width: 250px; background: var(--bg-surface); padding: 20px; border-radius: 8px; border-right: 3px solid var(--gold-primary);">
+                    <h4 style="color: var(--text-white); margin-bottom: 10px;">↔️ الفراغات البينية الواسعة</h4>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">وجود مسافات غير طبيعية بين الأسنان تؤثر سلباً على جمالية الابتسامة وتتسبب في انحشار الأطعمة المستمر.</p>
+                </div>
+                <div style="flex: 1; min-width: 250px; background: var(--bg-surface); padding: 20px; border-radius: 8px; border-right: 3px solid var(--gold-primary);">
+                    <h4 style="color: var(--text-white); margin-bottom: 10px;">⚖️ سوء إطباق الفكين (Malocclusion)</h4>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">مثل العضة المفتوحة، العضة العميقة، أو بروز الفك العلوي/السفلي، مما يؤدي لضعف كفاءة المضغ وإجهاد العضلات.</p>
+                </div>
+            </div>
 
-<p>
-تقويم الأسنان هو فرع متخصص يهدف إلى تصحيح سوء الإطباق واعوجاج الأسنان وتحسين وظيفة الفكين والمظهر الجمالي للابتسامة.
-</p>
+            <h3 style="color: var(--gold-primary); margin-bottom: 25px; text-align: center;">💎 أنظمة تقويم الأسنان المتاحة في مركزنا</h3>
+            
+            <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 40px;">
+                <div style="flex: 1; min-width: 260px; background: var(--bg-surface); padding: 25px; border-radius: 12px; border: 1px solid rgba(212,175,55,0.05);">
+                    <h4 style="color: var(--gold-primary); margin-bottom: 12px;">🔘 التقويم المعدني التقليدي المتطور</h4>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7;">النظام الأكثر كفاءة وقوة وعالمية للتعامل مع أعقد حالات الازدحام وسوء الإطباق الشديد، ويمتاز بنتائجه السريعة والدقيقة.</p>
+                </div>
+                <div style="flex: 1; min-width: 260px; background: var(--bg-surface); padding: 25px; border-radius: 12px; border: 1px solid rgba(212,175,55,0.05);">
+                    <h4 style="color: var(--gold-primary); margin-bottom: 12px;">💎 التقويم الخزفي التجميلي ($Ceramic$)</h4>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7;">حواصر تقويمية شفافة أو بلون السن الطبيعي تماماً، توفر خياراً جمالياً ممتازاً للكبار واليافعين دون إحداث إحراج بصري أثناء التحدث.</p>
+                </div>
+            </div>
 
-<h2>متى تحتاج إلى تقويم الأسنان؟</h2>
+            <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 40px;">
+                <div style="flex: 1; min-width: 260px; background: var(--bg-surface); padding: 25px; border-radius: 12px; border: 1px solid rgba(212,175,55,0.05);">
+                    <h4 style="color: var(--gold-primary); margin-bottom: 12px;">🌌 التقويم الشفاف غير المرئي ($Aligners$)</h4>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7;">سلسلة من القوالب البلاستيكية الشفافة القابلة للإزالة والمصممة رقمياً بالكامل؛ توفر حرية تامة أثناء تناول الطعام وتنظيف الأسنان مع خفاء بصري مطلق.</p>
+                </div>
+                <div style="flex: 1; min-width: 260px; background: var(--bg-surface); padding: 25px; border-radius: 12px; border: 1px solid rgba(212,175,55,0.05);">
+                    <h4 style="color: var(--gold-primary); margin-bottom: 12px;">🧒 الأجهزة الوظيفية وتوجيه نمو عظام الأطفال</h4>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7;">أجهزة متخصصة مصممة خصيصاً للأطفال في مرحلة النمو (التقويم الوقائي) لتوجيه نمو الفكين بشكل سليم وتفادي الحاجة للجراحات المعقدة مستقبلاً.</p>
+                </div>
+            </div>
 
-<ul>
-<li>تزاحم الأسنان.</li>
-<li>وجود فراغات بين الأسنان.</li>
-<li>بروز الأسنان الأمامية.</li>
-<li>مشاكل الإطباق.</li>
-<li>عدم انتظام الأسنان.</li>
-</ul>
+            <h3 style="color: var(--gold-primary); margin-bottom: 20px;">🛡️ الفوائد الحيوية والوقائية للعلاج التقويمي:</h3>
+            <p style="color: var(--text-muted); margin-bottom: 20px; text-align: justify; line-height: 1.8;">
+                إن الخضوع للعلاج التقويمي بداخل مركزنا يمنحك حزمة من المزايا الوظيفية والجمالية بعيدة المدى، والتي تعزز كفاءة ونمط حياتك بالكامل:
+            </p>
+            <div style="background: rgba(255,255,255,0.02); padding: 20px; border-radius: 12px; margin-bottom: 40px; border: 1px solid rgba(212,175,55,0.05);">
+                <p style="margin-bottom: 12px; color: var(--text-white);">✨ <strong>الارتقاء بالثقة والنطق:</strong> تحسين فوري وجذري في مخارج الحروف وتعبيرات الوجه وجمالية الابتسامة المشرقة.</p>
+                <p style="margin-bottom: 12px; color: var(--text-white);">🍏 <strong>مضغ وهضم مثالي:</strong> توزيع متوازن وصحي لقوى الإطباق يضمن كفاءة تفتيت الطعام ويحمي الجهاز الهضمي من المشاكل.</p>
+                <p style="margin-bottom: 0; color: var(--text-white);">🛡️ <strong>حماية وقائية مستدامة:</strong> القضاء على زوايا انحشار البكتيريا يسهل تنظيف الفم، مما يقلل فرص الإصابة بالتهابات اللثة الحادة ونخر عظام الأسنان على المدى الطويل.</p>
+            </div>
 
-<h2>أنواع التقويم</h2>
+            <hr style="border-color: rgba(212, 175, 55, 0.1); margin: 40px 0;">
 
-<ul>
-<li>التقويم المعدني التقليدي.</li>
-<li>التقويم التجميلي.</li>
-<li>التقويم الشفاف.</li>
-<li>الأجهزة الوظيفية للأطفال.</li>
-</ul>
+            <div style="text-align: center; background: var(--bg-surface); padding: 40px; border-radius: 16px; border: 1px solid var(--gold-primary);">
+                <h3 style="color: var(--gold-primary); margin-bottom: 15px;">ابدأ رحلة رص وهندسة ابتسامتك اليوم</h3>
+                <p style="color: var(--text-muted); margin-bottom: 25px; max-width: 650px; margin-left: auto; margin-right: auto;">
+                    سواء كان طفلك بحاجة لتقويم وقائي لحماية فكيه، أو كنت تبحث عن التقويم الشفاف غير المرئي؛ لا تتردد في فحص حالتك بأحدث أنظمة التصوير المقطعي بالمركز.
+                </p>
+                <a href="https://wa.me/967779690850?text=أرغب+في+حجز+موعد+استشارة+لفحص+وتركيب+تقويم+الأسنان" class="btn-primary" style="display: inline-block; padding: 12px 35px;">🟢 احجز موعد استشارة وفحص تقويم الأسنان</a>
+            </div>
 
-<h2>فوائد العلاج التقويمي</h2>
+        </div>
+    </section>
 
-<ul>
-<li>تحسين المظهر الجمالي.</li>
-<li>تحسين المضغ والنطق.</li>
-<li>تسهيل تنظيف الأسنان.</li>
-<li>تقليل مشاكل اللثة مستقبلاً.</li>
-</ul>
-<script type="application/ld+json">
-{
-"@context":"https://schema.org",
-"@type":"MedicalProcedure",
-"name":"Orthodontic Treatment",
-"provider":{
-"@type":"Dentist",
-"name":"مركز الدكتور نشوان عبد الوهاب الخولاني لطب الأسنان"
-}
-}
-</script>
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 مركز الدكتور نشوان عبد الوهاب الخولاني لطب الأسنان وجراحة الفكين | اليمن - إب</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/967779690850" class="whatsapp-float">💬</a>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
