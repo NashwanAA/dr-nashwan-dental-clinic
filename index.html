@@ -27,8 +27,8 @@
                     <li><a href="index.html" class="active">الرئيسية</a></li>
                     <li><a href="about.html">عن الدكتور</a></li>
                     <li><a href="services.html">خدماتنا</a></li>
-                    <li><a href="#specialties">التخصصات الجراحية</a></li> <!-- رابط داخلي يعمل فوراً -->
-                    <li><a href="#articles">المدونة الطبية</a></li>     <!-- رابط داخلي يعمل فوراً -->
+                    <li><a href="#specialties">التخصصات الجراحية</a></li>
+                    <li><a href="#articles">المدونة الطبية</a></li>
                     <li><a href="contact.html">اتصل بنا</a></li>
                 </ul>
             </nav>
@@ -45,7 +45,7 @@
                     نجمع في مركزنا بين عراقة الخبرة السريرية في طب الأسنان العام والتجميلي الممتدة منذ عام <b>2005</b>، وبين أحدث ما توصلت إليه التكنولوجيا الرقمية في تخصص جراحة الفم والوجه والفكين والزراعة الموجهة بالكمبيوتر. نوفر حلولاً متكاملة لكل أفراد العائلة إلى جانب المعالجات المعقدة لضمور العظام الحاد.
                 </p>
                 <div style="margin-top: 35px; display: flex; gap: 15px; flex-wrap: wrap;">
-                    <a href="https://wa.me/967779690850" class="btn-primary" style="padding: 14px 30px; font-weight: bold;">🟢 احجز موعدك الآن</a>
+                    <a href="#quick-booking" class="btn-primary" style="padding: 14px 30px; font-weight: bold; text-decoration: none;">🟢 احجز موعدك الآن</a>
                     <a href="services.html" class="btn-secondary" style="padding: 14px 30px; color: var(--text-white); border: 1px solid rgba(255,255,255,0.2); text-decoration: none; border-radius: 6px;">استكشف كافة الخدمات</a>
                 </div>
             </div>
@@ -75,7 +75,7 @@
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
                     <div style="background: var(--bg-dark); padding: 30px 20px; border-radius: 8px; text-align: center; border: 1px solid rgba(255,255,255,0.02);">
                         <div style="font-size: 2.2rem; color: var(--gold-primary); font-weight: bold; margin-bottom: 5px;">2005</div>
-                        <div style="color: var(--text-white); font-size: 0.95rem;">بداية المسيرة الطبية الشاملة</div>
+                        <div style="color: var(--text-white); font-size: 0.95rem;">بداية المسيرة الطبية الشامل</div>
                     </div>
                     <div style="background: var(--bg-dark); padding: 30px 20px; border-radius: 8px; text-align: center; border: 1px solid rgba(255,255,255,0.02);">
                         <div style="font-size: 2.2rem; color: var(--gold-primary); font-weight: bold; margin-bottom: 5px;">21+</div>
@@ -94,7 +94,7 @@
         </div>
     </section>
 
-    <!-- SPECIALTIES SECTION (FIXED TARGET ID) -->
+    <!-- SPECIALTIES SECTION WITH HIGH-END VISUAL IMAGES -->
     <section id="specialties" class="section" style="background: var(--bg-dark); padding: 80px 0; border-top: 1px solid rgba(255,255,255,0.02);">
         <div class="container">
             <div style="text-align: center; margin-bottom: 50px;">
@@ -107,25 +107,34 @@
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
                 <!-- التخصص 1 -->
-                <div style="background: var(--bg-surface); padding: 35px; border-radius: 12px; border-left: 4px solid var(--gold-primary);">
-                    <h4 style="color: var(--text-white); font-size: 1.3rem; margin-bottom: 15px;">💀 علاج حالات الضمور العظمي الشديد الحادة</h4>
-                    <p style="color: var(--text-muted); line-height: 1.7; font-size: 0.95rem;">
-                        تصميم وطباعة الغرسات ثلاثية الأبعاد تحت السمحاق (3D Subperiosteal Implants) التفصيلية والزراعات الوجنية الالتفافية لتوفير حلول فورية دائمة وثابتة للمرضى الذين يعانون من تراجع حاد في عظام الفكين دون الحاجة لعمليات رقع وتطعيم عظمي طويلة.
-                    </p>
+                <div style="background: var(--bg-surface); border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.02); display: flex; flex-direction: column;">
+                    <img src="assets/images/maxillofacial-specialty.jpg" alt="علاج حالات الضمور العظمي" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 25px; flex: 1;">
+                        <h4 style="color: var(--text-white); font-size: 1.25rem; margin-bottom: 12px;">💀 علاج حالات الضمور العظمي الحادة</h4>
+                        <p style="color: var(--text-muted); line-height: 1.7; font-size: 0.9rem;">
+                            تصميم وطباعة الغرسات ثلاثية الأبعاد تحت السمحاق (3D Subperiosteal Implants) التفصيلية والزراعات الوجنية الالتفافية لتوفير حلول فورية دائمة وثابتة للمرضى الذين يعانون من تراجع حاد في عظام الفكين.
+                        </p>
+                    </div>
                 </div>
                 <!-- التخصص 2 -->
-                <div style="background: var(--bg-surface); padding: 35px; border-radius: 12px; border-left: 4px solid var(--gold-primary);">
-                    <h4 style="color: var(--text-white); font-size: 1.3rem; margin-bottom: 15px;">🔩 زراعة الأسنان الرقمية الموجهة برمجياً</h4>
-                    <p style="color: var(--text-muted); line-height: 1.7; font-size: 0.95rem;">
-                        الدمج الكامل بين تقنيات الأشعة المقطعية المخروطية CBCT والتخطيط الافتراضي المسبق لصناعة أدلة جراحية ذكية، تتيح وضع الغرسات السويسرية والألمانية الفاخرة بدقة متناهية وبأقل تدخل جراحي وبدون ألم.
-                    </p>
+                <div style="background: var(--bg-surface); border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.02); display: flex; flex-direction: column;">
+                    <img src="assets/images/implant-specialty.jpg" alt="زراعة الأسنان الرقمية" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 25px; flex: 1;">
+                        <h4 style="color: var(--text-white); font-size: 1.25rem; margin-bottom: 12px;">🔩 زراعة الأسنان الرقمية الموجهة برمجياً</h4>
+                        <p style="color: var(--text-muted); line-height: 1.7; font-size: 0.9rem;">
+                            الدمج الكامل بين تقنيات الأشعة المقطعية المخروطية CBCT والتخطيط الافتراضي المسبق لصناعة أدلة جراحية ذكية، تتيح وضع الغرسات السويسرية والألمانية الفاخرة بدقة متناهية وبدون ألم.
+                        </p>
+                    </div>
                 </div>
                 <!-- التخصص 3 -->
-                <div style="background: var(--bg-surface); padding: 35px; border-radius: 12px; border-left: 4px solid var(--gold-primary);">
-                    <h4 style="color: var(--text-white); font-size: 1.3rem; margin-bottom: 15px;">😷 جراحة الوجه والفكين واستئصال الأورام</h4>
-                    <p style="color: var(--text-muted); line-height: 1.7; font-size: 0.95rem;">
-                        علاج وإصلاح كسور الفكين والوجه الناتجة عن الإصابات والحوادث، استئصال الأكياس والآفات العظمية الفكية، والخلع الجراحي الدقيق لأضراس العقل المنطمرة والمعقدة تشريحياً مع حماية كاملة ومطلقة للأعصاب والتروية الدموية.
-                    </p>
+                <div style="background: var(--bg-surface); border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.02); display: flex; flex-direction: column;">
+                    <img src="assets/images/cosmetic-specialty.jpg" alt="جراحة الوجه والفكين التجميلية والعلاجية" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 25px; flex: 1;">
+                        <h4 style="color: var(--text-white); font-size: 1.25rem; margin-bottom: 12px;">😷 جراحة الوجه والفكين واستئصال الأورام</h4>
+                        <p style="color: var(--text-muted); line-height: 1.7; font-size: 0.9rem;">
+                            علاج وإصلاح كسور الفكين والوجه الناتجة عن الحوادث، استئصال الأكياس والآفات العظمية، والخلع الجراحي الدقيق لأضراس العقل المنطمرة تشريحياً مع حماية كاملة للأعصاب.
+                        </p>
+                    </div>
                 </div>
             </div>
             
@@ -135,7 +144,7 @@
         </div>
     </section>
 
-    <!-- ARTICLES/BLOG SECTION (FIXED TARGET ID) -->
+    <!-- ARTICLES/BLOG SECTION WITH EXACT REVISED PATHWAYS (Ibb FIXED) -->
     <section id="articles" class="section" style="background: var(--bg-surface); padding: 80px 0;">
         <div class="container">
             <div style="text-align: center; margin-bottom: 50px;">
@@ -147,47 +156,56 @@
             </div>
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
-                <!-- مقال 1 -->
-                <div style="background: var(--bg-dark); border-radius: 8px; overflow: hidden; border: 1px solid rgba(255,255,255,0.02);">
-                    <div style="padding: 25px;">
-                        <span style="color: var(--gold-primary); font-size: 0.85rem; font-weight: bold;">🔩 جراحة وزراعة رقمية</span>
-                        <h4 style="color: var(--text-white); font-size: 1.2rem; margin: 10px 0 15px 0; line-height: 1.4;">تقنية الغرسات المطبوعة ثلاثياً تحت السمحاق لحالات الضمور الشديد</h4>
-                        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin-bottom: 20px;">
-                            كيف غيرت الهندسة الرقمية والطباعة ثلاثية الأبعاد حياة المرضى الذين يعانون من تآكل عظمي حاد وجعلت زراعة الأسنان الفورية ممكنة وبدون الحاجة لعمليات ترقيع عظمي مطولة ومؤلمة...
-                        </p>
-                        <a href="#" style="color: var(--gold-primary); text-decoration: none; font-weight: bold; font-size: 0.9rem;">اقرأ المقال كاملاً ←</a>
+                <!-- مقال 1 (تم تصحيح الرابط هنا) -->
+                <div style="background: var(--bg-dark); border-radius: 8px; overflow: hidden; border: 1px solid rgba(255,255,255,0.02); display: flex; flex-direction: column;">
+                    <img src="assets/images/article-bone-atrophy.jpg" alt="تقنية الغرسات المطبوعة ثلاثياً تحت السمحاق" style="width: 100%; height: 180px; object-fit: cover;">
+                    <div style="padding: 25px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <span style="color: var(--gold-primary); font-size: 0.85rem; font-weight: bold;">🔩 جراحة وزراعة رقمية</span>
+                            <h4 style="color: var(--text-white); font-size: 1.2rem; margin: 10px 0 15px 0; line-height: 1.4;">تقنية الغرسات المطبوعة ثلاثياً تحت السمحاق لحالات الضمور الشديد</h4>
+                            <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin-bottom: 20px;">
+                                كيف غيرت الهندسة الرقمية والطباعة ثلاثية الأبعاد حياة المرضى الذين يعانون من تآكل عظمي حاد وجعلت زراعة الأسنان الفورية ممكنة...
+                            </p>
+                        </div>
+                        <a href="implant-ibb.html" style="color: var(--gold-primary); text-decoration: none; font-weight: bold; font-size: 0.9rem;">اقرأ المقال كاملاً ←</a>
                     </div>
                 </div>
                 
                 <!-- مقال 2 -->
-                <div style="background: var(--bg-dark); border-radius: 8px; overflow: hidden; border: 1px solid rgba(255,255,255,0.02);">
-                    <div style="padding: 25px;">
-                        <span style="color: var(--gold-primary); font-size: 0.85rem; font-weight: bold;">🦷 صحة الفم العامة</span>
-                        <h4 style="color: var(--text-white); font-size: 1.2rem; margin: 10px 0 15px 0; line-height: 1.4;">العلاقة الوثيقة والمتبادلة بين صحة الفم واللثة والأمراض النظامية في الجسم</h4>
-                        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin-bottom: 20px;">
-                            دراسة طبية توضح كيف يمكن لالتهابات وجيوب اللثة المزمنة وغير المعالجة أن تؤثر بشكل مباشر على صحة القلب، وتساهم في عدم انتظام مستويات السكر في الدم لمرضى السكري...
-                        </p>
-                        <a href="#" style="color: var(--gold-primary); text-decoration: none; font-weight: bold; font-size: 0.9rem;">اقرأ المقال كاملاً ←</a>
+                <div style="background: var(--bg-dark); border-radius: 8px; overflow: hidden; border: 1px solid rgba(255,255,255,0.02); display: flex; flex-direction: column;">
+                    <img src="assets/images/article-digital-dentistry.jpg" alt="العلاقة بين صحة الفم واللثة والأمراض النظامية" style="width: 100%; height: 180px; object-fit: cover;">
+                    <div style="padding: 25px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <span style="color: var(--gold-primary); font-size: 0.85rem; font-weight: bold;">🦷 صحة الفم العامة</span>
+                            <h4 style="color: var(--text-white); font-size: 1.2rem; margin: 10px 0 15px 0; line-height: 1.4;">العلاقة الوثيقة والمتبادلة بين صحة الفم واللثة والأمراض النظامية في الجسم</h4>
+                            <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin-bottom: 20px;">
+                                دراسة طبية توضح كيف يمكن لالتهابات وجيوب اللثة المزمنة وغير المعالجة أن تؤثر بشكل مباشر على صحة القلب ومرضى السكري...
+                            </p>
+                        </div>
+                        <a href="oral-health.html" style="color: var(--gold-primary); text-decoration: none; font-weight: bold; font-size: 0.9rem;">اقرأ المقال كاملاً ←</a>
                     </div>
                 </div>
 
                 <!-- مقال 3 -->
-                <div style="background: var(--bg-dark); border-radius: 8px; overflow: hidden; border: 1px solid rgba(255,255,255,0.02);">
-                    <div style="padding: 25px;">
-                        <span style="color: var(--gold-primary); font-size: 0.85rem; font-weight: bold;">😷 جراحة الفم والفكين</span>
-                        <h4 style="color: var(--text-white); font-size: 1.2rem; margin: 10px 0 15px 0; line-height: 1.4;">أضراس العقل المنطمرة تشريحياً: متى يجب التدخل الجراحي لاستخراجها؟</h4>
-                        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin-bottom: 20px;">
-                            دليلك الطبي الشامل لفهم مخاطر إهمال أضراس العقل المائلة والمدفونة، وكيف نضمن استخراجها جراحياً بأعلى مستويات الأمان وحماية العصب الفكي السفلي عبر الأشعة المقطعية المخروطية...
-                        </p>
-                        <a href="#" style="color: var(--gold-primary); text-decoration: none; font-weight: bold; font-size: 0.9rem;">اقرأ المقال كاملاً ←</a>
+                <div style="background: var(--bg-dark); border-radius: 8px; overflow: hidden; border: 1px solid rgba(255,255,255,0.02); display: flex; flex-direction: column;">
+                    <img src="assets/images/dr-nashwan-surgery.jpg" alt="أضراس العقل المنطمرة تشريحياً" style="width: 100%; height: 180px; object-fit: cover;">
+                    <div style="padding: 25px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <span style="color: var(--gold-primary); font-size: 0.85rem; font-weight: bold;">😷 جراحة الفم والفكين</span>
+                            <h4 style="color: var(--text-white); font-size: 1.2rem; margin: 10px 0 15px 0; line-height: 1.4;">أضراس العقل المنطمرة تشريحياً: متى يجب التدخل الجراحي لاستخراجها؟</h4>
+                            <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin-bottom: 20px;">
+                                دليلك الطبي الشامل لفهم مخاطر إهمال أضراس العقل المائلة والمدفونة، وكيف نضمن استخراجها جراحياً بأعلى مستويات الأمان وحماية العصب...
+                            </p>
+                        </div>
+                        <a href="wisdom-teeth.html" style="color: var(--gold-primary); text-decoration: none; font-weight: bold; font-size: 0.9rem;">اقرأ المقال كاملاً ←</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CENTER LOCATION & INFO SYSTEM -->
-    <section class="section" style="background: var(--bg-dark); padding: 80px 0; border-top: 1px solid rgba(255,255,255,0.02);">
+    <!-- CENTER LOCATION & SMART BOOKING SYSTEM -->
+    <section id="quick-booking" class="section" style="background: var(--bg-dark); padding: 80px 0; border-top: 1px solid rgba(255,255,255,0.02);">
         <div class="container" style="display: flex; flex-wrap: wrap; gap: 50px;">
             <div style="flex: 1; min-width: 320px;">
                 <h3 style="color: var(--gold-primary); font-size: 1.8rem; margin-bottom: 20px;">معلومات الوصول والتواصل المباشر</h3>
@@ -199,13 +217,38 @@
                     <li>📞 <b>رقم الهاتف / الواتساب:</b> <a href="https://wa.me/967779690850" style="color: var(--gold-primary); text-decoration: none; font-weight: bold;">779690850</a></li>
                     <li>🌐 <b>الموقع الإلكتروني:</b> <a href="https://nashwanaa.github.io/dr-nashwan-dental-clinic/" target="_blank" style="color: var(--gold-primary); text-decoration: none; font-size: 0.95rem;">dr-nashwan-dental-center</a></li>
                 </ul>
+                <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); padding: 20px; border-radius: 8px; margin-top: 20px;">
+                    <h5 style="color: var(--text-white); margin: 0 0 5px 0; font-size: 1rem;">⏰ أوقات الدوام الرسمي بالمركز</h5>
+                    <p style="color: var(--text-muted); margin: 0; font-size: 0.9rem; line-height: 1.6;">طوال أيام الأسبوع (عدا الجمعة). يفضل الحجز المسبق لضمان توفير وقت كافٍ للفحص الرقمي ثلاثي الأبعاد.</p>
+                </div>
             </div>
-            <div style="flex: 1; min-width: 320px; background: var(--bg-surface); padding: 30px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.02);">
-                <h4 style="color: var(--text-white); margin-bottom: 15px;">⏰ أوقات الدوام الرسمي بالمركز</h4>
-                <p style="color: var(--text-muted); line-height: 1.7; font-size: 0.95rem; margin-bottom: 20px;">
-                    نستقبلكم لتشخيص وتصميم خططكم العلاجية والجراحية طوال أيام الأسبوع (عدا الجمعة). لضمان عدم الانتظار وتوفير وقت كافٍ للفحص الرقمي ثلاثي الأبعاد، يرجى التنسيق والحجز المسبق عبر الضغط على الرابط بالأسفل.
-                </p>
-                <a href="contact.html" class="btn-primary" style="display: block; text-align: center; padding: 12px; text-decoration: none; font-weight: bold;">📋 الانتقال لصفحة الحجز وبوابة الاتصال</a>
+            
+            <!-- بوابة حجز الاستشارة المباشرة عبر الواتساب الفوري -->
+            <div style="flex: 1; min-width: 320px; background: var(--bg-surface); padding: 35px; border-radius: 12px; border: 1px solid rgba(212, 175, 55, 0.1);">
+                <h4 style="color: var(--text-white); margin-bottom: 10px; font-size: 1.4rem;">📋 حجز استشارة فورية مع الدكتور</h4>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 25px; line-height: 1.6;">أدخل بياناتك بالأسفل لإنشاء رسالة حجز مخصصة وإرسالها فوراً لواتساب المركز لتأكيد الموعد واليوم.</p>
+                
+                <form onsubmit="sendConsultationToWhatsApp(event)" style="display: flex; flex-direction: column; gap: 18px;">
+                    <div>
+                        <label style="color: var(--text-white); display: block; margin-bottom: 6px; font-size: 0.9rem;">الاسم الكامل للمريض:</label>
+                        <input type="text" id="patientNameIndex" placeholder="مثال: أحمد عبد الله خليل" required style="width: 100%; padding: 12px; border-radius: 6px; background: var(--bg-dark); border: 1px solid rgba(255,255,255,0.1); color: var(--text-white); box-sizing: border-box;">
+                    </div>
+                    <div>
+                        <label style="color: var(--text-white); display: block; margin-bottom: 6px; font-size: 0.9rem;">رقم الجوال أو الواتساب:</label>
+                        <input type="tel" id="patientPhoneIndex" placeholder="مثال: 77XXXXXXX" required style="width: 100%; padding: 12px; border-radius: 6px; background: var(--bg-dark); border: 1px solid rgba(255,255,255,0.1); color: var(--text-white); box-sizing: border-box; text-align: left; direction: ltr;">
+                    </div>
+                    <div>
+                        <label style="color: var(--text-white); display: block; margin-bottom: 6px; font-size: 0.9rem;">الخدمة أو التخصص المطلوب:</label>
+                        <select id="serviceTypeIndex" style="width: 100%; padding: 12px; border-radius: 6px; background: var(--bg-dark); border: 1px solid rgba(255,255,255,0.1); color: var(--text-white); box-sizing: border-box; height: 46px; font-family: sans-serif;">
+                            <option value="زراعة الأسنان المتقدمة والرقمية">زراعة الأسنان المتقدمة والرقمية</option>
+                            <option value="علاج حالات ضمور العظام الشديد (تحت السمحاق)">علاج حالات ضمور العظام الشديد (تحت السمحاق)</option>
+                            <option value="جراحة الفم والوجه والفكين المعقدة">جراحة الفم والوجه والفكين المعقدة</option>
+                            <option value="طب أسنان وقائي وتجميلي (عدسات وفينير)">طب أسنان وقائي وتجميلي (عدسات وفينير)</option>
+                            <option value="استشارة تشخيصية عامة وفحص دوري">استشارة تشخيصية عامة وفحص دوري</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-primary" style="width: 100%; padding: 14px; font-size: 1.1rem; font-weight: bold; border: none; cursor: pointer; margin-top: 10px;">🟢 إرسال طلب الموعد عبر واتساب</button>
+                </form>
             </div>
         </div>
     </section>
@@ -219,6 +262,27 @@
 
     <!-- FLOATING WHATSAPP -->
     <a href="https://wa.me/967779690850" class="whatsapp-float">💬</a>
+
+    <!-- JAVASCRIPT FOR SMART WHATSAPP BOOKING INTEGRATION -->
+    <script>
+    function sendConsultationToWhatsApp(event) {
+        event.preventDefault();
+        
+        // جلب البيانات المدخلة من النموذج
+        const name = document.getElementById('patientNameIndex').value;
+        const phone = document.getElementById('patientPhoneIndex').value;
+        const service = document.getElementById('serviceTypeIndex').value;
+        
+        // صياغة رسالة احترافية ومخصصة لتصل لعيادتك دكتور نشوان
+        const message = `مرحباً دكتور نشوان، أود حجز موعد استشارة طبية في المركز:\n\n👤 اسم المريض: ${name}\n📞 رقم الجوال: ${phone}\n🏥 التخصص المطلوب: ${service}\n\nيرجى تأكيد اليوم والساعة المتاحة للاستقبال.`;
+        
+        // الرابط المباشر للواتساب بالصيغة الدولية المعتمدة
+        const whatsappUrl = `https://wa.me/967779690850?text=${encodeURIComponent(message)}`;
+        
+        // فتح الواتساب في نافذة جديدة لإتمام الحجز بنجاح
+        window.open(whatsappUrl, '_blank');
+    }
+    </script>
 
 </body>
 
